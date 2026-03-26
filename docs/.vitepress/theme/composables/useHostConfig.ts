@@ -5,12 +5,7 @@ const APIKEY_STORAGE_KEY = 'unifi-access-apikey'
 const DEFAULT_HOST = ''
 const DEFAULT_APIKEY = ''
 
-// vitepress-openapi localStorage keys (prefix: --oa)
-const OA_CUSTOM_SERVER_URL = '--oa-custom-server-url'
-const OA_USE_CUSTOM_SERVER = '--oa-use-custom-server'
-const OA_AUTH_BEARER = '--oa-authorization-bearerAuth'
-
-// Cookie name for dev proxy
+// Cookie name for dev proxy middleware
 const PROXY_COOKIE = 'unifi-access-host'
 
 const host = ref(DEFAULT_HOST)
@@ -45,28 +40,12 @@ function normalizeHost(input: string): string {
   }
 }
 
-/**
- * Sync host to vitepress-openapi custom server URL.
- * In dev mode: point to current origin (requests go through Vite proxy).
- * In prod mode: point directly to the user's host.
- */
-function syncOAServer(hostUrl: string) {
+function syncProxyCookie(hostUrl: string) {
+  if (!isDev) return
   if (hostUrl) {
-    const oaServer = isDev ? location.origin : hostUrl
-    localStorage.setItem(OA_CUSTOM_SERVER_URL, oaServer)
-    localStorage.setItem(OA_USE_CUSTOM_SERVER, 'true')
-
-    // Set cookie for dev proxy middleware to read target host
-    if (isDev) {
-      document.cookie = `${PROXY_COOKIE}=${encodeURIComponent(hostUrl)}; path=/; SameSite=Lax`
-    }
+    document.cookie = `${PROXY_COOKIE}=${encodeURIComponent(hostUrl)}; path=/; SameSite=Lax`
   } else {
-    localStorage.removeItem(OA_CUSTOM_SERVER_URL)
-    localStorage.setItem(OA_USE_CUSTOM_SERVER, 'false')
-
-    if (isDev) {
-      document.cookie = `${PROXY_COOKIE}=; path=/; max-age=0`
-    }
+    document.cookie = `${PROXY_COOKIE}=; path=/; max-age=0`
   }
 }
 
@@ -77,13 +56,12 @@ export function useHostConfig() {
     const savedHost = localStorage.getItem(HOST_STORAGE_KEY)
     if (savedHost) {
       host.value = savedHost
-      syncOAServer(savedHost)
+      syncProxyCookie(savedHost)
     }
 
     const savedKey = localStorage.getItem(APIKEY_STORAGE_KEY)
     if (savedKey) {
       apiKey.value = savedKey
-      localStorage.setItem(OA_AUTH_BEARER, savedKey)
     }
 
     initialized = true
@@ -94,16 +72,14 @@ export function useHostConfig() {
       } else {
         localStorage.removeItem(HOST_STORAGE_KEY)
       }
-      syncOAServer(val)
+      syncProxyCookie(val)
     })
 
     watch(apiKey, (val) => {
       if (val) {
         localStorage.setItem(APIKEY_STORAGE_KEY, val)
-        localStorage.setItem(OA_AUTH_BEARER, val)
       } else {
         localStorage.removeItem(APIKEY_STORAGE_KEY)
-        localStorage.removeItem(OA_AUTH_BEARER)
       }
     })
   }
