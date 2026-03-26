@@ -8,15 +8,11 @@ import spec from '../../../public/openapi.json' with { type: 'json' }
 
 import Layout from './Layout.vue'
 import HostConfig from './components/HostConfig.vue'
-import { installDevProxy } from './composables/useDevProxy'
 
 export default {
   extends: DefaultTheme,
   Layout,
   enhanceApp({ app, router, siteData }) {
-    // Install fetch interceptor before anything else (dev only)
-    installDevProxy()
-
     useOpenapi({
       spec,
       config: {

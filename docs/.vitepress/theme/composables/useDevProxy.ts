@@ -1,10 +1,11 @@
 /**
- * In dev mode, intercept fetch calls targeting the UniFi Access API
+ * In dev mode, intercept cross-origin fetch calls to /api/ paths
  * and rewrite them to go through the local Vite proxy instead.
  * This bypasses self-signed cert and CORS issues.
  */
 
 const HOST_STORAGE_KEY = 'unifi-access-host'
+const APIKEY_STORAGE_KEY = 'unifi-access-apikey'
 const COOKIE_NAME = 'unifi-access-host'
 
 let installed = false
@@ -24,26 +25,51 @@ export function installDevProxy() {
       : input instanceof Request ? input.url
       : null
 
-    if (url) {
-      const savedHost = localStorage.getItem(HOST_STORAGE_KEY)
-      if (savedHost && url.startsWith(savedHost)) {
-        // Rewrite: https://192.168.x.x:12445/api/... → /api/...
-        const localPath = url.slice(savedHost.length)
-        const localUrl = `${location.origin}${localPath}`
+    if (!url) return originalFetch.call(window, input, init)
 
-        // Ensure the proxy cookie is set
-        document.cookie = `${COOKIE_NAME}=${encodeURIComponent(savedHost)}; path=/; SameSite=Lax`
+    // Check if this is a cross-origin request with /api/ in the path
+    let parsed: URL | null = null
+    try {
+      parsed = new URL(url)
+    } catch {
+      return originalFetch.call(window, input, init)
+    }
 
-        // Rebuild the request with the local URL
-        if (typeof input === 'string') {
-          return originalFetch.call(window, localUrl, init)
-        } else if (input instanceof URL) {
-          return originalFetch.call(window, new URL(localUrl), init)
-        } else if (input instanceof Request) {
-          const newReq = new Request(localUrl, input)
-          return originalFetch.call(window, newReq, init)
-        }
+    const isCrossOrigin = parsed.origin !== location.origin
+    const isApiCall = parsed.pathname.startsWith('/api/')
+
+    if (isCrossOrigin && isApiCall) {
+      // Use the target from the fetch URL itself (e.g. https://192.168.1.1:12445)
+      const targetOrigin = parsed.origin
+      // Also check if user has a configured host — prefer that for the proxy cookie
+      const savedHost = localStorage.getItem(HOST_STORAGE_KEY) || targetOrigin
+
+      // Set cookie so proxy middleware knows where to forward
+      document.cookie = `${COOKIE_NAME}=${encodeURIComponent(savedHost)}; path=/; SameSite=Lax`
+
+      // Rewrite to local: https://192.168.x.x:12445/api/... → http://localhost:5173/api/...
+      const localUrl = `${location.origin}${parsed.pathname}${parsed.search}`
+
+      // Build init from existing Request or init object
+      const mergedInit: RequestInit = {
+        ...(input instanceof Request ? {
+          method: input.method,
+          headers: Object.fromEntries(input.headers.entries()),
+          body: input.body,
+          signal: input.signal,
+        } : {}),
+        ...init,
       }
+
+      // Inject Authorization header from stored API key
+      const apiKey = localStorage.getItem(APIKEY_STORAGE_KEY)
+      if (apiKey) {
+        const h = new Headers(mergedInit.headers)
+        h.set('Authorization', `Bearer ${apiKey}`)
+        mergedInit.headers = h
+      }
+
+      return originalFetch.call(window, localUrl, mergedInit)
     }
 
     return originalFetch.call(window, input, init)
