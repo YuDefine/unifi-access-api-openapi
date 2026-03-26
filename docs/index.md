@@ -25,5 +25,5 @@ features:
     details: Support for WebSocket and Webhook to receive access events, device status, and system alerts.
   - title: Official Documentation
     details: Download the original official UniFi Access API PDF documentation.
-    link: /unifi-access-api-original.pdf
+    link: https://github.com/YuDefine/unifi-access-api-openapi/raw/main/docs/unifi-access-api-original.pdf
 ---

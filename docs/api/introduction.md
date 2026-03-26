@@ -3,7 +3,7 @@
 Welcome to the UniFi Access API guide, which provides a detailed step-by-step explanation of how to utilize the API effectively. The UniFi Access API is an open interface protocol that allows developers to interact with a specific service using predefined interfaces.
 
 ::: tip Official Documentation
-Download the original official PDF: [UniFi Access API Documentation (PDF)](/unifi-access-api-original.pdf)
+Download the original official PDF: [UniFi Access API Documentation (PDF)](https://github.com/YuDefine/unifi-access-api-openapi/raw/main/docs/unifi-access-api-original.pdf)
 :::
 
 ## Create API Token & Download API Documentation

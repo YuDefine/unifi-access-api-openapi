@@ -3,7 +3,7 @@
 歡迎閱讀 UniFi Access API 指南，本指南提供了如何有效使用 API 的詳細逐步說明。UniFi Access API 是一個開放的介面協定，允許開發者透過預先定義的介面與特定服務進行互動。
 
 ::: tip 官方文件
-下載原始官方 PDF：[UniFi Access API 官方文件 (PDF)](/unifi-access-api-original.pdf)
+下載原始官方 PDF：[UniFi Access API 官方文件 (PDF)](https://github.com/YuDefine/unifi-access-api-openapi/raw/main/docs/unifi-access-api-original.pdf)
 :::
 
 ## 建立 API Token 與下載 API 文件

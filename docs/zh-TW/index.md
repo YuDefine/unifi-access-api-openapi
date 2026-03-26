@@ -25,5 +25,5 @@ features:
     details: 支援 WebSocket 與 Webhook，接收門禁事件、裝置狀態及系統警報。
   - title: 官方文件
     details: 下載原始官方 UniFi Access API PDF 文件。
-    link: /unifi-access-api-original.pdf
+    link: https://github.com/YuDefine/unifi-access-api-openapi/raw/main/docs/unifi-access-api-original.pdf
 ---
