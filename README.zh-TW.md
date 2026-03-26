@@ -61,9 +61,11 @@ npx @redocly/cli preview-docs openapi.yaml
 npx @openapitools/openapi-generator-cli generate -i openapi.yaml -g typescript-fetch -o ./client
 ```
 
-## 原始文件
+## 文件
 
-原始的 Ubiquiti UniFi Access API PDF 文件位於 [`docs/unifi-access-api-original.pdf`](docs/unifi-access-api-original.pdf)。
+- **[使用指南（繁體中文）](docs/USAGE.zh-TW.md)** — 完整整合指南，含 endpoint 參考、認證說明、錯誤碼、工具整合
+- **[Usage Guide (English)](docs/USAGE.md)** — Complete integration guide
+- **[原始 PDF](docs/unifi-access-api-original.pdf)** — Ubiquiti 官方 API 文件
 
 ## 重要聲明
 

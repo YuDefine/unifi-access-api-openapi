@@ -61,9 +61,11 @@ npx @redocly/cli preview-docs openapi.yaml
 npx @openapitools/openapi-generator-cli generate -i openapi.yaml -g typescript-fetch -o ./client
 ```
 
-## Original Documentation
+## Documentation
 
-The original Ubiquiti UniFi Access API PDF is available at [`docs/unifi-access-api-original.pdf`](docs/unifi-access-api-original.pdf).
+- **[Usage Guide](docs/USAGE.md)** — Complete integration guide with endpoint reference, authentication, error codes, and tooling
+- **[使用指南（繁體中文）](docs/USAGE.zh-TW.md)** — 完整整合指南
+- **[Original PDF](docs/unifi-access-api-original.pdf)** — Ubiquiti's official API documentation
 
 ## Disclaimer
 
