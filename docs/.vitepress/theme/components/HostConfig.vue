@@ -1,7 +1,13 @@
 <script setup lang="ts">
 import { useHostConfig } from '../composables/useHostConfig'
 
-const { host, apiKey, DEFAULT_HOST, resetHost, resetApiKey } = useHostConfig()
+const { host, apiKey, normalizeHost, resetHost, resetApiKey } = useHostConfig()
+
+function onHostBlur() {
+  if (host.value) {
+    host.value = normalizeHost(host.value)
+  }
+}
 </script>
 
 <template>
@@ -14,11 +20,12 @@ const { host, apiKey, DEFAULT_HOST, resetHost, resetApiKey } = useHostConfig()
             v-model="host"
             class="host-config-input"
             type="text"
-            :placeholder="DEFAULT_HOST"
+            placeholder="https://192.168.0.1:12445"
             spellcheck="false"
+            @blur="onHostBlur"
           />
           <button
-            v-if="host !== DEFAULT_HOST"
+            v-if="host"
             class="host-config-reset"
             title="Reset"
             @click="resetHost"

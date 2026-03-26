@@ -15,7 +15,11 @@ export default {
   enhanceApp({ app, router, siteData }) {
     useOpenapi({
       spec,
-      config: {},
+      config: {
+        server: {
+          allowCustomServer: true,
+        },
+      },
     })
     theme.enhanceApp({ app, router, siteData })
 

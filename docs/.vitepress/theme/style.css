@@ -4,3 +4,8 @@
   --vp-c-brand-3: #1e3a8a;
   --vp-c-brand-soft: rgba(29, 78, 216, 0.14);
 }
+
+/* Mask bearerAuth input in vitepress-openapi playground */
+.OAOperation input[name="bearerAuth"] {
+  -webkit-text-security: disc;
+}
