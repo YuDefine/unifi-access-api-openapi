@@ -5,6 +5,7 @@ info:
   description: Unofficial OpenAPI specification for the UniFi Access API, converted from Ubiquiti's official PDF documentation.
   license:
     name: MIT
+    identifier: MIT
 servers:
 - url: https://{host}:12445
   variables:
@@ -18,15 +19,6 @@ components:
       type: http
       scheme: bearer
   schemas:
-    ApiResponse:
-      type: object
-      properties:
-        code:
-          type: string
-        msg:
-          type: string
-        data:
-          type: object
     SuccessResponse:
       type: object
       properties:
@@ -962,7 +954,7 @@ paths:
                   msg:
                     type: string
                   data:
-                    nullable: true
+                    type: 'null'
         '400':
           description: Bad Request
         '401':
@@ -1673,7 +1665,7 @@ paths:
                   msg:
                     type: string
                   data:
-                    nullable: true
+                    type: 'null'
         '400':
           description: Bad Request
         '401':
@@ -1941,7 +1933,7 @@ paths:
                   msg:
                     type: string
                   data:
-                    nullable: true
+                    type: 'null'
         '400':
           description: Bad Request
         '401':
@@ -1981,7 +1973,7 @@ paths:
                   msg:
                     type: string
                   data:
-                    nullable: true
+                    type: 'null'
         '400':
           description: Bad Request
         '401':
@@ -2323,7 +2315,7 @@ paths:
                   msg:
                     type: string
                   data:
-                    nullable: true
+                    type: 'null'
         '400':
           description: Bad Request
         '401':
@@ -2524,7 +2516,7 @@ paths:
                   msg:
                     type: string
                   data:
-                    nullable: true
+                    type: 'null'
         '400':
           description: Bad Request
         '401':
@@ -2558,7 +2550,7 @@ paths:
                   msg:
                     type: string
                   data:
-                    nullable: true
+                    type: 'null'
         '400':
           description: Bad Request
         '401':
@@ -2601,7 +2593,7 @@ paths:
                   msg:
                     type: string
                   data:
-                    nullable: true
+                    type: 'null'
         '400':
           description: Bad Request
         '401':
@@ -2641,7 +2633,7 @@ paths:
                   msg:
                     type: string
                   data:
-                    nullable: true
+                    type: 'null'
         '400':
           description: Bad Request
         '401':
@@ -2697,6 +2689,12 @@ paths:
                     type: string
                   data:
                     $ref: '#/components/schemas/AccessPolicy'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
     get:
       tags:
       - Access Policy
@@ -2721,6 +2719,12 @@ paths:
                     type: array
                     items:
                       $ref: '#/components/schemas/AccessPolicy'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/access_policies/{id}:
     put:
       tags:
@@ -2776,6 +2780,12 @@ paths:
                     properties:
                       id:
                         type: string
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
     delete:
       tags:
       - Access Policy
@@ -2797,6 +2807,12 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/SuccessResponse'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
     get:
       tags:
       - Access Policy
@@ -2825,6 +2841,12 @@ paths:
                     type: string
                   data:
                     $ref: '#/components/schemas/AccessPolicy'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/access_policies/holiday_groups:
     post:
       tags:
@@ -2880,6 +2902,12 @@ paths:
                     type: string
                   data:
                     $ref: '#/components/schemas/HolidayGroup'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
     get:
       tags:
       - Holiday Group
@@ -2904,6 +2932,12 @@ paths:
                     type: array
                     items:
                       $ref: '#/components/schemas/HolidayGroupSummary'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/access_policies/holiday_groups/{id}:
     put:
       tags:
@@ -2968,6 +3002,12 @@ paths:
                     type: string
                   data:
                     $ref: '#/components/schemas/HolidayGroup'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
     delete:
       tags:
       - Holiday Group
@@ -2989,6 +3029,12 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/SuccessResponse'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
     get:
       tags:
       - Holiday Group
@@ -3017,6 +3063,12 @@ paths:
                     type: string
                   data:
                     $ref: '#/components/schemas/HolidayGroup'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/access_policies/schedules:
     post:
       tags:
@@ -3060,6 +3112,12 @@ paths:
                     type: string
                   data:
                     $ref: '#/components/schemas/Schedule'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
     get:
       tags:
       - Schedule
@@ -3084,6 +3142,12 @@ paths:
                     type: array
                     items:
                       $ref: '#/components/schemas/Schedule'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/access_policies/schedules/{id}:
     put:
       tags:
@@ -3130,6 +3194,12 @@ paths:
                     type: string
                   data:
                     $ref: '#/components/schemas/Schedule'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
     get:
       tags:
       - Schedule
@@ -3158,6 +3228,12 @@ paths:
                     type: string
                   data:
                     $ref: '#/components/schemas/Schedule'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
     delete:
       tags:
       - Schedule
@@ -3179,6 +3255,12 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/SuccessResponse'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/credentials/pin_codes:
     post:
       tags:
@@ -3203,6 +3285,12 @@ paths:
                   data:
                     type: string
                     description: The generated PIN code
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/credentials/nfc_cards/sessions:
     post:
       tags:
@@ -3242,6 +3330,12 @@ paths:
                     properties:
                       session_id:
                         type: string
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/credentials/nfc_cards/sessions/{id}:
     get:
       tags:
@@ -3276,6 +3370,12 @@ paths:
                         type: string
                       card_id:
                         type: string
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
     delete:
       tags:
       - Credential
@@ -3297,6 +3397,12 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/SuccessResponse'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/credentials/nfc_cards/tokens/{token}:
     get:
       tags:
@@ -3327,6 +3433,12 @@ paths:
                     type: string
                   data:
                     $ref: '#/components/schemas/NfcCard'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
     delete:
       tags:
       - Credential
@@ -3349,6 +3461,12 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/SuccessResponse'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
     put:
       tags:
       - Credential
@@ -3380,6 +3498,12 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/SuccessResponse'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/credentials/nfc_cards/tokens:
     get:
       tags:
@@ -3419,6 +3543,12 @@ paths:
                       $ref: '#/components/schemas/NfcCard'
                   pagination:
                     $ref: '#/components/schemas/Pagination'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/credentials/touch_passes:
     get:
       tags:
@@ -3468,6 +3598,12 @@ paths:
                       $ref: '#/components/schemas/TouchPass'
                   pagination:
                     $ref: '#/components/schemas/Pagination'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
     post:
       tags:
       - Credential
@@ -3504,6 +3640,12 @@ paths:
                     type: array
                     items:
                       $ref: '#/components/schemas/TouchPass'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/credentials/touch_passes/search:
     get:
       tags:
@@ -3536,6 +3678,12 @@ paths:
                     type: array
                     items:
                       $ref: '#/components/schemas/TouchPass'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/credentials/touch_passes/assignable:
     get:
       tags:
@@ -3562,6 +3710,12 @@ paths:
                     type: array
                     items:
                       $ref: '#/components/schemas/TouchPass'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/credentials/touch_passes/{id}:
     put:
       tags:
@@ -3617,6 +3771,12 @@ paths:
                     type: string
                   data:
                     $ref: '#/components/schemas/TouchPass'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
     get:
       tags:
       - Credential
@@ -3646,6 +3806,12 @@ paths:
                     type: string
                   data:
                     $ref: '#/components/schemas/TouchPass'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/credentials/qr_codes/download/{visitor_id}:
     get:
       tags:
@@ -3670,6 +3836,12 @@ paths:
               schema:
                 type: string
                 format: binary
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/credentials/nfc_cards/import:
     post:
       tags:
@@ -3716,6 +3888,12 @@ paths:
                           type: string
                         token:
                           type: string
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/door_groups/topology:
     get:
       tags:
@@ -3739,6 +3917,12 @@ paths:
                     type: string
                   data:
                     $ref: '#/components/schemas/DoorTopology'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/door_groups:
     post:
       tags:
@@ -3779,6 +3963,12 @@ paths:
                     type: string
                   data:
                     $ref: '#/components/schemas/DoorGroup'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
     get:
       tags:
       - Space
@@ -3803,6 +3993,12 @@ paths:
                     type: array
                     items:
                       $ref: '#/components/schemas/DoorGroup'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/door_groups/{id}:
     get:
       tags:
@@ -3832,6 +4028,12 @@ paths:
                     type: string
                   data:
                     $ref: '#/components/schemas/DoorGroup'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
     put:
       tags:
       - Space
@@ -3873,6 +4075,12 @@ paths:
                     type: string
                   data:
                     $ref: '#/components/schemas/DoorGroup'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
     delete:
       tags:
       - Space
@@ -3894,6 +4102,12 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/SuccessResponse'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/doors/{id}:
     get:
       tags:
@@ -3923,6 +4137,12 @@ paths:
                     type: string
                   data:
                     $ref: '#/components/schemas/Door'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/doors:
     get:
       tags:
@@ -3948,6 +4168,12 @@ paths:
                     type: array
                     items:
                       $ref: '#/components/schemas/Door'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/doors/{id}/unlock:
     put:
       tags:
@@ -3983,6 +4209,12 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/SuccessResponse'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/doors/{id}/lock_rule:
     put:
       tags:
@@ -4027,6 +4259,12 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/SuccessResponse'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
     get:
       tags:
       - Space
@@ -4056,6 +4294,12 @@ paths:
                     type: string
                   data:
                     $ref: '#/components/schemas/LockRule'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/doors/settings/emergency:
     put:
       tags:
@@ -4084,6 +4328,12 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/SuccessResponse'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
     get:
       tags:
       - Space
@@ -4107,6 +4357,12 @@ paths:
                     type: string
                   data:
                     $ref: '#/components/schemas/EmergencyStatus'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/devices:
     get:
       tags:
@@ -4140,6 +4396,12 @@ paths:
                     type: array
                     items:
                       $ref: '#/components/schemas/Device'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/devices/{device_id}/settings:
     get:
       tags:
@@ -4170,6 +4432,12 @@ paths:
                     type: string
                   data:
                     $ref: '#/components/schemas/DeviceAccessMethods'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
     put:
       tags:
       - Device
@@ -4201,6 +4469,12 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/SuccessResponse'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/devices/{device_id}/doorbell:
     post:
       tags:
@@ -4235,6 +4509,12 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/SuccessResponse'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/system/logs:
     post:
       tags:
@@ -4302,6 +4582,12 @@ paths:
                         type: integer
                       total:
                         type: integer
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/system/logs/export:
     post:
       tags:
@@ -4349,6 +4635,12 @@ paths:
               schema:
                 type: string
                 format: binary
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/system/logs/resource/{id}:
     get:
       tags:
@@ -4388,6 +4680,12 @@ paths:
                         type: string
                       updated_at:
                         type: string
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/system/static/{path}:
     get:
       tags:
@@ -4412,6 +4710,12 @@ paths:
               schema:
                 type: string
                 format: binary
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/users/identity/invitations:
     post:
       tags:
@@ -4453,6 +4757,12 @@ paths:
                     type: array
                     items:
                       type: object
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/users/identity/assignments:
     get:
       tags:
@@ -4484,6 +4794,12 @@ paths:
                     type: string
                   data:
                     $ref: '#/components/schemas/IdentityAssignments'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/users/{id}/identity/assignments:
     post:
       tags:
@@ -4533,7 +4849,13 @@ paths:
                   msg:
                     type: string
                   data:
-                    nullable: true
+                    type: 'null'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
     get:
       tags:
       - UniFi Identity
@@ -4563,6 +4885,12 @@ paths:
                     type: string
                   data:
                     $ref: '#/components/schemas/IdentityAssignments'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/user_groups/{id}/identity/assignments:
     post:
       tags:
@@ -4612,7 +4940,13 @@ paths:
                   msg:
                     type: string
                   data:
-                    nullable: true
+                    type: 'null'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
     get:
       tags:
       - UniFi Identity
@@ -4642,6 +4976,12 @@ paths:
                     type: string
                   data:
                     $ref: '#/components/schemas/IdentityAssignments'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/webhooks/endpoints:
     get:
       tags:
@@ -4668,6 +5008,12 @@ paths:
                     type: array
                     items:
                       $ref: '#/components/schemas/WebhookEndpoint'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
     post:
       tags:
       - Webhook
@@ -4716,6 +5062,12 @@ paths:
                     type: string
                   data:
                     $ref: '#/components/schemas/WebhookEndpoint'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/webhooks/endpoints/{id}:
     put:
       tags:
@@ -4770,6 +5122,12 @@ paths:
                     type: string
                   data:
                     $ref: '#/components/schemas/WebhookEndpoint'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
     delete:
       tags:
       - Webhook
@@ -4798,7 +5156,13 @@ paths:
                   msg:
                     type: string
                   data:
-                    nullable: true
+                    type: 'null'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
   /api/v1/developer/api_server/certificates:
     post:
       tags:
@@ -4832,6 +5196,12 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/SuccessResponse'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
     delete:
       tags:
       - API Server
@@ -4848,3 +5218,9 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/SuccessResponse'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
