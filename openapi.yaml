@@ -24,13 +24,16 @@ components:
       properties:
         code:
           type: string
-          example: SUCCESS
+          examples:
+          - SUCCESS
         msg:
           type: string
-          example: success
+          examples:
+          - success
         data:
           type: string
-          example: success
+          examples:
+          - success
     Pagination:
       type: object
       properties:
@@ -111,7 +114,8 @@ components:
           type: string
         credential_type:
           type: string
-          example: license
+          examples:
+          - license
         credential_status:
           type: string
           enum:
@@ -238,10 +242,12 @@ components:
       properties:
         start_time:
           type: string
-          example: 00:00:00
+          examples:
+          - 00:00:00
         end_time:
           type: string
-          example: '23:59:59'
+          examples:
+          - '23:59:59'
     AccessPolicy:
       type: object
       properties:
