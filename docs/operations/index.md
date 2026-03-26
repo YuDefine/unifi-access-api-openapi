@@ -8,15 +8,7 @@ next:
 
 Browse all UniFi Access API endpoints by category. Select any operation from the sidebar to view its details, parameters, and response schemas.
 
-## Configure Your Environment (Optional)
-
-Enter your UniFi Access host and API key below so that code examples are ready to copy & paste.
-
 <HostConfig />
-
-::: info Privacy Notice
-This is an **optional** convenience feature for testing purposes only. All values are stored exclusively in your browser's localStorage — **no data is transmitted to any server**. If you have concerns, you can [fork this project on GitHub](https://github.com/YuDefine/unifi-access-api-openapi) and run it locally, or simply copy the example code and replace the placeholders yourself.
-:::
 
 ## Getting Started
 

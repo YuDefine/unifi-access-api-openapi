@@ -8,6 +8,7 @@ import spec from '../../../public/openapi.json' with { type: 'json' }
 
 import Layout from './Layout.vue'
 import HostConfig from './components/HostConfig.vue'
+import AttendanceDemo from './components/AttendanceDemo.vue'
 
 export default {
   extends: DefaultTheme,
@@ -24,5 +25,6 @@ export default {
     theme.enhanceApp({ app, router, siteData })
 
     app.component('HostConfig', HostConfig)
+app.component('AttendanceDemo', AttendanceDemo)
   },
 } satisfies Theme

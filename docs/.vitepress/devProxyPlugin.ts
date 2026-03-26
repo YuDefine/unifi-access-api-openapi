@@ -72,7 +72,9 @@ export function devProxyPlugin(): Plugin {
     name: 'unifi-dev-proxy',
     configureServer(server) {
       server.middlewares.use((req, res, next) => {
-        if (!req.url?.startsWith('/api/')) return next()
+        // Only proxy UniFi Access API calls: /api/v1/developer/...
+        // Skip VitePress doc pages (e.g. /api/introduction.html)
+        if (!req.url?.startsWith('/api/v1/')) return next()
 
         // Handle CORS preflight
         if (req.method === 'OPTIONS') {

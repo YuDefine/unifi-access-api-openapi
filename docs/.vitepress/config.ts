@@ -29,6 +29,12 @@ const detailSidebarEn = [
     ],
   },
   {
+    text: 'Demos',
+    items: [
+      { text: 'Attendance', link: '/demo/attendance' },
+    ],
+  },
+  {
     text: 'Detailed Docs',
     items: [
       { text: 'User', link: '/api/user' },
@@ -53,6 +59,12 @@ const detailSidebarZhTW = [
       { text: '簡介', link: '/zh-TW/api/introduction' },
       { text: '使用指南', link: '/zh-TW/USAGE' },
       { text: '更新紀錄', link: '/zh-TW/api/changelog' },
+    ],
+  },
+  {
+    text: 'Demo',
+    items: [
+      { text: '出勤紀錄', link: '/zh-TW/demo/attendance' },
     ],
   },
   {
@@ -108,10 +120,6 @@ export default defineConfig({
           { text: 'API Quick Search', link: '/operations/' },
           { text: 'Usage', link: '/USAGE' },
         ],
-        sidebar: [
-          ...detailSidebarEn,
-          ...apiQuickSearchSidebarEn,
-        ],
       },
     },
     'zh-TW': {
@@ -125,10 +133,6 @@ export default defineConfig({
           { text: 'API 快速查找', link: '/zh-TW/operations/' },
           { text: '使用指南', link: '/zh-TW/USAGE' },
         ],
-        sidebar: [
-          ...detailSidebarZhTW,
-          ...apiQuickSearchSidebarZhTW,
-        ],
         outline: {
           label: '本頁目錄',
         },
@@ -139,6 +143,21 @@ export default defineConfig({
   themeConfig: {
     outline: {
       level: 2,
+    },
+
+    // Sidebar 放在 global themeConfig，不放在 locale 裡。
+    // 因為 locale themeConfig 是 shallow merge，會完整覆蓋 global sidebar，
+    // 導致切換語言過渡期間只有單一 locale 的路徑可供匹配。
+    // 放在 global 確保兩組路徑永遠都在，靠 path prefix 自然區分。
+    sidebar: {
+      '/api/': [...detailSidebarEn, ...apiQuickSearchSidebarEn],
+      '/operations/': [...detailSidebarEn, ...apiQuickSearchSidebarEn],
+      '/demo/': [...detailSidebarEn, ...apiQuickSearchSidebarEn],
+      '/USAGE': [...detailSidebarEn, ...apiQuickSearchSidebarEn],
+      '/zh-TW/api/': [...detailSidebarZhTW, ...apiQuickSearchSidebarZhTW],
+      '/zh-TW/operations/': [...detailSidebarZhTW, ...apiQuickSearchSidebarZhTW],
+      '/zh-TW/demo/': [...detailSidebarZhTW, ...apiQuickSearchSidebarZhTW],
+      '/zh-TW/USAGE': [...detailSidebarZhTW, ...apiQuickSearchSidebarZhTW],
     },
 
     search: {
