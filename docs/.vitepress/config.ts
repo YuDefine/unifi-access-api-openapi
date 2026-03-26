@@ -21,7 +21,7 @@ const detailSidebarEn = [
   {
     text: 'Guides',
     items: [
-      { text: 'Overview', link: '/' },
+      { text: 'Overview', link: '/api/overview' },
       { text: 'Introduction', link: '/api/introduction' },
       { text: 'Usage Guide', link: '/USAGE' },
       { text: 'Changelog', link: '/api/changelog' },
@@ -48,7 +48,7 @@ const detailSidebarZhTW = [
   {
     text: '導覽',
     items: [
-      { text: '總覽', link: '/zh-TW/' },
+      { text: '總覽', link: '/zh-TW/api/overview' },
       { text: '簡介', link: '/zh-TW/api/introduction' },
       { text: '使用指南', link: '/zh-TW/USAGE' },
       { text: '更新紀錄', link: '/zh-TW/api/changelog' },
@@ -75,6 +75,23 @@ export default defineConfig({
   title: 'UniFi Access API Docs',
   description: 'UniFi Access API 非官方說明文件',
   base: '/',
+
+  head: [
+    [
+      'script',
+      {},
+      `(function() {
+        if (window.location.pathname !== '/' && window.location.pathname !== '/index.html') return;
+        var key = 'vitepress-locale-redirected';
+        if (sessionStorage.getItem(key)) return;
+        sessionStorage.setItem(key, '1');
+        var lang = navigator.language || navigator.userLanguage || '';
+        if (/^zh\\b/i.test(lang)) {
+          window.location.replace('/zh-TW/');
+        }
+      })();`,
+    ],
+  ],
 
   locales: {
     root: {
