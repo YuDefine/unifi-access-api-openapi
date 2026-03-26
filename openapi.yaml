@@ -659,7 +659,7 @@ components:
               enum:
               - high
               - medium
-              - "no"
+              - 'no'
             detect_distance:
               type: string
               enum:
@@ -918,14 +918,22 @@ paths:
               properties:
                 first_name:
                   type: string
+                  example: John
                 last_name:
                   type: string
+                  example: Doe
                 user_email:
                   type: string
+                  example: john.doe@example.com
                 employee_number:
                   type: string
+                  example: E001
                 onboard_time:
                   type: integer
+                  example: 1689304925
+            example:
+              first_name: John
+              last_name: Doe
       responses:
         '200':
           description: User created successfully
@@ -969,16 +977,19 @@ paths:
         required: false
         schema:
           type: string
+        example: access_policy
       - name: page_num
         in: query
         required: false
         schema:
           type: string
+        example: '1'
       - name: page_size
         in: query
         required: false
         schema:
           type: string
+        example: '25'
       responses:
         '200':
           description: Users retrieved successfully
@@ -1025,6 +1036,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       requestBody:
         required: true
         content:
@@ -1034,19 +1046,25 @@ paths:
               properties:
                 first_name:
                   type: string
+                  example: John
                 last_name:
                   type: string
+                  example: Doe
                 user_email:
                   type: string
+                  example: john.doe@example.com
                 employee_number:
                   type: string
+                  example: E001
                 onboard_time:
                   type: integer
+                  example: 1689304925
                 status:
                   type: string
                   enum:
                   - ACTIVE
                   - DEACTIVATED
+                  example: ACTIVE
       responses:
         '200':
           description: User updated successfully
@@ -1081,6 +1099,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       - name: expand[]
         in: query
         required: false
@@ -1088,6 +1107,7 @@ paths:
           type: string
           enum:
           - access_policy
+        example: access_policy
       responses:
         '200':
           description: User retrieved successfully
@@ -1122,6 +1142,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       responses:
         '200':
           description: User deleted successfully
@@ -1155,6 +1176,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       requestBody:
         required: true
         content:
@@ -1168,6 +1190,10 @@ paths:
                   type: array
                   items:
                     type: string
+                  example: &id001
+                  - 550e8400-e29b-41d4-a716-446655440000
+            example:
+              access_policy_ids: *id001
       responses:
         '200':
           description: Access policy assigned successfully
@@ -1200,11 +1226,13 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       - name: only_user_policies
         in: query
         required: false
         schema:
           type: boolean
+        example: false
       responses:
         '200':
           description: Access policies retrieved successfully
@@ -1242,6 +1270,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       requestBody:
         required: true
         content:
@@ -1253,8 +1282,12 @@ paths:
               properties:
                 token:
                   type: string
+                  example: NFC-TOKEN-001
                 force_add:
                   type: boolean
+                  example: false
+            example:
+              token: NFC-TOKEN-001
       responses:
         '200':
           description: NFC card assigned successfully
@@ -1288,6 +1321,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       requestBody:
         required: true
         content:
@@ -1299,6 +1333,9 @@ paths:
               properties:
                 token:
                   type: string
+                  example: NFC-TOKEN-001
+            example:
+              token: NFC-TOKEN-001
       responses:
         '200':
           description: NFC card unassigned successfully
@@ -1332,6 +1369,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       requestBody:
         required: true
         content:
@@ -1343,6 +1381,9 @@ paths:
               properties:
                 pin_code:
                   type: string
+                  example: '123456'
+            example:
+              pin_code: '123456'
       responses:
         '200':
           description: PIN code assigned successfully
@@ -1375,6 +1416,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       responses:
         '200':
           description: PIN code unassigned successfully
@@ -1413,8 +1455,12 @@ paths:
               properties:
                 name:
                   type: string
+                  example: Engineering Team
                 up_id:
                   type: string
+                  example: 550e8400-e29b-41d4-a716-446655440000
+            example:
+              name: Engineering Team
       responses:
         '200':
           description: User group created successfully
@@ -1478,6 +1524,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       responses:
         '200':
           description: User group retrieved successfully
@@ -1512,6 +1559,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       requestBody:
         required: true
         content:
@@ -1523,8 +1571,12 @@ paths:
               properties:
                 name:
                   type: string
+                  example: Engineering Team
                 up_id:
                   type: string
+                  example: 550e8400-e29b-41d4-a716-446655440000
+            example:
+              name: Engineering Team
       responses:
         '200':
           description: User group updated successfully
@@ -1557,6 +1609,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       responses:
         '200':
           description: User group deleted successfully
@@ -1590,6 +1643,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       requestBody:
         required: true
         content:
@@ -1598,6 +1652,8 @@ paths:
               type: array
               items:
                 type: string
+            example:
+            - 550e8400-e29b-41d4-a716-446655440000
       responses:
         '200':
           description: Users assigned to group successfully
@@ -1630,6 +1686,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       responses:
         '200':
           description: Users retrieved successfully
@@ -1667,6 +1724,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       requestBody:
         required: true
         content:
@@ -1675,6 +1733,8 @@ paths:
               type: array
               items:
                 type: string
+            example:
+            - 550e8400-e29b-41d4-a716-446655440000
       responses:
         '200':
           description: Users unassigned from group successfully
@@ -1708,6 +1768,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       responses:
         '200':
           description: All users in group retrieved successfully
@@ -1745,6 +1806,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       requestBody:
         required: true
         content:
@@ -1758,6 +1820,10 @@ paths:
                   type: array
                   items:
                     type: string
+                  example: &id002
+                  - 550e8400-e29b-41d4-a716-446655440000
+            example:
+              access_policy_ids: *id002
       responses:
         '200':
           description: Access policy assigned to group successfully
@@ -1792,6 +1858,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       responses:
         '200':
           description: Access policies retrieved successfully
@@ -1829,31 +1896,37 @@ paths:
         required: false
         schema:
           type: string
+        example: John
       - name: user_id
         in: query
         required: false
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       - name: only_admin
         in: query
         required: false
         schema:
           type: boolean
+        example: false
       - name: status
         in: query
         required: false
         schema:
           type: string
+        example: ACTIVE
       - name: page_num
         in: query
         required: false
         schema:
           type: string
+        example: '1'
       - name: page_size
         in: query
         required: false
         schema:
           type: string
+        example: '25'
       responses:
         '200':
           description: Search results retrieved successfully
@@ -1891,11 +1964,13 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       - name: touch_pass_id
         in: path
         required: true
         schema:
           type: string
+        example: 6ba7b810-9dad-11d1-80b4-00c04fd430c8
       responses:
         '200':
           description: Touch pass assigned successfully
@@ -1930,11 +2005,13 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       - name: touch_pass_id
         in: path
         required: true
         schema:
           type: string
+        example: 6ba7b810-9dad-11d1-80b4-00c04fd430c8
       responses:
         '200':
           description: Touch pass unassigned successfully
@@ -2018,6 +2095,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       requestBody:
         required: true
         content:
@@ -2026,6 +2104,8 @@ paths:
               type: array
               items:
                 type: string
+            example:
+            - 550e8400-e29b-41d4-a716-446655440000
       responses:
         '200':
           description: License plates assigned successfully
@@ -2061,11 +2141,13 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       - name: license_plate_id
         in: path
         required: true
         schema:
           type: string
+        example: 6ba7b810-9dad-11d1-80b4-00c04fd430c8
       responses:
         '200':
           description: License plate unassigned successfully
@@ -2101,6 +2183,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       requestBody:
         required: true
         content:
@@ -2160,20 +2243,28 @@ paths:
               properties:
                 first_name:
                   type: string
+                  example: John
                 last_name:
                   type: string
+                  example: Doe
                 remarks:
                   type: string
+                  example: VIP guest
                 mobile_phone:
                   type: string
+                  example: '+886912345678'
                 email:
                   type: string
+                  example: john.doe@example.com
                 visitor_company:
                   type: string
+                  example: Acme Corp
                 start_time:
                   type: integer
+                  example: 1689304925
                 end_time:
                   type: integer
+                  example: 1689804925
                 visit_reason:
                   type: string
                   enum:
@@ -2181,6 +2272,7 @@ paths:
                   - Business
                   - Cooperation
                   - Others
+                  example: Business
                 resources:
                   type: array
                   items:
@@ -2192,6 +2284,12 @@ paths:
                         type: string
                 week_schedule:
                   $ref: '#/components/schemas/WeekSchedule'
+            example:
+              first_name: John
+              last_name: Doe
+              start_time: 1689304925
+              end_time: 1689804925
+              visit_reason: Business
       responses:
         '200':
           description: Visitor created successfully
@@ -2228,26 +2326,31 @@ paths:
           type: integer
           minimum: 1
           maximum: 6
+        example: 1
       - name: keyword
         in: query
         required: false
         schema:
           type: string
+        example: John
       - name: page_num
         in: query
         required: false
         schema:
           type: string
+        example: '1'
       - name: page_size
         in: query
         required: false
         schema:
           type: string
+        example: '25'
       - name: expand[]
         in: query
         required: false
         schema:
           type: string
+        example: access_policy
       responses:
         '200':
           description: Visitors retrieved successfully
@@ -2294,6 +2397,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       responses:
         '200':
           description: Visitor retrieved successfully
@@ -2328,6 +2432,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       requestBody:
         required: true
         content:
@@ -2337,20 +2442,28 @@ paths:
               properties:
                 first_name:
                   type: string
+                  example: John
                 last_name:
                   type: string
+                  example: Doe
                 remarks:
                   type: string
+                  example: VIP guest
                 mobile_phone:
                   type: string
+                  example: '+886912345678'
                 email:
                   type: string
+                  example: john.doe@example.com
                 visitor_company:
                   type: string
+                  example: Acme Corp
                 start_time:
                   type: integer
+                  example: 1689304925
                 end_time:
                   type: integer
+                  example: 1689804925
                 visit_reason:
                   type: string
                   enum:
@@ -2358,6 +2471,7 @@ paths:
                   - Business
                   - Cooperation
                   - Others
+                  example: Business
                 resources:
                   type: array
                   items:
@@ -2403,11 +2517,13 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       - name: is_force
         in: query
         required: false
         schema:
           type: boolean
+        example: false
       responses:
         '200':
           description: Visitor deleted successfully
@@ -2443,6 +2559,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       requestBody:
         required: true
         content:
@@ -2454,8 +2571,12 @@ paths:
               properties:
                 token:
                   type: string
+                  example: NFC-TOKEN-001
                 force_add:
                   type: boolean
+                  example: false
+            example:
+              token: NFC-TOKEN-001
       responses:
         '200':
           description: NFC card assigned successfully
@@ -2489,6 +2610,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       requestBody:
         required: true
         content:
@@ -2500,6 +2622,9 @@ paths:
               properties:
                 token:
                   type: string
+                  example: NFC-TOKEN-001
+            example:
+              token: NFC-TOKEN-001
       responses:
         '200':
           description: NFC card unassigned successfully
@@ -2533,6 +2658,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       requestBody:
         required: true
         content:
@@ -2544,6 +2670,9 @@ paths:
               properties:
                 pin_code:
                   type: string
+                  example: '123456'
+            example:
+              pin_code: '123456'
       responses:
         '200':
           description: PIN code assigned successfully
@@ -2576,6 +2705,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       responses:
         '200':
           description: PIN code unassigned successfully
@@ -2609,6 +2739,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       responses:
         '200':
           description: QR code assigned successfully
@@ -2643,6 +2774,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       responses:
         '200':
           description: QR code unassigned successfully
@@ -2678,6 +2810,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       requestBody:
         required: true
         content:
@@ -2686,6 +2819,8 @@ paths:
               type: array
               items:
                 type: string
+            example:
+            - 550e8400-e29b-41d4-a716-446655440000
       responses:
         '200':
           description: License plates assigned successfully
@@ -2721,11 +2856,13 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       - name: license_plate_id
         in: path
         required: true
         schema:
           type: string
+        example: 6ba7b810-9dad-11d1-80b4-00c04fd430c8
       responses:
         '200':
           description: License plate unassigned successfully
@@ -2767,6 +2904,7 @@ paths:
               properties:
                 name:
                   type: string
+                  example: Full Access Policy
                 resources:
                   type: array
                   items:
@@ -2781,6 +2919,10 @@ paths:
                         type: string
                 schedule_id:
                   type: string
+                  example: 6ba7b810-9dad-11d1-80b4-00c04fd430c8
+            example:
+              name: Full Access Policy
+              schedule_id: 6ba7b810-9dad-11d1-80b4-00c04fd430c8
       responses:
         '200':
           description: Successful response
@@ -2846,6 +2988,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       requestBody:
         required: true
         content:
@@ -2855,6 +2998,7 @@ paths:
               properties:
                 name:
                   type: string
+                  example: Full Access Policy
                 resources:
                   type: array
                   items:
@@ -2869,6 +3013,7 @@ paths:
                         type: string
                 schedule_id:
                   type: string
+                  example: 6ba7b810-9dad-11d1-80b4-00c04fd430c8
       responses:
         '200':
           description: Successful response
@@ -2906,6 +3051,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       responses:
         '200':
           description: Successful response
@@ -2933,6 +3079,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       responses:
         '200':
           description: Successful response
@@ -2973,8 +3120,10 @@ paths:
               properties:
                 name:
                   type: string
+                  example: National Holidays
                 description:
                   type: string
+                  example: Example description
                 holidays:
                   type: array
                   items:
@@ -2994,6 +3143,8 @@ paths:
                       end_time:
                         type: string
                         format: date-time
+            example:
+              name: National Holidays
       responses:
         '200':
           description: Successful response
@@ -3059,6 +3210,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       requestBody:
         required: true
         content:
@@ -3070,8 +3222,10 @@ paths:
               properties:
                 name:
                   type: string
+                  example: National Holidays
                 description:
                   type: string
+                  example: Example description
                 holidays:
                   type: array
                   items:
@@ -3094,6 +3248,8 @@ paths:
                       end_time:
                         type: string
                         format: date-time
+            example:
+              name: National Holidays
       responses:
         '200':
           description: Successful response
@@ -3128,6 +3284,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       responses:
         '200':
           description: Successful response
@@ -3155,6 +3312,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       responses:
         '200':
           description: Successful response
@@ -3196,14 +3354,18 @@ paths:
               properties:
                 name:
                   type: string
+                  example: Business Hours
                 week_schedule:
                   $ref: '#/components/schemas/WeekSchedule'
                 holiday_group_id:
                   type: string
+                  example: 550e8400-e29b-41d4-a716-446655440000
                 holiday_schedule:
                   type: array
                   items:
                     $ref: '#/components/schemas/TimePeriod'
+            example:
+              name: Business Hours
       responses:
         '200':
           description: Successful response
@@ -3269,6 +3431,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       requestBody:
         required: true
         content:
@@ -3278,10 +3441,12 @@ paths:
               properties:
                 name:
                   type: string
+                  example: Business Hours
                 week_schedule:
                   $ref: '#/components/schemas/WeekSchedule'
                 holiday_group_id:
                   type: string
+                  example: 550e8400-e29b-41d4-a716-446655440000
                 holiday_schedule:
                   type: array
                   items:
@@ -3320,6 +3485,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       responses:
         '200':
           description: Successful response
@@ -3354,6 +3520,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       responses:
         '200':
           description: Successful response
@@ -3417,8 +3584,12 @@ paths:
               properties:
                 device_id:
                   type: string
+                  example: 58d61f309629
                 reset_ua_card:
                   type: boolean
+                  example: false
+            example:
+              device_id: 58d61f309629
       responses:
         '200':
           description: Successful response
@@ -3457,6 +3628,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       responses:
         '200':
           description: Successful response
@@ -3496,6 +3668,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       responses:
         '200':
           description: Successful response
@@ -3525,6 +3698,7 @@ paths:
         required: true
         schema:
           type: string
+        example: NFC-TOKEN-001
       responses:
         '200':
           description: Successful response
@@ -3560,6 +3734,7 @@ paths:
         required: true
         schema:
           type: string
+        example: NFC-TOKEN-001
       responses:
         '200':
           description: Successful response
@@ -3588,6 +3763,7 @@ paths:
         required: true
         schema:
           type: string
+        example: NFC-TOKEN-001
       requestBody:
         required: true
         content:
@@ -3597,6 +3773,7 @@ paths:
               properties:
                 alias:
                   type: string
+                  example: Card-A
       responses:
         '200':
           description: Successful response
@@ -3626,11 +3803,13 @@ paths:
         required: false
         schema:
           type: string
+        example: '1'
       - name: page_size
         in: query
         required: false
         schema:
           type: string
+        example: '25'
       responses:
         '200':
           description: Successful response
@@ -3671,11 +3850,13 @@ paths:
         required: false
         schema:
           type: string
+        example: '1'
       - name: page_size
         in: query
         required: false
         schema:
           type: string
+        example: '25'
       - name: status
         in: query
         required: false
@@ -3686,6 +3867,7 @@ paths:
           - PENDING
           - SUSPENDED
           - INACTIVE
+        example: ACTIVE
       responses:
         '200':
           description: Successful response
@@ -3730,6 +3912,9 @@ paths:
               properties:
                 count:
                   type: integer
+                  example: 5
+            example:
+              count: 5
       responses:
         '200':
           description: Successful response
@@ -3768,6 +3953,7 @@ paths:
         required: true
         schema:
           type: string
+        example: search-term
       responses:
         '200':
           description: Successful response
@@ -3838,6 +4024,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       requestBody:
         required: true
         content:
@@ -3847,11 +4034,13 @@ paths:
               properties:
                 card_name:
                   type: string
+                  example: My Touch Pass
                 status:
                   type: string
                   enum:
                   - ACTIVE
                   - SUSPENDED
+                  example: ACTIVE
                 bundles:
                   type: array
                   items:
@@ -3899,6 +4088,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       responses:
         '200':
           description: Successful response
@@ -3935,6 +4125,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       responses:
         '200':
           description: QR code image
@@ -4053,11 +4244,14 @@ paths:
               properties:
                 group_name:
                   type: string
+                  example: 2F Office
                 resources:
                   type: array
                   items:
                     type: string
                   description: Array of door IDs
+            example:
+              group_name: 2F Office
       responses:
         '200':
           description: Successful response
@@ -4123,6 +4317,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       responses:
         '200':
           description: Successful response
@@ -4157,6 +4352,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       requestBody:
         required: true
         content:
@@ -4166,6 +4362,7 @@ paths:
               properties:
                 group_name:
                   type: string
+                  example: 2F Office
                 resources:
                   type: array
                   items:
@@ -4204,6 +4401,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       responses:
         '200':
           description: Successful response
@@ -4232,6 +4430,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       responses:
         '200':
           description: Successful response
@@ -4298,6 +4497,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       requestBody:
         required: false
         content:
@@ -4307,8 +4507,10 @@ paths:
               properties:
                 actor_id:
                   type: string
+                  example: 550e8400-e29b-41d4-a716-446655440000
                 actor_name:
                   type: string
+                  example: API Client
                 extra:
                   type: object
       responses:
@@ -4340,6 +4542,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       requestBody:
         required: true
         content:
@@ -4358,9 +4561,13 @@ paths:
                   - reset
                   - lock_early
                   - lock_now
+                  example: keep_lock
                 interval:
                   type: integer
                   description: Duration in minutes (for custom type)
+                  example: 30
+            example:
+              type: keep_lock
       responses:
         '200':
           description: Successful response
@@ -4389,6 +4596,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       responses:
         '200':
           description: Successful response
@@ -4428,8 +4636,10 @@ paths:
               properties:
                 lockdown:
                   type: boolean
+                  example: false
                 evacuation:
                   type: boolean
+                  example: false
       responses:
         '200':
           description: Successful response
@@ -4489,6 +4699,7 @@ paths:
           type: string
           enum:
           - 'true'
+        example: 'true'
       responses:
         '200':
           description: Successful response
@@ -4530,6 +4741,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 58d61f309629
       responses:
         '200':
           description: Successful response
@@ -4571,6 +4783,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 58d61f309629
       requestBody:
         required: true
         content:
@@ -4609,6 +4822,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 58d61f309629
       requestBody:
         required: true
         content:
@@ -4621,9 +4835,13 @@ paths:
                 room_name:
                   type: string
                   description: Intercom directory name to trigger. Use empty string to ring the default doorbell.
+                  example: ''
                 cancel:
                   type: boolean
                   description: If true, cancels the previous doorbell if still ringing.
+                  example: false
+            example:
+              room_name: ''
       responses:
         '200':
           description: Successful response
@@ -4652,11 +4870,13 @@ paths:
         required: false
         schema:
           type: string
+        example: '1'
       - name: page_size
         in: query
         required: false
         schema:
           type: string
+        example: '25'
       requestBody:
         required: true
         content:
@@ -4676,12 +4896,20 @@ paths:
                   - device_events
                   - admin_activity
                   - visitor
+                  example: door_openings
                 since:
                   type: integer
+                  description: Start time (Unix epoch seconds)
+                  example: 1689304925
                 until:
                   type: integer
+                  description: End time (Unix epoch seconds)
+                  example: 1689804925
                 actor_id:
                   type: string
+                  example: 3e1f196e-c97b-4748-aecb-eab5e9c251b2
+            example:
+              topic: door_openings
       responses:
         '200':
           description: Successful response
@@ -4743,14 +4971,26 @@ paths:
                   - device_events
                   - admin_activity
                   - visitor
+                  example: door_openings
                 since:
                   type: integer
+                  description: Start time (Unix epoch seconds)
+                  example: 1689304925
                 until:
                   type: integer
+                  description: End time (Unix epoch seconds)
+                  example: 1689804925
                 timezone:
                   type: string
+                  example: Asia/Taipei
                 actor_id:
                   type: string
+                  example: 3e1f196e-c97b-4748-aecb-eab5e9c251b2
+            example:
+              topic: door_openings
+              since: 1689304925
+              until: 1689804925
+              timezone: Asia/Taipei
       responses:
         '200':
           description: CSV file export
@@ -4779,8 +5019,10 @@ paths:
       - name: id
         in: path
         required: true
+        description: 'Resource ID from system log target entries (type: activities_resource)'
         schema:
           type: string
+        example: 0418d6a38f00-b6906057-2a90-4426-835c-b5b172381fec
       responses:
         '200':
           description: Successful response
@@ -4824,8 +5066,10 @@ paths:
       - name: path
         in: path
         required: true
+        description: Static resource path (e.g. avatar, capture image/video, activities_resource)
         schema:
           type: string
+        example: unifi_storage/unifi-access/capture_image/example.jpg
       responses:
         '200':
           description: Binary resource
@@ -4865,6 +5109,9 @@ paths:
                     type: string
                   email:
                     type: string
+            example:
+            - user_id: 550e8400-e29b-41d4-a716-446655440000
+              email: john@example.com
       responses:
         '200':
           description: Successful response
@@ -4904,6 +5151,7 @@ paths:
         description: Comma-separated values of ev_station, vpn, wifi
         schema:
           type: string
+        example: door
       responses:
         '200':
           description: Successful response
@@ -4940,6 +5188,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       requestBody:
         required: true
         content:
@@ -4995,6 +5244,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       responses:
         '200':
           description: Successful response
@@ -5031,6 +5281,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       requestBody:
         required: true
         content:
@@ -5086,6 +5337,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       responses:
         '200':
           description: Successful response
@@ -5111,9 +5363,8 @@ paths:
       tags:
       - Notification
       summary: Fetch Notifications [WebSocket]
-      description: >-
-        Fetch real-time notifications via WebSocket, such as doorbell notifications.
-        Use WebSocket protocol (wss://) to connect. Available since v1.20.11.
+      description: Fetch real-time notifications via WebSocket, such as doorbell notifications. Use WebSocket protocol (wss://)
+        to connect. Available since v1.20.11.
       operationId: fetchNotifications
       security:
       - bearerAuth: []
@@ -5179,16 +5430,24 @@ paths:
                   type: string
                   format: uri
                   description: HTTPS URL
+                  example: https://example.com/webhook
                 name:
                   type: string
+                  example: My Webhook
                 events:
                   type: array
                   items:
                     type: string
+                  example: &id003
+                  - access.door.unlock
                 headers:
                   type: object
                   additionalProperties:
                     type: string
+            example:
+              endpoint: https://example.com/webhook
+              name: My Webhook
+              events: *id003
       responses:
         '200':
           description: Successful response
@@ -5225,6 +5484,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       requestBody:
         required: true
         content:
@@ -5239,16 +5499,24 @@ paths:
                 endpoint:
                   type: string
                   format: uri
+                  example: https://example.com/webhook
                 name:
                   type: string
+                  example: My Webhook
                 events:
                   type: array
                   items:
                     type: string
+                  example: &id004
+                  - access.door.unlock
                 headers:
                   type: object
                   additionalProperties:
                     type: string
+            example:
+              endpoint: https://example.com/webhook
+              name: My Webhook
+              events: *id004
       responses:
         '200':
           description: Successful response
@@ -5284,6 +5552,7 @@ paths:
         required: true
         schema:
           type: string
+        example: 550e8400-e29b-41d4-a716-446655440000
       responses:
         '200':
           description: Successful response

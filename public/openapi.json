@@ -1395,21 +1395,30 @@
                 ],
                 "properties": {
                   "first_name": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "John"
                   },
                   "last_name": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "Doe"
                   },
                   "user_email": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "john.doe@example.com"
                   },
                   "employee_number": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "E001"
                   },
                   "onboard_time": {
-                    "type": "integer"
+                    "type": "integer",
+                    "example": 1689304925
                   }
                 }
+              },
+              "example": {
+                "first_name": "John",
+                "last_name": "Doe"
               }
             }
           }
@@ -1480,7 +1489,8 @@
             "required": false,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "access_policy"
           },
           {
             "name": "page_num",
@@ -1488,7 +1498,8 @@
             "required": false,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "1"
           },
           {
             "name": "page_size",
@@ -1496,7 +1507,8 @@
             "required": false,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "25"
           }
         ],
         "responses": {
@@ -1570,7 +1582,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "requestBody": {
@@ -1581,26 +1594,32 @@
                 "type": "object",
                 "properties": {
                   "first_name": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "John"
                   },
                   "last_name": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "Doe"
                   },
                   "user_email": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "john.doe@example.com"
                   },
                   "employee_number": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "E001"
                   },
                   "onboard_time": {
-                    "type": "integer"
+                    "type": "integer",
+                    "example": 1689304925
                   },
                   "status": {
                     "type": "string",
                     "enum": [
                       "ACTIVE",
                       "DEACTIVATED"
-                    ]
+                    ],
+                    "example": "ACTIVE"
                   }
                 }
               }
@@ -1659,7 +1678,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           },
           {
             "name": "expand[]",
@@ -1670,7 +1690,8 @@
               "enum": [
                 "access_policy"
               ]
-            }
+            },
+            "example": "access_policy"
           }
         ],
         "responses": {
@@ -1725,7 +1746,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "responses": {
@@ -1779,7 +1801,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "requestBody": {
@@ -1796,9 +1819,17 @@
                     "type": "array",
                     "items": {
                       "type": "string"
-                    }
+                    },
+                    "example": [
+                      "550e8400-e29b-41d4-a716-446655440000"
+                    ]
                   }
                 }
+              },
+              "example": {
+                "access_policy_ids": [
+                  "550e8400-e29b-41d4-a716-446655440000"
+                ]
               }
             }
           }
@@ -1852,7 +1883,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           },
           {
             "name": "only_user_policies",
@@ -1860,7 +1892,8 @@
             "required": false,
             "schema": {
               "type": "boolean"
-            }
+            },
+            "example": false
           }
         ],
         "responses": {
@@ -1920,7 +1953,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "requestBody": {
@@ -1934,12 +1968,17 @@
                 ],
                 "properties": {
                   "token": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "NFC-TOKEN-001"
                   },
                   "force_add": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "example": false
                   }
                 }
+              },
+              "example": {
+                "token": "NFC-TOKEN-001"
               }
             }
           }
@@ -1995,7 +2034,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "requestBody": {
@@ -2009,9 +2049,13 @@
                 ],
                 "properties": {
                   "token": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "NFC-TOKEN-001"
                   }
                 }
+              },
+              "example": {
+                "token": "NFC-TOKEN-001"
               }
             }
           }
@@ -2067,7 +2111,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "requestBody": {
@@ -2081,9 +2126,13 @@
                 ],
                 "properties": {
                   "pin_code": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "123456"
                   }
                 }
+              },
+              "example": {
+                "pin_code": "123456"
               }
             }
           }
@@ -2137,7 +2186,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "responses": {
@@ -2195,12 +2245,17 @@
                 ],
                 "properties": {
                   "name": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "Engineering Team"
                   },
                   "up_id": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "550e8400-e29b-41d4-a716-446655440000"
                   }
                 }
+              },
+              "example": {
+                "name": "Engineering Team"
               }
             }
           }
@@ -2304,7 +2359,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "responses": {
@@ -2359,7 +2415,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "requestBody": {
@@ -2373,12 +2430,17 @@
                 ],
                 "properties": {
                   "name": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "Engineering Team"
                   },
                   "up_id": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "550e8400-e29b-41d4-a716-446655440000"
                   }
                 }
+              },
+              "example": {
+                "name": "Engineering Team"
               }
             }
           }
@@ -2432,7 +2494,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "responses": {
@@ -2486,7 +2549,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "requestBody": {
@@ -2498,7 +2562,10 @@
                 "items": {
                   "type": "string"
                 }
-              }
+              },
+              "example": [
+                "550e8400-e29b-41d4-a716-446655440000"
+              ]
             }
           }
         },
@@ -2551,7 +2618,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "responses": {
@@ -2611,7 +2679,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "requestBody": {
@@ -2623,7 +2692,10 @@
                 "items": {
                   "type": "string"
                 }
-              }
+              },
+              "example": [
+                "550e8400-e29b-41d4-a716-446655440000"
+              ]
             }
           }
         },
@@ -2678,7 +2750,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "responses": {
@@ -2738,7 +2811,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "requestBody": {
@@ -2755,9 +2829,17 @@
                     "type": "array",
                     "items": {
                       "type": "string"
-                    }
+                    },
+                    "example": [
+                      "550e8400-e29b-41d4-a716-446655440000"
+                    ]
                   }
                 }
+              },
+              "example": {
+                "access_policy_ids": [
+                  "550e8400-e29b-41d4-a716-446655440000"
+                ]
               }
             }
           }
@@ -2814,7 +2896,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "responses": {
@@ -2874,7 +2957,8 @@
             "required": false,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "John"
           },
           {
             "name": "user_id",
@@ -2882,7 +2966,8 @@
             "required": false,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           },
           {
             "name": "only_admin",
@@ -2890,7 +2975,8 @@
             "required": false,
             "schema": {
               "type": "boolean"
-            }
+            },
+            "example": false
           },
           {
             "name": "status",
@@ -2898,7 +2984,8 @@
             "required": false,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "ACTIVE"
           },
           {
             "name": "page_num",
@@ -2906,7 +2993,8 @@
             "required": false,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "1"
           },
           {
             "name": "page_size",
@@ -2914,7 +3002,8 @@
             "required": false,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "25"
           }
         ],
         "responses": {
@@ -2974,7 +3063,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           },
           {
             "name": "touch_pass_id",
@@ -2982,7 +3072,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "6ba7b810-9dad-11d1-80b4-00c04fd430c8"
           }
         ],
         "responses": {
@@ -3037,7 +3128,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           },
           {
             "name": "touch_pass_id",
@@ -3045,7 +3137,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "6ba7b810-9dad-11d1-80b4-00c04fd430c8"
           }
         ],
         "responses": {
@@ -3179,7 +3272,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "requestBody": {
@@ -3191,7 +3285,10 @@
                 "items": {
                   "type": "string"
                 }
-              }
+              },
+              "example": [
+                "550e8400-e29b-41d4-a716-446655440000"
+              ]
             }
           }
         },
@@ -3249,7 +3346,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           },
           {
             "name": "license_plate_id",
@@ -3257,7 +3355,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "6ba7b810-9dad-11d1-80b4-00c04fd430c8"
           }
         ],
         "responses": {
@@ -3314,7 +3413,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "requestBody": {
@@ -3403,28 +3503,36 @@
                 ],
                 "properties": {
                   "first_name": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "John"
                   },
                   "last_name": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "Doe"
                   },
                   "remarks": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "VIP guest"
                   },
                   "mobile_phone": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "+886912345678"
                   },
                   "email": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "john.doe@example.com"
                   },
                   "visitor_company": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "Acme Corp"
                   },
                   "start_time": {
-                    "type": "integer"
+                    "type": "integer",
+                    "example": 1689304925
                   },
                   "end_time": {
-                    "type": "integer"
+                    "type": "integer",
+                    "example": 1689804925
                   },
                   "visit_reason": {
                     "type": "string",
@@ -3433,7 +3541,8 @@
                       "Business",
                       "Cooperation",
                       "Others"
-                    ]
+                    ],
+                    "example": "Business"
                   },
                   "resources": {
                     "type": "array",
@@ -3453,6 +3562,13 @@
                     "$ref": "#/components/schemas/WeekSchedule"
                   }
                 }
+              },
+              "example": {
+                "first_name": "John",
+                "last_name": "Doe",
+                "start_time": 1689304925,
+                "end_time": 1689804925,
+                "visit_reason": "Business"
               }
             }
           }
@@ -3511,7 +3627,8 @@
               "type": "integer",
               "minimum": 1,
               "maximum": 6
-            }
+            },
+            "example": 1
           },
           {
             "name": "keyword",
@@ -3519,7 +3636,8 @@
             "required": false,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "John"
           },
           {
             "name": "page_num",
@@ -3527,7 +3645,8 @@
             "required": false,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "1"
           },
           {
             "name": "page_size",
@@ -3535,7 +3654,8 @@
             "required": false,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "25"
           },
           {
             "name": "expand[]",
@@ -3543,7 +3663,8 @@
             "required": false,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "access_policy"
           }
         ],
         "responses": {
@@ -3617,7 +3738,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "responses": {
@@ -3672,7 +3794,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "requestBody": {
@@ -3683,28 +3806,36 @@
                 "type": "object",
                 "properties": {
                   "first_name": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "John"
                   },
                   "last_name": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "Doe"
                   },
                   "remarks": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "VIP guest"
                   },
                   "mobile_phone": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "+886912345678"
                   },
                   "email": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "john.doe@example.com"
                   },
                   "visitor_company": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "Acme Corp"
                   },
                   "start_time": {
-                    "type": "integer"
+                    "type": "integer",
+                    "example": 1689304925
                   },
                   "end_time": {
-                    "type": "integer"
+                    "type": "integer",
+                    "example": 1689804925
                   },
                   "visit_reason": {
                     "type": "string",
@@ -3713,7 +3844,8 @@
                       "Business",
                       "Cooperation",
                       "Others"
-                    ]
+                    ],
+                    "example": "Business"
                   },
                   "resources": {
                     "type": "array",
@@ -3789,7 +3921,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           },
           {
             "name": "is_force",
@@ -3797,7 +3930,8 @@
             "required": false,
             "schema": {
               "type": "boolean"
-            }
+            },
+            "example": false
           }
         ],
         "responses": {
@@ -3854,7 +3988,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "requestBody": {
@@ -3868,12 +4003,17 @@
                 ],
                 "properties": {
                   "token": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "NFC-TOKEN-001"
                   },
                   "force_add": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "example": false
                   }
                 }
+              },
+              "example": {
+                "token": "NFC-TOKEN-001"
               }
             }
           }
@@ -3929,7 +4069,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "requestBody": {
@@ -3943,9 +4084,13 @@
                 ],
                 "properties": {
                   "token": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "NFC-TOKEN-001"
                   }
                 }
+              },
+              "example": {
+                "token": "NFC-TOKEN-001"
               }
             }
           }
@@ -4001,7 +4146,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "requestBody": {
@@ -4015,9 +4161,13 @@
                 ],
                 "properties": {
                   "pin_code": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "123456"
                   }
                 }
+              },
+              "example": {
+                "pin_code": "123456"
               }
             }
           }
@@ -4071,7 +4221,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "responses": {
@@ -4125,7 +4276,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "responses": {
@@ -4180,7 +4332,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "responses": {
@@ -4237,7 +4390,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "requestBody": {
@@ -4249,7 +4403,10 @@
                 "items": {
                   "type": "string"
                 }
-              }
+              },
+              "example": [
+                "550e8400-e29b-41d4-a716-446655440000"
+              ]
             }
           }
         },
@@ -4307,7 +4464,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           },
           {
             "name": "license_plate_id",
@@ -4315,7 +4473,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "6ba7b810-9dad-11d1-80b4-00c04fd430c8"
           }
         ],
         "responses": {
@@ -4377,7 +4536,8 @@
                 ],
                 "properties": {
                   "name": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "Full Access Policy"
                   },
                   "resources": {
                     "type": "array",
@@ -4398,9 +4558,14 @@
                     }
                   },
                   "schedule_id": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "6ba7b810-9dad-11d1-80b4-00c04fd430c8"
                   }
                 }
+              },
+              "example": {
+                "name": "Full Access Policy",
+                "schedule_id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8"
               }
             }
           }
@@ -4507,7 +4672,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "requestBody": {
@@ -4518,7 +4684,8 @@
                 "type": "object",
                 "properties": {
                   "name": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "Full Access Policy"
                   },
                   "resources": {
                     "type": "array",
@@ -4539,7 +4706,8 @@
                     }
                   },
                   "schedule_id": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "6ba7b810-9dad-11d1-80b4-00c04fd430c8"
                   }
                 }
               }
@@ -4603,7 +4771,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "responses": {
@@ -4647,7 +4816,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "responses": {
@@ -4708,10 +4878,12 @@
                 ],
                 "properties": {
                   "name": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "National Holidays"
                   },
                   "description": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "Example description"
                   },
                   "holidays": {
                     "type": "array",
@@ -4742,6 +4914,9 @@
                     }
                   }
                 }
+              },
+              "example": {
+                "name": "National Holidays"
               }
             }
           }
@@ -4848,7 +5023,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "requestBody": {
@@ -4862,10 +5038,12 @@
                 ],
                 "properties": {
                   "name": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "National Holidays"
                   },
                   "description": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "Example description"
                   },
                   "holidays": {
                     "type": "array",
@@ -4900,6 +5078,9 @@
                     }
                   }
                 }
+              },
+              "example": {
+                "name": "National Holidays"
               }
             }
           }
@@ -4956,7 +5137,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "responses": {
@@ -5000,7 +5182,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "responses": {
@@ -5062,13 +5245,15 @@
                 ],
                 "properties": {
                   "name": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "Business Hours"
                   },
                   "week_schedule": {
                     "$ref": "#/components/schemas/WeekSchedule"
                   },
                   "holiday_group_id": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "550e8400-e29b-41d4-a716-446655440000"
                   },
                   "holiday_schedule": {
                     "type": "array",
@@ -5077,6 +5262,9 @@
                     }
                   }
                 }
+              },
+              "example": {
+                "name": "Business Hours"
               }
             }
           }
@@ -5183,7 +5371,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "requestBody": {
@@ -5194,13 +5383,15 @@
                 "type": "object",
                 "properties": {
                   "name": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "Business Hours"
                   },
                   "week_schedule": {
                     "$ref": "#/components/schemas/WeekSchedule"
                   },
                   "holiday_group_id": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "550e8400-e29b-41d4-a716-446655440000"
                   },
                   "holiday_schedule": {
                     "type": "array",
@@ -5265,7 +5456,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "responses": {
@@ -5320,7 +5512,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "responses": {
@@ -5418,12 +5611,17 @@
                 ],
                 "properties": {
                   "device_id": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "58d61f309629"
                   },
                   "reset_ua_card": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "example": false
                   }
                 }
+              },
+              "example": {
+                "device_id": "58d61f309629"
               }
             }
           }
@@ -5487,7 +5685,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "responses": {
@@ -5550,7 +5749,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "responses": {
@@ -5597,7 +5797,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "NFC-TOKEN-001"
           }
         ],
         "responses": {
@@ -5653,7 +5854,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "NFC-TOKEN-001"
           }
         ],
         "responses": {
@@ -5698,7 +5900,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "NFC-TOKEN-001"
           }
         ],
         "requestBody": {
@@ -5709,7 +5912,8 @@
                 "type": "object",
                 "properties": {
                   "alias": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "Card-A"
                   }
                 }
               }
@@ -5760,7 +5964,8 @@
             "required": false,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "1"
           },
           {
             "name": "page_size",
@@ -5768,7 +5973,8 @@
             "required": false,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "25"
           }
         ],
         "responses": {
@@ -5832,7 +6038,8 @@
             "required": false,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "1"
           },
           {
             "name": "page_size",
@@ -5840,7 +6047,8 @@
             "required": false,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "25"
           },
           {
             "name": "status",
@@ -5854,7 +6062,8 @@
                 "SUSPENDED",
                 "INACTIVE"
               ]
-            }
+            },
+            "example": "ACTIVE"
           }
         ],
         "responses": {
@@ -5920,9 +6129,13 @@
                 ],
                 "properties": {
                   "count": {
-                    "type": "integer"
+                    "type": "integer",
+                    "example": 5
                   }
                 }
+              },
+              "example": {
+                "count": 5
               }
             }
           }
@@ -5985,7 +6198,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "search-term"
           }
         ],
         "responses": {
@@ -6097,7 +6311,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "requestBody": {
@@ -6108,14 +6323,16 @@
                 "type": "object",
                 "properties": {
                   "card_name": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "My Touch Pass"
                   },
                   "status": {
                     "type": "string",
                     "enum": [
                       "ACTIVE",
                       "SUSPENDED"
-                    ]
+                    ],
+                    "example": "ACTIVE"
                   },
                   "bundles": {
                     "type": "array",
@@ -6193,7 +6410,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "responses": {
@@ -6251,7 +6469,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "responses": {
@@ -6435,7 +6654,8 @@
                 ],
                 "properties": {
                   "group_name": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "2F Office"
                   },
                   "resources": {
                     "type": "array",
@@ -6445,6 +6665,9 @@
                     "description": "Array of door IDs"
                   }
                 }
+              },
+              "example": {
+                "group_name": "2F Office"
               }
             }
           }
@@ -6551,7 +6774,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "responses": {
@@ -6606,7 +6830,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "requestBody": {
@@ -6617,7 +6842,8 @@
                 "type": "object",
                 "properties": {
                   "group_name": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "2F Office"
                   },
                   "resources": {
                     "type": "array",
@@ -6682,7 +6908,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "responses": {
@@ -6728,7 +6955,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "responses": {
@@ -6835,7 +7063,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "requestBody": {
@@ -6846,10 +7075,12 @@
                 "type": "object",
                 "properties": {
                   "actor_id": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "550e8400-e29b-41d4-a716-446655440000"
                   },
                   "actor_name": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "API Client"
                   },
                   "extra": {
                     "type": "object"
@@ -6903,7 +7134,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "requestBody": {
@@ -6925,13 +7157,18 @@
                       "reset",
                       "lock_early",
                       "lock_now"
-                    ]
+                    ],
+                    "example": "keep_lock"
                   },
                   "interval": {
                     "type": "integer",
-                    "description": "Duration in minutes (for custom type)"
+                    "description": "Duration in minutes (for custom type)",
+                    "example": 30
                   }
                 }
+              },
+              "example": {
+                "type": "keep_lock"
               }
             }
           }
@@ -6978,7 +7215,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "responses": {
@@ -7037,10 +7275,12 @@
                 "type": "object",
                 "properties": {
                   "lockdown": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "example": false
                   },
                   "evacuation": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "example": false
                   }
                 }
               }
@@ -7139,7 +7379,8 @@
               "enum": [
                 "true"
               ]
-            }
+            },
+            "example": "true"
           }
         ],
         "responses": {
@@ -7204,7 +7445,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "58d61f309629"
           }
         ],
         "responses": {
@@ -7269,7 +7511,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "58d61f309629"
           }
         ],
         "requestBody": {
@@ -7331,7 +7574,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "58d61f309629"
           }
         ],
         "requestBody": {
@@ -7346,13 +7590,18 @@
                 "properties": {
                   "room_name": {
                     "type": "string",
-                    "description": "Intercom directory name to trigger. Use empty string to ring the default doorbell."
+                    "description": "Intercom directory name to trigger. Use empty string to ring the default doorbell.",
+                    "example": ""
                   },
                   "cancel": {
                     "type": "boolean",
-                    "description": "If true, cancels the previous doorbell if still ringing."
+                    "description": "If true, cancels the previous doorbell if still ringing.",
+                    "example": false
                   }
                 }
+              },
+              "example": {
+                "room_name": ""
               }
             }
           }
@@ -7400,7 +7649,8 @@
             "required": false,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "1"
           },
           {
             "name": "page_size",
@@ -7408,7 +7658,8 @@
             "required": false,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "25"
           }
         ],
         "requestBody": {
@@ -7431,18 +7682,27 @@
                       "device_events",
                       "admin_activity",
                       "visitor"
-                    ]
+                    ],
+                    "example": "door_openings"
                   },
                   "since": {
-                    "type": "integer"
+                    "type": "integer",
+                    "description": "Start time (Unix epoch seconds)",
+                    "example": 1689304925
                   },
                   "until": {
-                    "type": "integer"
+                    "type": "integer",
+                    "description": "End time (Unix epoch seconds)",
+                    "example": 1689804925
                   },
                   "actor_id": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "3e1f196e-c97b-4748-aecb-eab5e9c251b2"
                   }
                 }
+              },
+              "example": {
+                "topic": "door_openings"
               }
             }
           }
@@ -7532,21 +7792,34 @@
                       "device_events",
                       "admin_activity",
                       "visitor"
-                    ]
+                    ],
+                    "example": "door_openings"
                   },
                   "since": {
-                    "type": "integer"
+                    "type": "integer",
+                    "description": "Start time (Unix epoch seconds)",
+                    "example": 1689304925
                   },
                   "until": {
-                    "type": "integer"
+                    "type": "integer",
+                    "description": "End time (Unix epoch seconds)",
+                    "example": 1689804925
                   },
                   "timezone": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "Asia/Taipei"
                   },
                   "actor_id": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "3e1f196e-c97b-4748-aecb-eab5e9c251b2"
                   }
                 }
+              },
+              "example": {
+                "topic": "door_openings",
+                "since": 1689304925,
+                "until": 1689804925,
+                "timezone": "Asia/Taipei"
               }
             }
           }
@@ -7594,9 +7867,11 @@
             "name": "id",
             "in": "path",
             "required": true,
+            "description": "Resource ID from system log target entries (type: activities_resource)",
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "0418d6a38f00-b6906057-2a90-4426-835c-b5b172381fec"
           }
         ],
         "responses": {
@@ -7666,9 +7941,11 @@
             "name": "path",
             "in": "path",
             "required": true,
+            "description": "Static resource path (e.g. avatar, capture image/video, activities_resource)",
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "unifi_storage/unifi-access/capture_image/example.jpg"
           }
         ],
         "responses": {
@@ -7729,7 +8006,13 @@
                     }
                   }
                 }
-              }
+              },
+              "example": [
+                {
+                  "user_id": "550e8400-e29b-41d4-a716-446655440000",
+                  "email": "john@example.com"
+                }
+              ]
             }
           }
         },
@@ -7792,7 +8075,8 @@
             "description": "Comma-separated values of ev_station, vpn, wifi",
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "door"
           }
         ],
         "responses": {
@@ -7850,7 +8134,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "requestBody": {
@@ -7936,7 +8221,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "responses": {
@@ -7994,7 +8280,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "requestBody": {
@@ -8080,7 +8367,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "responses": {
@@ -8219,16 +8507,21 @@
                   "endpoint": {
                     "type": "string",
                     "format": "uri",
-                    "description": "HTTPS URL"
+                    "description": "HTTPS URL",
+                    "example": "https://example.com/webhook"
                   },
                   "name": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "My Webhook"
                   },
                   "events": {
                     "type": "array",
                     "items": {
                       "type": "string"
-                    }
+                    },
+                    "example": [
+                      "access.door.unlock"
+                    ]
                   },
                   "headers": {
                     "type": "object",
@@ -8237,6 +8530,13 @@
                     }
                   }
                 }
+              },
+              "example": {
+                "endpoint": "https://example.com/webhook",
+                "name": "My Webhook",
+                "events": [
+                  "access.door.unlock"
+                ]
               }
             }
           }
@@ -8296,7 +8596,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "requestBody": {
@@ -8313,16 +8614,21 @@
                 "properties": {
                   "endpoint": {
                     "type": "string",
-                    "format": "uri"
+                    "format": "uri",
+                    "example": "https://example.com/webhook"
                   },
                   "name": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "My Webhook"
                   },
                   "events": {
                     "type": "array",
                     "items": {
                       "type": "string"
-                    }
+                    },
+                    "example": [
+                      "access.door.unlock"
+                    ]
                   },
                   "headers": {
                     "type": "object",
@@ -8331,6 +8637,13 @@
                     }
                   }
                 }
+              },
+              "example": {
+                "endpoint": "https://example.com/webhook",
+                "name": "My Webhook",
+                "events": [
+                  "access.door.unlock"
+                ]
               }
             }
           }
@@ -8388,7 +8701,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "example": "550e8400-e29b-41d4-a716-446655440000"
           }
         ],
         "responses": {

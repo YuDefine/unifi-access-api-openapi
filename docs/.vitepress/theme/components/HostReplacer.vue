@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { watch, onMounted, nextTick } from 'vue'
+import { watch, onMounted, onUnmounted, nextTick } from 'vue'
 import { useRoute } from 'vitepress'
 import { useHostConfig } from '../composables/useHostConfig'
 
@@ -19,6 +19,9 @@ const HARDCODED_HOST_PATTERN = /https:\/\/192\.168\.\d+\.\d+:12445/g
 // Covers: "Bearer wHFmHR*****kD6wHg", "Bearer <token>", "Token" (standalone from vitepress-openapi)
 const BEARER_PATTERN = /Bearer\s+[\w*/+=.\-/<>]+/g
 const AUTH_TOKEN_PATTERN = /Authorization:\s*Token\b/g
+
+let observer: MutationObserver | null = null
+let debounceTimer: ReturnType<typeof setTimeout> | null = null
 
 function replaceInCodeBlocks() {
   const codeBlocks = document.querySelectorAll('.vp-doc pre code, .vp-doc code, .OACodeBlock pre code, .OACodeBlock code, .shiki code')
@@ -66,8 +69,36 @@ function replaceTextNodes(el: HTMLElement) {
   }
 }
 
+function debouncedReplace() {
+  if (debounceTimer) clearTimeout(debounceTimer)
+  debounceTimer = setTimeout(replaceInCodeBlocks, 50)
+}
+
+function startObserver() {
+  if (observer) observer.disconnect()
+
+  const target = document.querySelector('#app') || document.body
+  observer = new MutationObserver((mutations) => {
+    // Only react to additions of code blocks or OA components
+    const relevant = mutations.some((m) =>
+      m.type === 'childList' && m.addedNodes.length > 0
+    )
+    if (relevant) debouncedReplace()
+  })
+
+  observer.observe(target, { childList: true, subtree: true })
+}
+
 onMounted(() => {
-  nextTick(replaceInCodeBlocks)
+  nextTick(() => {
+    replaceInCodeBlocks()
+    startObserver()
+  })
+})
+
+onUnmounted(() => {
+  if (observer) observer.disconnect()
+  if (debounceTimer) clearTimeout(debounceTimer)
 })
 
 watch([host, apiKey], () => {
@@ -75,9 +106,7 @@ watch([host, apiKey], () => {
 })
 
 watch(() => route.path, () => {
-  nextTick(() => {
-    setTimeout(replaceInCodeBlocks, 100)
-  })
+  nextTick(replaceInCodeBlocks)
 })
 </script>
 
