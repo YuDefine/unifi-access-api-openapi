@@ -592,8 +592,28 @@ components:
           type: string
         type:
           type: string
+          description: Device model type (e.g., UA-G2-PRO, UAH-DOOR).
         alias:
           type: string
+        capabilities:
+          type: array
+          items:
+            type: string
+          description: List of device capabilities (e.g., pin_code, nfc, face, qr_code).
+        connected_uah_id:
+          type: string
+          description: MAC address of the connected UA Hub (empty for hubs themselves).
+        is_adopted:
+          type: boolean
+        is_connected:
+          type: boolean
+        is_managed:
+          type: boolean
+        is_online:
+          type: boolean
+        location_id:
+          type: string
+          description: Door ID the device is bound to.
     DeviceAccessMethods:
       type: object
       properties:
@@ -4483,8 +4503,11 @@ paths:
                     type: string
                   data:
                     type: array
+                    description: Nested array — each inner array groups devices by door/location.
                     items:
-                      $ref: '#/components/schemas/Device'
+                      type: array
+                      items:
+                        $ref: '#/components/schemas/Device'
         '400':
           description: Bad Request
         '401':
@@ -4587,16 +4610,20 @@ paths:
         schema:
           type: string
       requestBody:
-        required: false
+        required: true
         content:
           application/json:
             schema:
               type: object
+              required:
+              - room_name
               properties:
                 room_name:
                   type: string
+                  description: Intercom directory name to trigger. Use empty string to ring the default doorbell.
                 cancel:
                   type: boolean
+                  description: If true, cancels the previous doorbell if still ringing.
       responses:
         '200':
           description: Successful response

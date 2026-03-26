@@ -2,188 +2,188 @@
 
 Leverage the power of the UniFi Access APl
 
-![](images/cdcb87b9f3a26b1339c8914f6eb4b3d2c2c105d526c405ff2a678af157aa290e.jpg)
 
-# 1. Introduction ... 7
 
-1.1 Create API Token & Download API Documentation 7   
-1.2 Obtain Your Hostname   
-1.3 Use the API .   
-1.4 Security Configuration   
-1.5 Important Notes ..............
+# 1. Introduction
 
-# 2. Overview .... 8
+1.1 Create API Token & Download API Documentation
+1.2 Obtain Your Hostname
+1.3 Use the API
+1.4 Security Configuration
+1.5 Important Notes
 
-2.1 API Token .. 8   
-2.2 HTTP Status Code Reference 8   
-2.3 Success Code . 9   
-2.4 Error Code .. 9   
-2.5 HTTP Verbs . 11   
-2.6 API Host . 11   
-2.7 Request Header . . 11   
-2.8 Response Schema . . 12
+# 2. Overview
 
-# 3. User . . 12
+2.1 API Token
+2.2 HTTP Status Code Reference
+2.3 Success Code
+2.4 Error Code
+2.5 HTTP Verbs
+2.6 API Host
+2.7 Request Header
+2.8 Response Schema
 
-3.1 Schemas . 12   
-3.2 User Registration . 13   
-3.3 Update User . . 15   
-3.4 Fetch User ... . 16   
-3.5 Fetch All Users . 19   
-3.6 Assign Access Policy to User .. 22   
-3.7 Assign NFC Card to User . .. 23   
-3.8 Unassign NFC Card from User .. 24   
-3.9 Assign PIN Code to User . .. 25   
-3.10 Unassign PIN Code from User .. 26   
-3.11 Create User Group .. 27   
-3.12 Fetch All User Groups .. 28   
-3.13 Fetch User Group .. 29   
-3.14 Update User Group . .. 30   
-3.15 Delete User Group ..... 31   
-3.16 Assign User to User Group .. 32   
-3.17 Unassign User from User Group .... 33   
-3.18 Fetch Users in a User Group .. 34
+# 3. User
 
-3.19 Fetch All Users in a User Group .. 36   
-3.20 Fetch the Access Policies Assigned to a User ... 37   
-3.21 Assign Access Policy to User Group ... 39   
-3.22 Fetch the Access Policies Assigned to a User Group ... 40   
-3.23 Delete User ... .. 41   
-3.24 Search Users .. ... 42   
-3.25 Assign Touch Pass to User .. 44   
-3.26 Unassign Touch Pass from User . .. 45   
-3.27 Batch Assign Touch Passes to Users .. 47   
-3.28 Assign License Plate Numbers to User . ... 49   
-3.29 Unassign License Plate Numbers from User ... 50   
-3.30 Upload User Profile Picture .. 51
+3.1 Schemas
+3.2 User Registration
+3.3 Update User
+3.4 Fetch User
+3.5 Fetch All Users
+3.6 Assign Access Policy to User
+3.7 Assign NFC Card to User
+3.8 Unassign NFC Card from User
+3.9 Assign PIN Code to User
+3.10 Unassign PIN Code from User
+3.11 Create User Group
+3.12 Fetch All User Groups
+3.13 Fetch User Group
+3.14 Update User Group
+3.15 Delete User Group
+3.16 Assign User to User Group
+3.17 Unassign User from User Group
+3.18 Fetch Users in a User Group
 
-4. Visitor ... .... 52
+3.19 Fetch All Users in a User Group
+3.20 Fetch the Access Policies Assigned to a User
+3.21 Assign Access Policy to User Group
+3.22 Fetch the Access Policies Assigned to a User Group
+3.23 Delete User
+3.24 Search Users
+3.25 Assign Touch Pass to User
+3.26 Unassign Touch Pass from User
+3.27 Batch Assign Touch Passes to Users
+3.28 Assign License Plate Numbers to User
+3.29 Unassign License Plate Numbers from User
+3.30 Upload User Profile Picture
 
-4.1 Schemas ... . 52   
-4.2 Create Visitor .. . 53   
-4.3 Fetch Visitor . . 57   
-4.4 Fetch All Visitors .. ... 59   
-4.5 Update Visitor . .. 60   
-4.6 Delete Visitor . 64   
-4.7 Assign NFC Card To Visitor .. 65   
-4.8 Unassign NFC Card From Visitor . .. 66   
-4.9 Assign PIN Code To Visitor .. 67   
-4.10 Unassign PIN Code From Visitor .. 68   
-4.11 Assign QR Code to Visitor . .. 69   
-4.12 Unassign QR Code from Visitor . ... 70   
-4.13 Assign License Plate Numbers to Visitor . .. 71   
-4.14 Unassign License Plate Number from Visitor . .. 72
+# 4. Visitor
 
-5. Access Policy . 73
+4.1 Schemas
+4.2 Create Visitor
+4.3 Fetch Visitor
+4.4 Fetch All Visitors
+4.5 Update Visitor
+4.6 Delete Visitor
+4.7 Assign NFC Card To Visitor
+4.8 Unassign NFC Card From Visitor
+4.9 Assign PIN Code To Visitor
+4.10 Unassign PIN Code From Visitor
+4.11 Assign QR Code to Visitor
+4.12 Unassign QR Code from Visitor
+4.13 Assign License Plate Numbers to Visitor
+4.14 Unassign License Plate Number from Visitor
 
-5.1 Access Policy Schemas . .. 73   
-5.2 Create Access Policy ... 73   
-5.3 Update Access Policy .. 75   
-5.4 Delete Access Policy . 77   
-5.5 Fetch Access Policy . .. 77   
-5.6 Fetch All Access Policies ... 79
+# 5. Access Policy
 
-5.7 Holiday Group Schemas . ... 81   
-5.8 Create Holiday Group . 81   
-5.9 Update Holiday Group . .. 84   
-5.10 Delete Holiday Group .. 86   
-5.11 Fetch Holiday Group .. 87   
-5.12 Fetch All Holiday Groups .. 88   
-5.13 Schedule Schemas ... 90   
-5.14 Create Schedule ... 91   
-5.15 Update Schedule . 95   
-5.16 Fetch Schedule . 97   
-5.17 Fetch All Schedules . 100   
-5.18 Delete Schedule . 101
+5.1 Access Policy Schemas
+5.2 Create Access Policy
+5.3 Update Access Policy
+5.4 Delete Access Policy
+5.5 Fetch Access Policy
+5.6 Fetch All Access Policies
 
-# 6. Credential . 102
+5.7 Holiday Group Schemas
+5.8 Create Holiday Group
+5.9 Update Holiday Group
+5.10 Delete Holiday Group
+5.11 Fetch Holiday Group
+5.12 Fetch All Holiday Groups
+5.13 Schedule Schemas
+5.14 Create Schedule
+5.15 Update Schedule
+5.16 Fetch Schedule
+5.17 Fetch All Schedules
+5.18 Delete Schedule
 
-6.1 Generate PIN Code . 102   
-6.2 Enroll NFC Card . . 103   
-6.3 Fetch NFC Card Enrollment Status .. . 104   
-6.4 Remove a Session Created for NFC Card Enrollment . 105   
-6.5 Flowchart for NFC Card Enrollment . . 106   
-6.6 NFC Card Schemas . 106   
-6.7 Fetch NFC Card ... 106   
-6.8 Fetch All NFC Cards . 108   
-6.9 Delete NFC Card . .. 109   
-6.10 Update NFC Card . . 110   
-6.11 Touch Pass Schemas . . 111   
-6.12 Fetch the Touch Pass List . . 112   
-6.13 Search Touch Pass . . 114   
-6.14 Fetch All Assignable Touch Passes . . 116   
-6.15 Update Touch Pass . 117   
-6.16 Fetch Touch Pass Details . 120   
-6.17 Purchase Touch Passes . 121   
-6.18 Download QR Code Image . . 123   
-6.19 Import Third-Party NFC Cards . . 124
+# 6. Credential
 
-# 7. Space ..... . 125
+6.1 Generate PIN Code
+6.2 Enroll NFC Card
+6.3 Fetch NFC Card Enrollment Status
+6.4 Remove a Session Created for NFC Card Enrollment
+6.5 Flowchart for NFC Card Enrollment
+6.6 NFC Card Schemas
+6.7 Fetch NFC Card
+6.8 Fetch All NFC Cards
+6.9 Delete NFC Card
+6.10 Update NFC Card
+6.11 Touch Pass Schemas
+6.12 Fetch the Touch Pass List
+6.13 Search Touch Pass
+6.14 Fetch All Assignable Touch Passes
+6.15 Update Touch Pass
+6.16 Fetch Touch Pass Details
+6.17 Purchase Touch Passes
+6.18 Download QR Code Image
+6.19 Import Third-Party NFC Cards
 
-7.1 Fetch Door Group Topology . 125   
-7.2 Create Door Group . 127   
-7.3 Fetch Door Group . 129
+# 7. Space
 
-7.4 Update Door Group . 131   
-7.5 Fetch All Door Groups . . 133   
-7.6 Delete Door Group . . 134   
-7.7 Fetch Door . . 135   
-7.8 Fetch All Doors . . 137   
-7.9 Remote Door Unlocking . 138   
-7.10 Set Temporary Door Locking Rule . 140   
-7.11 Fetch Door Locking Rule . 142   
-7.12 Set Door Emergency Status . 144   
-7.13 Fetch Door Emergency Status . .. 145
+7.1 Fetch Door Group Topology
+7.2 Create Door Group
+7.3 Fetch Door Group
 
-# 8. Device .. .. 146
+7.4 Update Door Group
+7.5 Fetch All Door Groups
+7.6 Delete Door Group
+7.7 Fetch Door
+7.8 Fetch All Doors
+7.9 Remote Door Unlocking
+7.10 Set Temporary Door Locking Rule
+7.11 Fetch Door Locking Rule
+7.12 Set Door Emergency Status
+7.13 Fetch Door Emergency Status
 
-8.1 Fetch Devices .. . 146   
-8.2 Fetch Access Device's Access Method Settings . 148   
-8.3 Update Access Device's Access Method Settings . 150   
-8.4 Trigger Doorbells . 153
+# 8. Device
 
-# 9. System Log . . 154
+8.1 Fetch Devices
+8.2 Fetch Access Device's Access Method Settings
+8.3 Update Access Device's Access Method Settings
+8.4 Trigger Doorbells
 
-9.1 Topic Reference . 154   
-9.2 Fetch System Logs . 156   
-9.3 Export System Logs . 158   
-9.4 Fetch Resources in System Logs . 159   
-9.5 Fetch Static Resources in System Logs . . 160
+# 9. System Log
 
-# 10. UniFi Identity . 161
+9.1 Topic Reference
+9.2 Fetch System Logs
+9.3 Export System Logs
+9.4 Fetch Resources in System Logs
+9.5 Fetch Static Resources in System Logs
 
-10.1 Send UniFi Identity Invitations . 161   
-10.2 Fetch Available Resources . 163   
-10.3 Assign Resources to Users . . 164   
-10.4 Fetch Resources Assigned to Users . . 165   
-10.5 Assign Resources to User Groups .. 167   
-10.6 Fetch the Resources Assigned to User Groups . . 168
+# 10. UniFi Identity
 
-# 11. Notification . . 170
+10.1 Send UniFi Identity Invitations
+10.2 Fetch Available Resources
+10.3 Assign Resources to Users
+10.4 Fetch Resources Assigned to Users
+10.5 Assign Resources to User Groups
+10.6 Fetch the Resources Assigned to User Groups
 
-11.1 Fetch Notifications [WebSocket] . 170   
-11.2 List of Supported Webhook Events [Webhook] . 172   
-11.3 Fetch Webhook Endpoints List [Webhook] . 173   
-11.4 Add Webhook Endpoints [Webhook] . 174   
-11.5 Update Webhook Endpoints [Webhook] . 176
+# 11. Notification
 
-11.6 Delete Webhook Endpoints [Webhook] .. 178   
-11.7 Allow Webhook Endpoint Owner to Receive Webhook Events [Webhook] . 179
+11.1 Fetch Notifications [WebSocket]
+11.2 List of Supported Webhook Events [Webhook]
+11.3 Fetch Webhook Endpoints List [Webhook]
+11.4 Add Webhook Endpoints [Webhook]
+11.5 Update Webhook Endpoints [Webhook]
 
-12. API Server . .. 191
+11.6 Delete Webhook Endpoints [Webhook]
+11.7 Allow Webhook Endpoint Owner to Receive Webhook Events [Webhook]
 
-12.1 Upload HTTPS Certificate .. 191   
-12.2 Delete HTTPS Certificate . 192
+# 12. API Server
 
-13. Change Logs .. . 193
+12.1 Upload HTTPS Certificate
+12.2 Delete HTTPS Certificate
 
-v4.0.10 . 193   
-v3.3.21 . 193   
-v3.3.10 193   
-V3.2.20 . . 193   
-V3.1.30 . 193   
-V2.2.6 194   
-V2.2.10 . . 194
+# 13. Change Logs
+
+v4.0.10
+v3.3.21
+v3.3.10
+V3.2.20
+V3.1.30
+V2.2.6
+V2.2.10
 
 # 1. Introduction
 
@@ -195,7 +195,7 @@ Before you can use the UniFi Access API, you need to obtain a valid API Token fo
 
 1. Sign in to your UniFi Portal (https://account.ui.com/login) using your web browser.   
 2. Select the UniFi Console where the UniFi Access application is installed.   
-3. Go to Access $>$ Settings $>$ General $>$ Advanced.   
+3. Go to Access > Settings > General > Advanced.   
 4. Go to API Token to Download API documentation and create an API Token.   
 5. To create an API Token, click Create New, enter the key name and validity period, select the permission scopes, and click Create.   
 6. Once the API Token is created, ensure to Copy API Token and store it safely for future use. Please note that the key is displayed only once for security purposes.
@@ -465,7 +465,6 @@ Method: GET
             "user_id": "3e763e5d-6804-437d-ae8d-3fee74119b80",
             "user_name": "Example Name",
             "user_status": "ACTIVE"
-        },
         "nfc_cards": [
             {"id": "100001", "token": "d27822fc682b478dc637c6db01813e465174df6e54ca515d8427db623cfda1d0", "type": "ua_card"}
         ],
@@ -475,7 +474,6 @@ Method: GET
         "onboard_time": 1689047588,
         "pin_code": {"token": "5f742ee4424e5a7dd265de3461009b9ebafa1fb9d6b15018842055cc0466ac56"},
         "status": "ACTIVE"
-    },
     "msg": "success"
 }
 ```
@@ -553,18 +551,69 @@ Method: GET
 ],
 "card_id": "70A3-2FAD-181B-4CC9",
 "card_name": "Test",
-"expired_at": {}, 
-{id": "c83b69ff-1992-4e7f-9287-1e6a161adeea",
+"expired_at": {},
+"id": "c83b69ff-1992-4e7f-9287-1e6a161adeea",
 "last_activity": "2025-04-10T00:46:20+08:00",
 "status": "SUSPENDED", 
-"user_avatar": "", "user_email": "example@ui.com", "user_id": "3e763e5d-6804-437d-ae8d-3fee74119b80", "user_name": "Example Name", "user_status": "ACTIVE" }, "user_email": "", "nfc_cards": [], "license_plates": [ { "credential": "jq178", "credential_status": "active", "credential_type": "license", "id": "5cac1825-f5e9-410d-a32e-a1fb9fc83b92" } ], " onboard_time": 0, "pin_code": null, "status": "ACTIVE" }, { "access_policies": [ { "id": "c1682fb8-ef6e-4fe2-aa8a-b6f29df753ff", "name": "policy_1690272668035", "resources": [ { "id": "6ff875d2-af87-470b-9cb5-774c6596afc8", "type": "door" } ], "schedule_id": "0616ef06-b807-4372-9ae0-7a87e12e4019" } ], "access_policy_ids": [ "c1682fb8-ef6e-4fe2-aa8a-b6f29df753ff" ], "employee_number": "", "first_name": "Tttttt", "id": "3a3ba57a-796e-46e0-b8f3-478bb70a114d", "last_name": "Tttt", "nfc_cards": [], " onboard_time": 1689048000, "pin_code": null, "status": "ACTIVE" } ], "msg": "success", "pagination": { "page_num": 1, "page_size": 97, "total": 97 } 
+"user_avatar": "",
+"user_email": "example@ui.com",
+"user_id": "3e763e5d-6804-437d-ae8d-3fee74119b80",
+"user_name": "Example Name",
+"user_status": "ACTIVE"
+"user_email": "",
+"nfc_cards": [],
+"license_plates": [
+    {
+        "credential": "jq178",
+        "credential_status": "active",
+        "credential_type": "license",
+        "id": "5cac1825-f5e9-410d-a32e-a1fb9fc83b92"
+    }
+],
+"onboard_time": 0,
+"pin_code": null,
+"status": "ACTIVE"
+},
+{
+"access_policies": [
+    {
+        "id": "c1682fb8-ef6e-4fe2-aa8a-b6f29df753ff",
+        "name": "policy_1690272668035",
+        "resources": [
+            {
+                "id": "6ff875d2-af87-470b-9cb5-774c6596afc8",
+                "type": "door"
+            }
+        ],
+        "schedule_id": "0616ef06-b807-4372-9ae0-7a87e12e4019"
+    }
+],
+"access_policy_ids": [
+    "c1682fb8-ef6e-4fe2-aa8a-b6f29df753ff"
+],
+"employee_number": "",
+"first_name": "Tttttt",
+"id": "3a3ba57a-796e-46e0-b8f3-478bb70a114d",
+"last_name": "Tttt",
+"nfc_cards": [],
+"onboard_time": 1689048000,
+"pin_code": null,
+"status": "ACTIVE"
+}
+],
+"msg": "success",
+"pagination": {
+    "page_num": 1,
+    "page_size": 97,
+    "total": 97
+} 
 ```
 
 # Request Sample
 
 The request body should be a JSON object containing the following fields:
 
-```shell
+```bash
 curl -XGET '{host}/api/v1/developer/users?page_num=1&page_size=25&expand[]=access_policy'  
 -H 'Authorization: Bearer wHFmHR*****kD6wHg'  
 -H 'accept: application/json'  
@@ -594,15 +643,24 @@ Method: PUT
 
 The request body should be a JSON object containing the following fields:
 
-```shell
-//assign access policies to user  
-curl -XPUT '{host}'/api/v1/developer/users/38857332-7a5e-4bb6-8837-651b2a47cea5/access_policies'  
--H 'Authorization: Bearer wHFmHR*****kD6wHg'  
--H 'accept: application/json' 
+```bash
+# Assign access policies to user
+curl -XPUT '{host}/api/v1/developer/users/38857332-7a5e-4bb6-8837-651b2a47cea5/access_policies' \
+-H 'Authorization: Bearer wHFmHR*****kD6wHg' \
+-H 'accept: application/json' \
+-H 'content-type: application/json' \
+--data-raw '{ "access_policy_ids": ["03895c7f-9f53-4334-812b-5db9c122c109", "3b6bcb0c-7498-44cf-8615-00a96d824cbe"] }' \
+--insecure
 ```
 
-```txt
--H 'content-type: application/json' --data-raw '{ "access_policy_ids":[ "03895c7f-9f53-4334-812b-5db9c122c109", "3b6bcb0c-7498-44cf-8615-00a96d824cbe" ] } ' --insecure //remove all access policies from user curl -XPUT '{host}/api/v1/developer/users/38857332-7a5e-4bb6-8837- 651b2a47cea5/access_policies' -H 'Authorization: Bearer wHFmHR******kD6wHg' -H 'accept: application/json' -H 'content-type: application/json' --data-raw '{ "access_policy_ids":[] } ' --insecure 
+```bash
+# Remove all access policies from user
+curl -XPUT '{host}/api/v1/developer/users/38857332-7a5e-4bb6-8837-651b2a47cea5/access_policies' \
+-H 'Authorization: Bearer wHFmHR******kD6wHg' \
+-H 'accept: application/json' \
+-H 'content-type: application/json' \
+--data-raw '{ "access_policy_ids": [] }' \
+--insecure
 ```
 
 # Response Sample
@@ -634,7 +692,7 @@ Method: PUT
 The request body should be a JSON object containing the following fields:
 
 ```bash
-curl -XPUT '{host}/{api/v1/developer/users/17d2f099-99df-429b-becb-1399a6937e5a/nfc_cards'  
+curl -XPUT '{host}/api/v1/developer/users/17d2f099-99df-429b-becb-1399a6937e5a/nfc_cards'  
 -H 'Authorization: Bearer wHFmHR*****kD6wHg'  
 -H 'accept: application/json'  
 -H 'content-type: application/json'  
@@ -710,7 +768,7 @@ Method: PUT
 
 The request body should be a JSON object containing the following fields:
 
-```shell
+```bash
 curl -XPUT '{host}/api/v1/developer/users/17d2f099-99df-429b-becb-1399a6937e5a/pin_codes'  
 -H 'Authorization: Bearer wHFmHR*****kD6wHg'  
 -H 'accept: application/json'  
@@ -781,7 +839,7 @@ API version: v1
 
 The request body should be a JSON object containing the following fields:
 
-```shell
+```bash
 curl -XPOST '{host}/api/v1/developer/user_groups'  
 -H 'Authorization: Bearer wHFmHR*****kD6wHg'  
 -H 'accept: application/json'  
@@ -831,7 +889,6 @@ curl -XGET '{host}/api/v1/developer/developer/user_groups'
     "data": [ 
         {
         "full_name": "Group Name",
-        },
         "id": "75011ee6-b7ab-4927-9d9f-dd08ef0a3199",
         "name": "Group Name",
         "up_id": "a27899fc-a2d1-4797-8d4d-86118f8555f3",
@@ -884,7 +941,6 @@ curl -XGET '{host}/api/v1/developer/developer/user_groups/75011ee6-b7ab-4927-9d9
         "up_ids": [
             "a27899fc-a2d1-4797-8d4d-86118f8555f3"
         ]
-    },
     "msg": "success"
 } 
 ```
@@ -913,7 +969,7 @@ API version: v1
 
 The request body should be a JSON object containing the following fields:
 
-```shell
+```bash
 curl -XPUT '{host}/api/v1/developer/user_groups/75011ee6-b7ab-4927-9d9f-dd08ef0a3199'  
 -H 'Authorization: Bearer wHFmHR*****kD6wHg'  
 -H 'accept: application/json'  
@@ -989,13 +1045,13 @@ API version: v1
 
 The request body should be a JSON object containing the following fields:
 
-```shell
-curl -XPOST '{host}/api/v1/developer/user_groups/75011ee6-b7ab-4927-9d9f-dd08ef0a3199/users'  
--H 'Authorization: Bearer wHFmHR******KD6wHg'  
--H 'accept: application/json'  
--H 'content-type: application/json'  
---data-raw '["7c6e9102-acb7-4b89-8ed4-7561e6fb706c", "fd63bc4c-52e0-4dbf-a699-e1233339c73b"]  
---insecure 
+```bash
+curl -XPOST '{host}/api/v1/developer/user_groups/75011ee6-b7ab-4927-9d9f-dd08ef0a3199/users' \
+-H 'Authorization: Bearer wHFmHR******kD6wHg' \
+-H 'accept: application/json' \
+-H 'content-type: application/json' \
+--data-raw '["7c6e9102-acb7-4b89-8ed4-7561e6fb706c", "fd63bc4c-52e0-4dbf-a699-e1233339c73b"]' \
+--insecure
 ```
 
 # Response Sample
@@ -1029,12 +1085,12 @@ API version: v1
 The request body should be a JSON object containing the following fields:
 
 ```bash
-curl -XPOST '{host}/api/v1/developer/user_groups/75011ee6-b7ab-4927-9d9f-dd08ef0a3199/users/delete'  
--H 'Authorization: Bearer wHFmHR*****kD6wHg'  
--H 'accept: application/json'  
--H 'content-type: application/json'  
---data-raw '["7c6e9102-acb7-4b89-8ed4-7561e6fb706c", "fd63bc4c-52e0-4dbf-a699-e1233339c73b"]  
---insecure 
+curl -XPOST '{host}/api/v1/developer/user_groups/75011ee6-b7ab-4927-9d9f-dd08ef0a3199/users/delete' \
+-H 'Authorization: Bearer wHFmHR*****kD6wHg' \
+-H 'accept: application/json' \
+-H 'content-type: application/json' \
+--data-raw '["7c6e9102-acb7-4b89-8ed4-7561e6fb706c", "fd63bc4c-52e0-4dbf-a699-e1233339c73b"]' \
+--insecure
 ```
 
 # Response Sample
@@ -1113,7 +1169,7 @@ API version: v1
 
 The request body should be a JSON object containing the following fields:
 
-```shell
+```bash
 curl -XGET '{host}'/api/v1/developer/user_groups/23676a54-382e-4121-AA80-878d2d9bacaa/users/all'  
 -H 'Authorization: Bearer wHFmHR*****kD6wHg'  
 -H 'accept: application/json'  
@@ -1177,7 +1233,7 @@ API version: v1
 
 The request body should be a JSON object containing the following fields:
 
-```batch
+```bash
 curl -XGET '{host}/users/27aa91ac-2924-43d4-82e1-24b6a570d29e/access_policies? only_user_policies=false' -H 'Authorization: Bearer wHFmHR*****kD6wHg' -H 'accept: application/json' -H 'content-type: application/json' --insecure 
 ```
 
@@ -1186,17 +1242,15 @@ curl -XGET '{host}/users/27aa91ac-2924-43d4-82e1-24b6a570d29e/access_policies? o
 ```json
 {
     "code": "SUCCESS",
-    "data": [ 
+    "data": [
         {
-        "id": "89a4ca95-1502-4ae7-954f-d986b67afe5c",
-        },
-        "name": "Default Site Policy",
-        "resources": [ 
-            {
-            "id": "fd2a06e2-81af-4cf4-9bd5-8bceb5e7b7d7",
-            },
-            "type": "door_group"
-        }
+            "id": "89a4ca95-1502-4ae7-954f-d986b67afe5c",
+            "name": "Default Site Policy",
+            "resources": [
+                {
+                    "id": "fd2a06e2-81af-4cf4-9bd5-8bceb5e7b7d7",
+                    "type": "door_group"
+                }
     ],
     "schedule_id": "6b79d12a-2a6e-4463-949c-f1a98fff40d2"
     ],
@@ -1241,7 +1295,7 @@ curl -XPUT '{host}/user_groups/23676a54-382e-4121-AA80-878d2d9bacaa/access_polic
 -H 'Authorization: Bearer wHFmHR*****kD6wHg'  
 -H 'accept: application/json'  
 -H 'content-type: application/json'  
---data {'  
+--data '{
     "access_policy_ids": [  
         "bbe48a65-2ac1-4bf6-bd65-bc8f9ee7fb75"  
     ]  
@@ -1281,7 +1335,7 @@ API version: v1
 
 The request body should be a JSON object containing the following fields:
 
-```shell
+```bash
 curl -XGET '{host}/user_groups/23676a54-382e-4121-AA80-878d2d9bacaa/access_policies'  
 -H 'Authorization: Bearer wHFmHR*****kD6wHg'  
 -H 'accept: application/json'  
@@ -1294,17 +1348,15 @@ curl -XGET '{host}/user_groups/23676a54-382e-4121-AA80-878d2d9bacaa/access_polic
 ```json
 {
     "code": "SUCCESS",
-    "data": [ 
+    "data": [
         {
-        "id": "89a4ca95-1502-4ae7-954f-d986b67afe5c",
-        },
-        "name": "Default Site Policy",
-        "resources": [ 
-            {
-            "id": "fd2a06e2-81af-4cf4-9bd5-8bceb5e7b7d7",
-            },
-            "type": "door_group"
-        }
+            "id": "89a4ca95-1502-4ae7-954f-d986b67afe5c",
+            "name": "Default Site Policy",
+            "resources": [
+                {
+                    "id": "fd2a06e2-81af-4cf4-9bd5-8bceb5e7b7d7",
+                    "type": "door_group"
+                }
     ],
     "schedule_id": "6b79d12a-2a6e-4463-949c-f1a98fff40d2"
     ],
@@ -1384,10 +1436,9 @@ UniFi Access Requirement: 3.1.30 or later
         [ 
             {
             "alias": "", 
-            },
-            "ayarilerative_path": "/ayaral/186b07b1-fa13-49b5-8954-399d1b9c5285",
+            "avatar_relative_path": "/avatar/186b07b1-fa13-49b5-8954-399d1b9c5285",
             "email": "User1@*.com",
-            "email.status": "VERIFIED",
+            "email_status": "VERIFIED",
             "employee_number": "", 
             "first_name": "Name",
             "full_name": "Full Name",
@@ -1409,7 +1460,7 @@ UniFi Access Requirement: 3.1.30 or later
 
 The request body should be a JSON object containing the following fields:
 
-```shell
+```bash
 curl -XGET '{host}/api/v1/developer/users/search?keyword=Name&user_id=472cabd2-0634-4e85-9e8d-5a73b500516a&user_id=21472b1d-AA3a-4f2c-855e-0ec3dcaaeb5a&only_admin=false&status=ACTIVE&status=DEACTIVATED&page_size=10&page_num=1' -H 'Authorization: Bearer wHFmHR*****kD6wHg' -H 'accept: application/json' -H 'content-type: application/json' --insecure 
 ```
 
@@ -1448,14 +1499,13 @@ UniFi Access Requirement: Version 3.2.20 or later
         "user_id": "cadb8707-a2c1-4407-a904-24868bf4aad9",
         "user_name": "Example Name",
         "user_status": ""
-   },
     "msg": "success"
 } 
 ```
 
 # Request Sample
 
-```shell
+```bash
 curl --location --request PUT '{host}/api/v1/developer/users/cadb8707-a2c1-4407-a904-24868bf4aad9/touch_passes/e9a8e5ad-0afd-4abf-a9ce-9535df6bc00d' \
 --header 'Authorization: Bearer wHFmHR*****kD6wHg' \
 --data '' 
@@ -1488,16 +1538,24 @@ UniFi Access Requirement: Version 3.2.20 or later
 {
     "code": "SUCCESS",
     "data": {
-        "bundles": [], "card_id": "104D-2E7D-0CF9-45B9",
-        "card_name": "", "id": "e9a8e5ad-0afd-4abf-a9ce-9535df6bc00d",
-    }
-} 
-"last_activity": "2025-04-09T18:46:27+08:00", "status": "INACTIVE", "user_avatar": "", "user_email": "", "user_id": "", "user_name": "", "user_status": "ACTIVE" }, "msg": "success" } 
+        "bundles": [],
+        "card_id": "104D-2E7D-0CF9-45B9",
+        "card_name": "",
+        "id": "e9a8e5ad-0afd-4abf-a9ce-9535df6bc00d",
+        "last_activity": "2025-04-09T18:46:27+08:00",
+        "status": "INACTIVE",
+        "user_avatar": "",
+        "user_email": "",
+        "user_id": "",
+        "user_name": "",
+        "user_status": "ACTIVE"
+    "msg": "success"
+}
 ```
 
 # Request Sample
 
-```shell
+```bash
 curl --location --request DELETE 'https://192.168.1.1:12445/api/v1/developer/users/cadb8707-a2c1-4407-a904-24868bf4aad9/touch_passes/e9a8e5ad-0afd-4abf-a9ce-9535df6bc00d' \
 --header 'Authorization: Bearer wHFmHR*****kD6wHg' \
 --data '' 
@@ -1531,16 +1589,17 @@ UniFi Access Requirement: Version 3.2.20 or later
     "code": "SUCCESS",
     "data": [
         {
-        "bundles": [], "card_id": "05FD-99C6-1876-4EF9",
-        },
-        "card_name": "", "id": "fdb79d4-c113-4893-9a3b-b61836b5108d",
-        "last_activity": "2025-04-09T13:40:28+08:00",
-        "status": "PENDING",
-        "user_avatar": "https://192.168.1.1/proxy/users/public/avatar/5b7e0cef-dba1-415b-8ee7-7efb440645c1",
-        "user_email": "example@ui.com",
-        "user_id": "ed34ad8b-9d34-48a8-b110-0ddc5f1e6055",
-        "user_name": "Example Name",
-        "user.status":",
+            "bundles": [],
+            "card_id": "05FD-99C6-1876-4EF9",
+            "card_name": "",
+            "id": "fdb79d4-c113-4893-9a3b-b61836b5108d",
+            "last_activity": "2025-04-09T13:40:28+08:00",
+            "status": "PENDING",
+            "user_avatar": "https://192.168.1.1/proxy/users/public/avatar/5b7e0cef-dba1-415b-8ee7-7efb440645c1",
+            "user_email": "example@ui.com",
+            "user_id": "ed34ad8b-9d34-48a8-b110-0ddc5f1e6055",
+            "user_name": "Example Name",
+            "user_status": ""
     ],
     "msg": "success"
 } 
@@ -1549,14 +1608,16 @@ UniFi Access Requirement: Version 3.2.20 or later
 # Request Sample
 
 ```bash
-curl --location --request PUT
+curl --location --request PUT \
 'https://192.168.1.1:12445/api/v1/developer/users/touch_passes/assign' \
 --header 'Authorization: Bearer wHFmHR*****kD6wHg' \
 --header 'Content-Type: application/json' \
---data \
-"ids": ["ed34ad8b-9d34-48a8-b110-0ddc5f1e6055"], "emails": \{
-	"ed34ad8b-9d34-48a8-b110-0ddc5f1e6055": "example@ui.com"
-\} 
+--data '{
+    "ids": ["ed34ad8b-9d34-48a8-b110-0ddc5f1e6055"],
+    "emails": {
+        "ed34ad8b-9d34-48a8-b110-0ddc5f1e6055": "example@ui.com"
+    }
+}'
 ```
 
 # 3.28 Assign License Plate Numbers to User
@@ -1588,8 +1649,8 @@ An array of license plate strings to assign to the user.
 curl --location --request PUT 'https://192.168.1.1:12445/api/v1/developer/users/d0beeccd-0f5e-4606-9d6e-764e19685e27/license_plates' \
 --header 'Authorization: Bearer vPUhdytCPDvt/+dSLlGTjw' \
 --header 'Content-Type: application/json' \
---data '[abcd5', "efge36"]
-'] --insecure 
+--data '["abcd5", "efge36"]' \
+--insecure 
 ```
 
 # Response Sample
@@ -1621,7 +1682,7 @@ UniFi Access Requirement: Version 3.3.10 or later
 
 # Request Sample: Shell/cURL
 
-```batch
+```bash
 curl --location --request DELETE 'https://192.168.1.1:12445/api/v1/developer/users/d0beeecd-0f5e-4606-9d6e-764e19685e27/license_plates/74f3c466-c564-4035-aebd-fd383ebebcc6a' \
 --header 'Authorization: Bearer vPUhdtCPDvt/+dSLlGTjw' 
 ```
@@ -1660,7 +1721,7 @@ Note: Updating the profile picture is supported only for local users. UI Account
 
 # Request Sample: Shell/cURL
 
-```shell
+```bash
 curl --location 'https://192.168.1.1:12445/api/v1/developer/users/d0beeccd-0f5e-4606-9d6e-764e19685e27/avatar' \
 --header 'Authorization: Bearer vPUhdytCPDvt/+dSLlGTjw' \
 --form 'file=@"./fa8134ba-352a-4499-ab62-713618388148.jpeg'" --insecure 
@@ -1673,7 +1734,6 @@ curl --location 'https://192.168.1.1:12445/api/v1/developer/users/d0beeccd-0f5e-
     "code": "SUCCESS",
     "data": {
         "avatar_url": "https://192.168.1.1/proxy/users/public/avatar/d0beecccd-0f5e-4606-9d6e-764e19685e27"
-    },
     "msg": "success"
 } 
 ```
@@ -1761,7 +1821,6 @@ If the week_schedule information is present, it indicates that the visit schedul
         },
         "schedule_id": "1fb849bb-e7e5-4516-8dd9-b78094a6708a",
         "status": "ACTIVE"
-    },
     "msg": "success"
 }
 ```
@@ -1868,7 +1927,6 @@ Method: GET
 ],
 "pin_code": {
     "token": "bc3e3135013e2dcae119390b7897166e8cec3bcf5becb6b05578ab67634559ed"
-   },
 "resources": [
         {
             "id": "fd293ecb-98d2-425b-a020-cb9365ea48b3",
@@ -1885,7 +1943,6 @@ Method: GET
 },
 "schedule_id": "6ccf9e1e-b174-476d-b2fe-96817c780fbf",
     "status": "VISITED"
-},
 "msg": "success" 
 ```
 
@@ -1926,7 +1983,7 @@ Note: license plates will be supported by 3.3.10 or later
 
 The request body should be a JSON object containing the following fields:
 
-```shell
+```bash
 curl -XGET '{host}/api/v1/developer/visitors?page_num=1&page_size=25'  
 -H 'Authorization: Bearer wHFmHR*****kD6wHg'  
 -H 'accept: application/json'  
@@ -1940,7 +1997,7 @@ curl -XGET '{host}/api/v1/developer/visitors?keyword=H'
 --insecure 
 ```
 
-```shell
+```bash
 using the "expands" options  
 curl -XGET '{host}/api/v1/developer/visitors?  
 expand[]=access_policy&expand[]=resource&expand[]=schedule&expand[]=nfc_card&expand[]=pin_code'  
@@ -2028,7 +2085,6 @@ Note: Status change is not supported.
         },
         "schedule_id": "c03bf601-0b90-4341-bce4-6061931e9f4e",
         "status": "ACTIVE"
-    },
     "msg": "success"
 }
 ```
@@ -2129,7 +2185,7 @@ Method: DELETE
 
 The request body should be a JSON object containing the following fields:
 
-```batch
+```bash
 curl -XDELETE '{host}/api/v1/developer/visitors/c81dfee6-5970-4938-bd30-40820e16ea01? is_force=true' -H 'Authorization: Bearer wHFmHR*****kD6wHg' -H 'accept: application/json' -H 'content-type: application/json' --insecure 
 ```
 
@@ -2156,14 +2212,15 @@ Method: PUT
 The request body should be a JSON object containing the following fields:
 
 ```bash
-curl -XPUT '{host}/api/v1/developer/visitors/60b5c15e-9aff-4fc8-9547-d21d2e39c1ff/nfc_cards
--H 'Authorization: Bearer wHFmHR******kD6wHg'
--H 'accept: application/json'
--H 'content-type: application/json'
+curl -XPUT '{host}/api/v1/developer/visitors/60b5c15e-9aff-4fc8-9547-d21d2e39c1ff/nfc_cards' \
+-H 'Authorization: Bearer wHFmHR******kD6wHg' \
+-H 'accept: application/json' \
+-H 'content-type: application/json' \
 --data-raw '{
     "token": "d27822fc682b478dc637c6db01813e465174df6e54ca515d8427db623cfda1d0",
-    "force_add": true}
---insecure 
+    "force_add": true
+}' \
+--insecure
 ```
 
 # Response Sample
@@ -2194,15 +2251,15 @@ Method: PUT
 
 The request body should be a JSON object containing the following fields:
 
-```shell
-curl -XPUT '{host}/api/v1/developer/visitors/60b5c15e-9aff-4fc8-9547-d21d2e39c1ff/nfc_cards/delete  
--H 'Authorization: Bearer wHFmHR*****kD6wHg'  
--H 'accept: application/json'  
--H 'content-type: application/json'  
--d '{  
-    "token": "d27822fc682b478dc637c6db01813e465174df6e54ca515d8427db623cfda1d0"  
-}  
---insecure 
+```bash
+curl -XPUT '{host}/api/v1/developer/visitors/60b5c15e-9aff-4fc8-9547-d21d2e39c1ff/nfc_cards/delete' \
+-H 'Authorization: Bearer wHFmHR*****kD6wHg' \
+-H 'accept: application/json' \
+-H 'content-type: application/json' \
+-d '{
+    "token": "d27822fc682b478dc637c6db01813e465174df6e54ca515d8427db623cfda1d0"
+}' \
+--insecure
 ```
 
 # Response Sample
@@ -2235,12 +2292,12 @@ Method: PUT
 The request body should be a JSON object containing the following fields:
 
 ```bash
-curl -XPUT '{host}/api/v1/developer/visitors/17d2f099-99df-429b-becb-1399a6937e5a/pin_codes
--H 'Authorization: Bearer wHFmHR*****kD6wHg'
--H 'accept: application/json'
--H 'content-type: application/json'
---data-raw {' "pin_code": "57301208" }
---insecure 
+curl -XPUT '{host}/api/v1/developer/visitors/17d2f099-99df-429b-becb-1399a6937e5a/pin_codes' \
+-H 'Authorization: Bearer wHFmHR*****kD6wHg' \
+-H 'accept: application/json' \
+-H 'content-type: application/json' \
+--data-raw '{ "pin_code": "57301208" }' \
+--insecure
 ```
 
 # Response Sample
@@ -2267,12 +2324,12 @@ Method: DELETE
 
 The request body should be a JSON object containing the following fields:
 
-```shell
-curl -XDELETE '{host}/api/v1/developer/visitors/17d2f099-99df-429b-becb-1399a6937e5a/pin_codes
--H 'Authorization: Bearer wHFmHR*****kD6wHg'
--H 'accept: application/json'
--H 'content-type: application/json'
---insecure 
+```bash
+curl -XDELETE '{host}/api/v1/developer/visitors/17d2f099-99df-429b-becb-1399a6937e5a/pin_codes' \
+-H 'Authorization: Bearer wHFmHR*****kD6wHg' \
+-H 'accept: application/json' \
+-H 'content-type: application/json' \
+--insecure
 ```
 
 # Response Sample
@@ -2300,7 +2357,7 @@ UniFi Access Requirement: Version 3.3.10 or later
 
 # Request Sample: Shell/cURL
 
-```shell
+```bash
 curl --location --request PUT 'https://192.168.1.1:12445/api/v1/developer/visitors/15a90692-6f3b-4e1c-9886-bcd15e9c3f2d/qr_codes' \
 --header 'Authorization: Bearer s4KgshBaoXTxwfAHLPwDw' \
 --insecure 
@@ -2372,7 +2429,7 @@ UniFi Access Requirement: Version 3.3.10 or later
 
 # Request Sample: Shell/cURL
 
-```shell
+```bash
 curl --location --request PUT 'https://192.168.1.1:12445/api/v1/developer/visitors/b8635fc9-e9d2-4ec5-8763-d2c067ba4fc2/license_plates' \
 --header 'Authorization: Bearer s4KgshBaoXTXwFAhLPwDW' \
 --header 'Content-Type: application/json' \
@@ -2463,27 +2520,32 @@ Method: POST
 The request body should be a JSON object containing the following fields:
 
 ```bash
-curl '{host}/api/v1/developer/access_policies' -H 'Authorization: Bearer wHFmHR*****kD6wHg' -H 'accept: application/json' -H 'content-type: application/json' --data-raw
-{
+curl '{host}/api/v1/developer/access_policies' \
+-H 'Authorization: Bearer wHFmHR*****kD6wHg' \
+-H 'accept: application/json' \
+-H 'content-type: application/json' \
+--data-raw '{
     "name": "test",
-    "resource": [
+    "resources": [
         {
-        "id": "6ff875d2-af87-470b-9cb5-774c6596afc8",
+            "id": "6ff875d2-af87-470b-9cb5-774c6596afc8",
+            "type": "door"
         },
-        "type": "door"
-   ],
-        "id": "5c496423-6d25-4e4f-8cdf-95ad5135188a",
-        "type": "door_group"
-   ],
-        "id": "d5573467-d6b3-4e8f-8e48-8a322b91664a",
-        "type": "door_group" 
+        {
+            "id": "5c496423-6d25-4e4f-8cdf-95ad5135188a",
+            "type": "door_group"
+        },
+        {
+            "id": "d5573467-d6b3-4e8f-8e48-8a322b91664a",
+            "type": "door_group"
+        }
+    ],
+    "schedule_id": "4e108aab-ec9a-4822-bf86-170ea986f934"
+}' \
+--insecure
 ```
 
-```txt
-} ], "schedule_id": "4e108aab-ec9a-4822-bf86-170ea986f934" } ' --insecure
-```
-
-Response Sample   
+# Response Sample
 ```json
 {
     "code": "SUCCESS",
@@ -2518,7 +2580,7 @@ Request URL: /api/v1/developer/access_policies/:id
 Permission Key: edit:policy   
 Method: PUT
 
-Request Header   
+# Request Header
 
 <table><tr><td>Parameter</td><td>Required</td><td>Type</td><td>Description</td></tr><tr><td>Authorization</td><td>T</td><td>String</td><td>Token required for authentication and access control.</td></tr></table>
 
@@ -2582,7 +2644,7 @@ Method: DELETE
 
 The request body should be a JSON object containing the following fields:
 
-```shell
+```bash
 curl -XDELETE '{host}'/api/v1/developer/access_policies/460d0bcc-5d4f-4e7b-8a3c-8d4502765e11'  
 -H 'Authorization: Bearer wHFmHR*****kD6wHg'  
 --insecure 
@@ -2677,48 +2739,42 @@ curl '{host}/api/v1/developer/access_policies'
 --insecure 
 ```
 
-Response Sample   
+# Response Sample
 ```json
 {
 "code": "SUCCESS",
-"data": [ \{
+"data": [ {
 	"id": "73f15cab-c725-4a76-a419-a4026d131e96",
 	"name": "Default Admin Policy",
-	"resources": [ \{
+	"resources": [ {
 		"id": "d5573467-d6b3-4e8f-8e48-8a322b91664a",
 		"type": "door_group"
-	\},
 		"id": "5c496423-6d25-4e4f-8cdf-95ad5135188a",
 		"type": "door_group"
-	\},
 	"schedule_id": "73facd6c-839e-4521-a4f4-c07e1d44e748"
-\},
-\{
+},
+{
 	"id": "b96948a4-fed9-40a3-9c4a-e473822a3db7",
 	"name": "Default UNVR Policy",
-	"resources": [ \{
+	"resources": [ {
 		"id": "d5573467-d6b3-4e8f-8e48-8a322b91664a",
 		"type": "door_group"
-	\},
 		"id": "6ff875d2-af87-470b-9cb5-774c6596afc8",
 		"type": "door"
-	\},
 	"schedule_id": "58c0f89b-f35c-4d2c-af7b-8b8918df2c31"
-\},
-\{
+},
+{
 	"id": "edbc80df-3698-49fd-8b53-f1867f104947",
 	"name": "TEST",
-	"resources": [ \{
+	"resources": [ {
 		"id": "d5573467-d6b3-4e8f-8e48-8a322b91664a",
 		"type": "door_group"
-	\},
 		"id": "5c496423-6d25-4e4f-8cdf-95ad5135188a",
 		"type": "door_group"
-	\},
 		"id": "6ff875d2-af87-470b-9cb5-774c6596afc8",
 		"type": "door"
-	\},
-\], 
+	},
+], 
 "schedule_id": "73facd6c-839e-4521-a4f4-c07e1d44e748" } ], "msg": "success" } 
 ```
 
@@ -2754,7 +2810,7 @@ Method: POST
 
 The request body should be a JSON object containing the following fields:
 
-```shell
+```bash
 curl '{host}/api/v1/developer/access_policies/holiday_groups'  
 -H 'Authorization: Bearer wHFmHR*****kD6wHg'  
 -H 'accept: application/json' 
@@ -2770,14 +2826,13 @@ curl '{host}/api/v1/developer/access_policies/holiday_groups'
 
 # Response Sample
 
-```txt
+```json
 {
     "code": "SUCCESS",
     "data": {
         "description": "", "holidays": [
             {
             "description": "", "end_time": "2023-08-26 00:00:00z",
-            },
             "id": "8900533d-03be-4f84-832d-54ff59905759",
             "name": "Holiday Name 1",
             "repeat": false,
@@ -2795,7 +2850,6 @@ curl '{host}/api/v1/developer/access_policies/holiday_groups'
     "is_default": false,
     "name": "Holiday Group-169286791557142",
     "template_name": "",
-},
 "msg": "success" 
 ```
 
@@ -2807,15 +2861,15 @@ Request URL: /api/v1/developer/access_policies/holiday_groups/:id
 Permission Key: edit:policy   
 Method: PUT
 
-Request Header   
+# Request Header
 
 <table><tr><td>Parameter</td><td>Required</td><td>Type</td><td>Description</td></tr><tr><td>Authorization</td><td>T</td><td>String</td><td>Token required for authentication and access control.</td></tr></table>
 
-Request Path   
+# Request Path
 
 <table><tr><td>Parameter</td><td>Required</td><td>Type</td><td>Description</td><td>Example</td><td></td></tr><tr><td>Id</td><td>T</td><td>String</td><td>Identity ID of the holiday group.</td><td></td><td></td></tr></table>
 
-Request Body   
+# Request Body
 
 <table><tr><td>Parameter</td><td>Required</td><td>Type</td><td>Description</td><td>Example</td></tr><tr><td>name</td><td>T</td><td>String</td><td>Name of the holiday group.</td><td></td></tr><tr><td>description</td><td>F</td><td>String</td><td>Description of the holiday group.</td><td></td></tr><tr><td>holidays</td><td>F</td><td>Array[Object]</td><td>Show a list of the holidays within the holiday group. Omit this parameter if it doesn&#x27;t need to be updated.</td><td></td></tr><tr><td>holidays[].id</td><td>F</td><td>String</td><td>Identity ID of the holiday. Omit this parameter if it doesn&#x27;t need to be updated.</td><td>Get it from the API /api/v1/developer/access_policies/holiday_groups</td></tr><tr><td>holidays[].description</td><td>F</td><td>String</td><td>Description of the holiday.</td><td></td></tr><tr><td>holidays[].name</td><td>F</td><td>String</td><td>Name of the holiday.</td><td></td></tr><tr><td>holidays[].repeat</td><td>F</td><td>Boolean</td><td>Indicate whether the holiday repeats annually.</td><td></td></tr><tr><td>holidays[].start_time</td><td>F</td><td>String</td><td>Start time of the holiday, provided in UTC format according to RFC3339.</td><td>2023-08-25T00:00:00Z</td></tr><tr><td>holidays[].end_time</td><td>F</td><td>String</td><td>End time of the holiday, provided in UTC format according to RFC3339.</td><td>2023-08-26T00:00:00Z</td></tr></table>
 
@@ -2839,7 +2893,6 @@ curl -XPUT '{host}/api/v1/developer/access_policies/holiday_groups/7be7a7a0-818f
     "holidays": [
         {
         "name": "Holiday Name 1",
-        },
         "description": "", "repeat": false,
         "start_time": "2023-08-25T00:00:00z",
         "end_time": "2023-08-26T00:00:00z"
@@ -2884,7 +2937,6 @@ curl -XPUT '{host}/api/v1/developer/access_policies/holiday_groups/7be7a7a0-818f
         "is_default": false,
         "name": "Holiday Group-169286791557142",
         "template_name": ""
-    },
     "msg": "success"
 }
 ```
@@ -2897,11 +2949,11 @@ Request URL: /api/v1/developer/access_policies/holiday_groups/:id
 Permission Key: edit:policy   
 Method: DELETE
 
-Request Header   
+# Request Header
 
 <table><tr><td>Parameter</td><td>Required</td><td>Type</td><td>Description</td></tr><tr><td>Authorization</td><td>T</td><td>String</td><td>Token required for authentication and access control.</td></tr></table>
 
-Request Path   
+# Request Path
 
 <table><tr><td>Parameter</td><td>Required</td><td>Type</td><td>Description</td><td>Related API</td></tr><tr><td>id</td><td>T</td><td>String</td><td>Identity ID of the holiday group.</td><td>/api/v1/developer/access_policies/holiday_groups</td></tr></table>
 
@@ -2949,7 +3001,7 @@ Method: GET
 
 The request body should be a JSON object containing the following fields:
 
-```shell
+```bash
 curl -XGET '{host}/api/v1/developer/access_policies/holiday_groups/7be7a7a0-818f-4f76-98c3-1c38957f4dca'  
 -H 'Authorization: Bearer wHFmHR*****KD6wHg'  
 -H 'accept: application/json'  
@@ -2966,7 +3018,6 @@ curl -XGET '{host}/api/v1/developer/access_policies/holiday_groups/7be7a7a0-818f
         "description": "", "holidays": [
             {
             "description": "", "end_time": "2023-08-26 00:00:00z",
-            },
         "id": "8900533d-03be-4f84-832d-54ff59905759",
         "name": "Holiday Name 1",
         "repeat": false,
@@ -2983,7 +3034,6 @@ curl -XGET '{host}/api/v1/developer/access_policies/holiday_groups/7be7a7a0-818f
     "is_default": false,
     "name": "Holiday Group-169286791557142",
     "template_name": "",
-    },
     "msg": "success"
 } 
 ```
@@ -3058,11 +3108,11 @@ Request URL: /api/v1/developer/access_policies/schedules
 Permission Key: edit:policy   
 Method: POST
 
-Request Header   
+# Request Header
 
 <table><tr><td>Parameter</td><td>Required</td><td>Type</td><td>Description</td></tr><tr><td>Authorization</td><td>T</td><td>String</td><td>Token required for authentication and access control.</td></tr></table>
 
-Request Body   
+# Request Body
 
 <table><tr><td>Parameter</td><td>Required</td><td>Type</td><td>Description</td><td>Example</td></tr><tr><td>name</td><td>T</td><td>String</td><td>The name of the schedule. This needs to be globally unique.</td><td>schedule-1789067565323</td></tr><tr><td>week_schedule</td><td>T</td><td>Object</td><td>The customizable scheduling strategy for each day from Sunday to Saturday. If not specified, it means access is allowed every day.</td><td></td></tr><tr><td>week_schedule monday</td><td>T</td><td>Array[Object]</td><td>Specify the daily access time period from Sunday to Saturday.</td><td></td></tr><tr><td>week_schedule monday[0].start_time</td><td>T</td><td>String</td><td>Start time of the access time period.</td><td>00:00:00</td></tr><tr><td>week_schedule monday[0].end_time</td><td>T</td><td>String</td><td>End time of the access time period.</td><td>23:59:59</td></tr><tr><td>holiday_group_id</td><td>F</td><td>String</td><td>Identity ID of the holiday group. The default is No holidays system group.</td><td>75660081-431b-4dbe-9b98-e0257877118e</td></tr><tr><td>holiday_schedule</td><td>F</td><td>Array[Object]</td><td>Specify the accessible period during holidays.</td><td></td></tr><tr><td>holiday_schedule[].start_time</td><td>F</td><td>String</td><td>Start time of the access time period.</td><td>03:15:00</td></tr><tr><td>holiday_schedule[].end_time</td><td>F</td><td>String</td><td>End time of the access time period.</td><td>11:45:59</td></tr></table>
 
@@ -3077,33 +3127,39 @@ Request Body
 The request body should be a JSON object containing the following fields:
 
 ```bash
-curl '{host}/api/v1/developer/access_policies/schedules' -H 'Authorization: Bearer wHFmHR*****kD6wHg' -H 'accept: application/json' -H 'content-type: application/json' --data-raw
-'[
-    {
+curl '{host}/api/v1/developer/access_policies/schedules' \
+-H 'Authorization: Bearer wHFmHR*****kD6wHg' \
+-H 'accept: application/json' \
+-H 'content-type: application/json' \
+--data-raw '{
     "name": "schedule-1688977094169",
-    },
     "week_schedule": {
-        "sunday": [], "monday": [
-            {
-            "start_time": "10:00:00",
-            },
-            "end_time": "17:00:59"
+        "sunday": [],
+        "monday": [
+            { "start_time": "10:00:00", "end_time": "17:00:59" }
         ],
-    ],
-    "tuesday": [
-        {
-        "start_time": "10:00:00",
-        },
-        "end_time": "17:00:59"
-    ],
-] 
+        "tuesday": [
+            { "start_time": "10:00:00", "end_time": "17:00:59" }
+        ],
+        "wednesday": [
+            { "start_time": "10:00:00", "end_time": "17:00:59" }
+        ],
+        "thursday": [],
+        "friday": [
+            { "start_time": "10:00:00", "end_time": "17:00:59" }
+        ],
+        "saturday": []
+    },
+    "holiday_group_id": "75660081-431b-4dbe-9b98-e0257877118e",
+    "holiday_schedule": [
+        { "start_time": "03:15:00", "end_time": "11:45:59" },
+        { "start_time": "15:00:00", "end_time": "19:00:59" }
+    ]
+}' \
+--insecure
 ```
 
-```jsonl
-"wednesday": [ { "start_time": "10:00:00", "end_time": "17:00:59" } ], "thursday": [], "friday": [ { "start_time": "10:00:00", "end_time": "17:00:59" } ], "saturday": [] }, "holiday_group_id": "75660081-431b-4dbe-9b98-e0257877118e", "holiday_schedule": [ { "start_time": "03:15:00", "end_time": "11:45:59" }, { "start_time": "15:00:00", "end_time": "19:00:59" } ] } 
-```
-
-Response Sample   
+# Response Sample
 ```json
 {
     "code": "SUCCESS",
@@ -3114,21 +3170,53 @@ Response Sample
         "type": "access",
         "weekly": {
             "friday": [
-                {
-                "end_time": "17:00:59",
-                },
-                "start_time": "10:00:00"
+                { "start_time": "10:00:00", "end_time": "17:00:59" }
             ],
-        ],
-        "monday": [
-            {
-            "end_time": "17:00:59",
-            },
-            "start_time": "10:00:00"
-        ],
-        "saturday": [], "sunday": [], 
-"thursday": [], "tuesday": [ { "end_time": "17:00:59", "start_time": "10:00:00" } ], "wednesday": [ { "end_time": "17:00:59", "start_time": "10:00:00" } ] }, "holiday_group_id": "75660081-431b-4dbe-9b98-e0257877118e", "holiday_group": { "description": "", "holidays": [ { "description": "", "end_time": "2023-08-26 00:00:00z", "id": "d51777c4-9559-45aa-8e23-434995d9d2a1", "is_template": false, "name": "Holiday Name 1", "repeat": false, "start_time": "2023-08-25 00:00:00z" }, { "description": "", "end_time": "2023-08-27 00:00:00z", "id": "d23a4226-765f-4967-b84f-6dfd53f33c89", "is_template": false, "name": "Holiday Name 2", "repeat": false, "start_time": "2023-08-26 00:00:00z" } ], "id": "75660081-431b-4dbe-9b98-e0257877118e", "is_default": false, "name": "Holiday Group-1692867915571423", "template_name": "" }, "holiday_schedule": [ { "start_time": "03:15:00", "end_time": "11:45:59" } , { "start_time": "15:00:00", "end_time": "19:00:59" } ] }, 
-"msg": "success" } 
+            "monday": [
+                { "start_time": "10:00:00", "end_time": "17:00:59" }
+            ],
+            "saturday": [],
+            "sunday": [],
+            "thursday": [],
+            "tuesday": [
+                { "start_time": "10:00:00", "end_time": "17:00:59" }
+            ],
+            "wednesday": [
+                { "start_time": "10:00:00", "end_time": "17:00:59" }
+            ]
+        "holiday_group_id": "75660081-431b-4dbe-9b98-e0257877118e",
+        "holiday_group": {
+            "description": "",
+            "holidays": [
+                {
+                    "description": "",
+                    "end_time": "2023-08-26 00:00:00z",
+                    "id": "d51777c4-9559-45aa-8e23-434995d9d2a1",
+                    "is_template": false,
+                    "name": "Holiday Name 1",
+                    "repeat": false,
+                    "start_time": "2023-08-25 00:00:00z"
+                },
+                {
+                    "description": "",
+                    "end_time": "2023-08-27 00:00:00z",
+                    "id": "d23a4226-765f-4967-b84f-6dfd53f33c89",
+                    "is_template": false,
+                    "name": "Holiday Name 2",
+                    "repeat": false,
+                    "start_time": "2023-08-26 00:00:00z"
+                }
+            ],
+            "id": "75660081-431b-4dbe-9b98-e0257877118e",
+            "is_default": false,
+            "name": "Holiday Group-1692867915571423",
+            "template_name": ""
+        "holiday_schedule": [
+            { "start_time": "03:15:00", "end_time": "11:45:59" },
+            { "start_time": "15:00:00", "end_time": "19:00:59" }
+        ]
+    "msg": "success"
+}
 ```
 
 # 5.15 Update Schedule
@@ -3179,28 +3267,24 @@ curl -XPUT '{host}/api/v1/developer/access_policies/schedules/1d31b648-b8ff-4bd1
         ]  
     ],  
     "tuesday": [  
-        {
-        "start_time": "10:00:00",  
-        },
-        "end_time": "17:00:59"  
-    ],  
-    "wednesday": [  
-        {
-        "start_time": "10:00:00",  
-        },
-        "end_time": "17:00:59"  
-    ],  
-    "thursday": [  
-        {
-        "start_time": "10:00:00",  
-        },
-        "end_time": "17:00:59"  
-    ]  
-}, 
-```
-
-```python
-"start_time": "10:00:00", "end_time": "17:01:59" } ], "friday": [ { "start_time": "10:00:00", "end_time": "17:00:59" } ], "saturday": [] }, "holiday_schedule": [ { "start_time": "03:15:00", "end_time": "11:45:59" } ] } ' --insecure 
+            { "start_time": "10:00:00", "end_time": "17:00:59" }
+        ],
+        "wednesday": [
+            { "start_time": "10:00:00", "end_time": "17:00:59" }
+        ],
+        "thursday": [
+            { "start_time": "10:00:00", "end_time": "17:00:59" }
+        ],
+        "friday": [
+            { "start_time": "10:00:00", "end_time": "17:00:59" }
+        ],
+        "saturday": []
+    },
+    "holiday_schedule": [
+        { "start_time": "03:15:00", "end_time": "11:45:59" }
+    ]
+}' \
+--insecure
 ```
 
 # Response Sample
@@ -3386,15 +3470,20 @@ curl '{host}/api/v1/developer/credentials/nfc_cards sessions'
 -H 'Authorization: Bearer wHFmHR*****kD6wHg'  
 -H 'accept: application/json'  
 -H 'content-type: application/json'  
---data-raw '{device_id': "0418d6a2bb7a", "reset_ua_card": false}'  
+--data-raw '{"device_id": "0418d6a2bb7a", "reset_ua_card": false}'  
 --insecure 
 ```
 
 # Response Sample
 
-```txt
-{ "code": "SUCCESS", "msg": "success", "data": { "session_id": "e8a97c52-6676-4c48-8589-bd518afc4094" }   
-} 
+```json
+{
+    "code": "SUCCESS",
+    "msg": "success",
+    "data": {
+        "session_id": "e8a97c52-6676-4c48-8589-bd518afc4094"
+    }
+}
 ```
 
 # 6.3 Fetch NFC Card Enrollment Status
@@ -3417,11 +3506,11 @@ Method: GET
 
 <table><tr><td>Parameter</td><td>Required</td><td>Type</td><td>Description</td><td>Related API</td><td>Purpose</td></tr><tr><td>token</td><td>T</td><td>String</td><td>Unique NFC card token.</td><td>/api/v1/developer/users; /api/v1/developer/visitors</td><td>The generated card token is used to bind to a user or visitor.</td></tr><tr><td>card_id</td><td>T</td><td>String</td><td>Display ID of the NFC card.</td><td></td><td></td></tr></table>
 
-```batch
+```bash
 GET /api/v1/developer/credentials/nfc_cards/sections/e8a97c52-6676-4c48-8589-bd518afc4094 
 ```
 
-Response Sample   
+# Response Sample
 ```json
 {
     "code": "SUCCESS",
@@ -3441,18 +3530,18 @@ Request URL: /api/v1/developer/credentials/nfc_cards/sessions/:id
 Permission Key: edit:credential   
 Method: DELETE
 
-Request Header   
+# Request Header
 
 <table><tr><td>Parameter</td><td>Required</td><td>Type</td><td>Description</td></tr><tr><td>Authorization</td><td>T</td><td>String</td><td>Token required for authentication and access control.</td></tr></table>
 
-Request Body   
+# Request Body
 
 <table><tr><td>Parameter</td><td>Required</td><td>Type</td><td>Description</td><td>Related API</td><td>How to Get It?</td></tr><tr><td>id</td><td>T</td><td>String</td><td>The ID of the session #6.2.</td><td>/api/v1/developer/users; /api/v1/developer/visitors</td><td>Get session id from the API #6.2</td></tr></table>
 
 # Request Sample
 
-```sql
-DELETE /api/v1/developer/credentials/nfc_cards sessions/e8a97c52-6676-4c48-8589-bd518afc4094 
+```
+DELETE /api/v1/developer/credentials/nfc_cards/sessions/e8a97c52-6676-4c48-8589-bd518afc4094
 ```
 
 ```json
@@ -3506,10 +3595,8 @@ Schemas: NFC Card Schemas
             "id": "e0051e08-c4d5-43db-87c8-a9b19cb66513",
             "last_name": "L",
             "name": "H L",
-       },
         "user_id": "e0051e08-c4d5-43db-87c8-a9b19cb66513",
         "user_type": "USER"
-   },
     "msg": "success"
 } 
 ```
@@ -3554,18 +3641,49 @@ Schemas: NFC Card Schemas
 ```json
 {
     "code": "SUCCESS",
-    "data": [ 
+    "data": [
         {
-        "alias": "", 
+            "alias": "",
+            "card_type": "ua_card",
+            "display_id": "100004",
+            "note": "100004",
+            "status": "assigned",
+            "token": "9e24cdfafebeb63e58fd02c5f67732b478948e5793d31124239597d9a86b30dc4",
+            "user": {
+                "avatar": "",
+                "first_name": "H",
+                "id": "e0051e08-c4d5-43db-87c8-a9b19cb66513",
+                "last_name": "L",
+                "name": "H L"
+            },
+            "user_id": "e0051e08-c4d5-43db-87c8-a9b19cb66513",
+            "user_type": "USER"
         },
-        "card_type": "ua_card",
-        "display_id": "100004",
-        "note": "100004",
-        "status": "assigned",
-        "token": "9e24cdfafebeb63e58fd02c5f67732b478948e5793d31124239597d9a86b30dc4",
+        {
+            "alias": "F77D69B03",
+            "card_type": "ua_card",
+            "display_id": "100005",
+            "note": "100005",
+            "status": "assigned",
+            "token": "f77d69b08eaf5eb5d647ac1a0a73580f1b27494b345f40f54fa022a8741fa15c",
+            "user": {
+                "avatar": "",
+                "first_name": "H2",
+                "id": "34dc90a7-409f-4bf8-a5a8-1c59535a21b9",
+                "last_name": "L",
+                "name": "H2 L"
+            },
+            "user_id": "34dc90a7-409f-4bf8-a5a8-1c59535a21b9",
+            "user_type": "VISITOR"
+        }
+    ],
+    "msg": "success",
+    "pagination": {
+        "page_num": 1,
+        "page_size": 2,
+        "total": 2
     }
-} 
-"user": { "avatar": "", "first_name": "H", "id": "e0051e08-c4d5-43db-87c8-a9b19cb66513", "last_name": "L", "name": "H L", }, "user_id": "e0051e08-c4d5-43db-87c8-a9b19cb66513", "user_type": "USER" }, { "alias": "F77D69B03", "card_type": "ua_card", "display_id": "100005", "note": "100005", "status": "assigned", "token": "f77d69b08eaf5eb5d647ac1a0a73580f1b27494b345f40f54fa022a8741fa15c", "user": { "avatar": "", "first_name": "H2", "id": "34dc90a7-409f-4bf8-a5a8-1c59535a21b9", "last_name": "L", "name": "H2 L", }, "user_id": "34dc90a7-409f-4bf8-a5a8-1c59535a21b9", "user_type": "VISITOR" }, ], "msg": "succ", "pageation": { "page_num": 1, "page_size": 2, "total": 2 } } 
+}
 ```
 
 # Request Sample
@@ -3573,11 +3691,11 @@ Schemas: NFC Card Schemas
 The request body should be a JSON object containing the following fields:
 
 ```bash
-curl -XGET '{host}'/api/v1/developer/credentials/nfc_cards/tokens?page_num=1&page_size=12'  
--H 'Authorization: Bearer wHFmHR*****kD6wHg'  
--H 'accept: application/json'  
--H 'content-type: application/json'  
---insecure 
+curl -XGET '{host}/api/v1/developer/credentials/nfc_cards/tokens?page_num=1&page_size=12' \
+-H 'Authorization: Bearer wHFmHR*****kD6wHg' \
+-H 'accept: application/json' \
+-H 'content-type: application/json' \
+--insecure
 ```
 
 # 6.9 Delete NFC Card
@@ -3589,15 +3707,15 @@ Permission Key: edit:credential
 Method: DELETE   
 UniFi Access Requirement: Version 1.22.16 or later
 
-Request Header   
+# Request Header
 
 <table><tr><td>Parameter</td><td>Required</td><td>Type</td><td>Description</td></tr><tr><td>Authorization</td><td>T</td><td>String</td><td>Token required for authentication and access control.</td></tr></table>
 
-Request Path   
+# Request Path
 
 <table><tr><td>Parameter</td><td>Required</td><td>Type</td><td>Description</td><td>Example</td><td>How to Get It?</td></tr><tr><td>token</td><td>T</td><td>String</td><td>Token of the NFC card.</td><td>821f90b262e90c5c0fbcdf3d6d2f3b94cc015d6e8104ab4fb96e4c8b8e90cb7</td><td>Get it from the API #6.3 #6.8</td></tr></table>
 
-Response Sample   
+# Response Sample
 ```json
 { "code": "SUCCESS", "data": "success", "msg": "success" } 
 ```
@@ -3648,17 +3766,16 @@ UniFi Access Requirement: Version 3.1.30 or later
 
 The request body should be a JSON object containing the following fields:
 
-```diff
-curl -XPUT
-'{host}/api/v1/developer/credentials/nfc_cards/tokens/f77d69b08eaf5eb5d647ac1a0a73580f1b27
-494b345f40f54fa022a8741fa15c'
--H 'Authorization: Bearer wHFmHR*****KD6wHg'
--H 'accept: application/json'
--H 'content-type: application/json'
---data {}
-"alias": "New Alias"
-}'
---insecure 
+```bash
+curl -XPUT \
+'{host}/api/v1/developer/credentials/nfc_cards/tokens/f77d69b08eaf5eb5d647ac1a0a73580f1b27494b345f40f54fa022a8741fa15c' \
+-H 'Authorization: Bearer wHFmHR*****kD6wHg' \
+-H 'accept: application/json' \
+-H 'content-type: application/json' \
+--data '{
+    "alias": "New Alias"
+}' \
+--insecure
 ```
 
 # 6.11 Touch Pass Schemas
@@ -3697,7 +3814,6 @@ Schemas: Touch Pass Schemas
     "data": [ 
         {
         "bundles": [], 
-        },
         "card_id": "F8AD-3A41-787D-4D30",
         "card_name": "", 
         "id": "31fa3c4e-4a42-4021-a3f9-6ae08610cf32",
@@ -3707,7 +3823,7 @@ Schemas: Touch Pass Schemas
         "user_email": "example@ui.com",
         "user_id": "472cabd2-0634-4e85-9e8d-5a73b500516a",
         "user_name": "Example Name",
-        "user.status": "ACTIVE"
+        "user_status": "ACTIVE"
     ],
     {
         "bundles": [], 
@@ -3726,7 +3842,7 @@ Schemas: Touch Pass Schemas
 
 # Request Sample
 
-```shell
+```bash
 curl --location --request GET
 'https://192.168.1.1:12445/api/v1/developer/credentials/touch_passes?
 page_num=1&page_size=10&status=PENDING'
@@ -3765,7 +3881,6 @@ Schemas: Touch Pass Schemas
     "data": [ 
         {
         "bundles": [], 
-        },
         "card_id": "057B-D703-0C6D-4AC9",
         "card_name": "", 
         "id": "0e297aea-2b66-434c-a3bc-4f26314ed509",
@@ -3783,7 +3898,7 @@ Schemas: Touch Pass Schemas
 
 # Request Sample
 
-```shell
+```bash
 curl --location --request GET
 'https://192.168.1.1:12445/api/v1/developer/credentials/touch_passes/search?condition=057B'
 \--header 'Authorization: Bearer wHFmHR*****kD6wHg' \
@@ -3849,7 +3964,7 @@ UniFi Access Requirement: Version 3.2.20 or later
 
 The request body should be a JSON object containing the following fields:
 
-```shell
+```bash
 curl --location --request GET
 'https://192.168.1.1:12445/api/v1/developer/credentials/touch_passes/assignable' \
 --header 'Authorization: Bearer wHFmHR*****kD6wHg' \
@@ -3902,7 +4017,6 @@ Note: If user_status is UNLINK , it indicates the associated user is no longer l
         "user_id": "1f57be2b-f721-4ea3-b1d1-626815b468f0",
         "user_name": "Test Name",
         "user_status": "ACTIVE"
-   },
     "msg": "success"
 } 
 ```
@@ -3911,32 +4025,34 @@ Note: If user_status is UNLINK , it indicates the associated user is no longer l
 
 # Update Card Name & Update Touch Pass Status
 
-```shell
-curl --location --request PUT  
-'https://192.168.1.1:12445/api/v1/developer/credentials/touch_passes/1d64d2b8-a8b0-4c73-9d49-4922ad0cab9'  
---header 'Authorization: Bearer wHFmHR*****kD6wHg'  
---header 'Content-Type: application/json' 
+**Update Card Name & Status**
+
+```bash
+curl --location --request PUT \
+'https://192.168.1.1:12445/api/v1/developer/credentials/touch_passes/1d64d2b8-a8b0-4c73-9d49-4922ad0cab9' \
+--header 'Authorization: Bearer wHFmHR*****kD6wHg' \
+--header 'Content-Type: application/json' \
+--data '{
+    "card_name": "test",
+    "status": "SUSPENDED"
+}'
 ```
 
-```lua
---data{' "card_name": "test", "status": "SUSPENDED", } 
-```
+**Unbundle Devices**
 
-Unbundled Devices   
-Request Header   
-Request Path   
-```shell
-curl --location --request PUT
+```bash
+curl --location --request PUT \
 'https://192.168.1.1:12445/api/v1/developer/credentials/touch_passes/1d64d2b8-a8b0-4c73-9d49-4922ad0cacb9' \
 --header 'Authorization: Bearer wHFmHR*****kD6wHg' \
 --header 'Content-Type: application/json' \
---data \
-"bundles": [
-{
-    "bundle_id": "DAPLODe22212d0-a70e-4649-ae19-c0e745d65335",
-    "bundle_status": "DISABLED"
-}
-] 
+--data '{
+    "bundles": [
+        {
+            "bundle_id": "DAPLODe22212d0-a70e-4649-ae19-c0e745d65335",
+            "bundle_status": "DISABLED"
+        }
+    ]
+}'
 ```
 
 # 6.16 Fetch Touch Pass Details
@@ -3953,40 +4069,44 @@ Note: If user_status is UNLINK , it indicates the associated user is no longer l
 
 <table><tr><td>Parameter</td><td>Required</td><td>Type</td><td>Description</td><td>Example</td><td>How to Get It?</td></tr><tr><td>id</td><td>T</td><td>String</td><td>ID of the Touch Pass.</td><td>c83b69ff-1992-4e7f-9287-1e6a161adeea</td><td>Get it from API /api/v1/developer/credentials/touch_passes/search</td></tr></table>
 
-Response Sample   
-```txt
+# Response Sample
+```json
 {
 "code": "SUCCESS",
-"data": \{
-	"activated_at": \{\},
-	"bundles": [ \{
-		"bundle_id": "caf6bd5b-6b8d-409a-b500-977a0f02b181",
-		"bundle_status": "ACTIVE",
-		"device_id": "device-id-1",
-		"device_name": "Test Android",
-		"device_type": 20,
-		"source": "google"
-	\},
+"data": {
+	"activated_at": {},
+	"bundles": [
+		{
+			"bundle_id": "caf6bd5b-6b8d-409a-b500-977a0f02b181",
+			"bundle_status": "ACTIVE",
+			"device_id": "device-id-1",
+			"device_name": "Test Android",
+			"device_type": 20,
+			"source": "google"
+		}
+	],
 	"card_id": "70A3-2FAD-181B-4CC9",
-	"card_name": "", "expired_at": \{\},
+	"card_name": "",
+	"expired_at": {},
 	"id": "c83b69ff-1992-4e7f-9287-1e6a161adeea",
 	"last_activity": "2025-04-09T17:49:20+08:00",
 	"status": "ACTIVE",
-	"userlest": "", "user_email": "example@ui.com",
+	"user_avatar": "",
+	"user_email": "example@ui.com",
 	"user_id": "3e763e5d-6804-437d-ae8d-3fee74119b80",
 	"user_name": "Example Name",
 	"user_status": "ACTIVE"
-\},
-"msg": "success" 
+"msg": "success"
+}
 ```
 
 # Request Sample
 
-```shell
-curl --location --request GET
+```bash
+curl --location --request GET \
 'https://192.168.1.1:12445/api/v1/developer/credentials/touch_passes/c83b69ff-1992-4e7f-9287-1e6a161adeea' \
 --header 'Authorization: Bearer wHFmHR*****kD6wHg' \
---header 'Content-Type: application/json' 
+--header 'Content-Type: application/json'
 ```
 
 # 6.17 Purchase Touch Passes
@@ -3999,15 +4119,15 @@ Permission Key: edit:credential
 Method: POST   
 UniFi Access Requirement: Version 3.2.20 or later
 
-Request Header   
+# Request Header
 
 <table><tr><td>Parameter</td><td>Required</td><td>Type</td><td>Description</td></tr><tr><td>Authorization</td><td>T</td><td>String</td><td>Token required for authentication and access control.</td></tr></table>
 
-Request Body   
+# Request Body
 
 <table><tr><td>Parameter</td><td>Required</td><td>Type</td><td>Description</td><td>How to Get It?</td></tr><tr><td>count</td><td>T</td><td>Int</td><td>Total number of Touch Passes to be purchased.</td><td>Manual input</td></tr></table>
 
-Response Body   
+# Response Body
 
 <table><tr><td>Parameter</td><td>Type</td><td>Description</td></tr><tr><td>id</td><td>String</td><td>ID of the newly purchased Touch Pass.</td></tr><tr><td>card_id</td><td>String</td><td>Card ID assigned to the pass.</td></tr><tr><td>card_name</td><td>String</td><td>Card alias or name. Initially empty.</td></tr><tr><td>status</td><td>String</td><td>Initial Touch Pass status after purchase (INACTIVE).</td></tr><tr><td>last_activity</td><td>String</td><td>Timestamp of the last activity or usage.</td></tr><tr><td>bundles</td><td>Array</td><td>Empty array by default.</td></tr><tr><td>user_id</td><td>String</td><td>Empty string; Touch Pass is not yet assigned to any user.</td></tr><tr><td>user_name</td><td>String</td><td>Empty string; Touch Pass is not yet assigned to any user.</td></tr><tr><td>user_email</td><td>String</td><td>Empty string; Touch Pass is not yet assigned to any user.</td></tr><tr><td>user_avatar</td><td>String</td><td>Empty string.</td></tr><tr><td>user_status</td><td>String</td><td>Empty string.</td></tr></table>
 
@@ -4017,11 +4137,19 @@ Response Body
 {
     "code": "SUCCESS",
     "data": {
-        "bundles": [], 
+        "bundles": [],
         "card_id": "F8AD-3A41-787D-4D30",
-    }
-} 
-"card_name": "", "id": "31fa3c4e-4a42-4021-a3f9-6ae08610cf32", "last_activity": "2025-04-03T10:28:42+01:00", "status": "INACTIVE", "user_avatar": "", "user_email": "", "user_id": "", "user_name": "", "user_status": "", }, "msg": "success" } 
+        "card_name": "",
+        "id": "31fa3c4e-4a42-4021-a3f9-6ae08610cf32",
+        "last_activity": "2025-04-03T10:28:42+01:00",
+        "status": "INACTIVE",
+        "user_avatar": "",
+        "user_email": "",
+        "user_id": "",
+        "user_name": "",
+        "user_status": ""
+    "msg": "success"
+}
 ```
 
 # Request Sample
@@ -4052,7 +4180,7 @@ UniFi Access Requirement: Version 3.3.10 or later
 
 # Request Sample: Shell/cURL
 
-```shell
+```bash
 curl --location --request GET
 'https://192.168.1.1:12445/api/v1/developer/credentials/qr_codes/download/15a90692-6f3b-4e1c-9886-bcd15e9c3f2d' \
 --header 'Authorization: Bearer s4KgshBaoXTwXwFAHLPwDw' \
@@ -4090,7 +4218,7 @@ NOTE: 068E2836 is an example NFC ID of a third-party card. NFC IDs are represent
 
 # Request Sample: Shell/cURL
 
-```shell
+```bash
 curl --location 'https://192.168.1.1:12445/api/v1/developer/credentials/nfc_cards/import' \
 --header 'Authorization: Bearer NvrB7qunKOFi/HcIjUMF0w' \
 --form 'file=@"/Documents/ufcs.csv'" 
@@ -4146,8 +4274,8 @@ Method: GET
 
 The request body should be a JSON object containing the following fields:
 
-```shell
-curl -X GET '{host}/{api/v1/developer/door_groups/topology'  
+```bash
+curl -X GET '{host}/api/v1/developer/door_groups/topology'  
 -H 'Authorization: Bearer wHFmHR*****kD6wHg'  
 -H 'accept: application/json'  
 -H 'content-type: application/json'  
@@ -4157,37 +4285,51 @@ curl -X GET '{host}/{api/v1/developer/door_groups/topology'
 # Response Sample
 
 ```json
-{ "code": "SUCCESS", "data": [ { "id": "d5573467-d6b3-4e8f-8e48-8a322b91664a", "name": "All Doors", "resource_topologies": [ { "id": "9bee6e0e-108d-4c52-9107-76f2c7dea4f1", "name": "Main Floor", "resources": [ { "id": "6ff875d2-af87-470b-9cb5-774c6596afc8", "name": "Door 3855", "type": "door", "is_bind_hub": true } 
-```
-
-```python
-},
-"type": "floor"
-}
-},
-"type": "building"
-},
 {
-    "id": "5c496423-6d25-4e4f-8cdf-95ad5135188a",
-    "name": "customized group",
-    "resource_topologies": [
+    "code": "SUCCESS",
+    "data": [
         {
-        "id": "9bee6e0e-108d-4c52-9107-76f2c7dea4f1",
+            "id": "d5573467-d6b3-4e8f-8e48-8a322b91664a",
+            "name": "All Doors",
+            "resource_topologies": [
+                {
+                    "id": "9bee6e0e-108d-4c52-9107-76f2c7dea4f1",
+                    "name": "Main Floor",
+                    "resources": [
+                        {
+                            "id": "6ff875d2-af87-470b-9cb5-774c6596afc8",
+                            "name": "Door 3855",
+                            "type": "door",
+                            "is_bind_hub": true
+                        }
+                    ],
+                    "type": "floor"
+                }
+            ],
+            "type": "building"
         },
-        "name": "Main Floor",
-        "resources": [
-            {
-            "id": "6ff875d2-af87-470b-9cb5-774c6596afc8",
-            },
-            "name": "Door 3855",
-            "type": "door",
-            "is_bind_hub": true
-        ]
+        {
+            "id": "5c496423-6d25-4e4f-8cdf-95ad5135188a",
+            "name": "customized group",
+            "resource_topologies": [
+                {
+                    "id": "9bee6e0e-108d-4c52-9107-76f2c7dea4f1",
+                    "name": "Main Floor",
+                    "resources": [
+                        {
+                            "id": "6ff875d2-af87-470b-9cb5-774c6596afc8",
+                            "name": "Door 3855",
+                            "type": "door",
+                            "is_bind_hub": true
+                        }
+                    ],
+                    "type": "floor"
+                }
+            ]
+        }
     ],
-    "type": "floor"
+    "msg": "success"
 }
-},
-"msg": "success" 
 ```
 
 # 7.2 Create Door Group
@@ -4238,7 +4380,6 @@ curl '{host}/api/v1/developer/door_groups'
             }
         ],
         "type": "access"
-    },
     "msg": "success"
 }
 ```
@@ -4314,7 +4455,7 @@ Method: PUT
 
 The request body should be a JSON object containing the following fields:
 
-```shell
+```bash
 curl -XPUT '{host}/api/v1/developer/door_groups/0140fa3d-8973-4305-a0ce-5306ae277878' -H 'Authorization: Bearer wHFmHR*****kD6wHg' -H 'accept: application/json' -H 'content-type: application/json' --data-raw {' "resources": [ "6ff875d2-af87-470b-9cb5-774c6596afc8", "5a2c3d4e-1f6b-4c8d-9e0f-2a3b4c5d6e7f", "2p3q4r5s-6t7u-8v9w-x0y1-z2a3b4c5d6e" ] } ' --insecure   
 # Delete all door resources   
 curl -XPUT '{host}/api/v1/developer/door_groups/0140fa3d-8973-4305-a0ce-5306ae277878' -H 'Authorization: Bearer wHFmHR*****kD6wHg' -H 'accept: application/json' -H 'content-type: application/json' --data-raw {' "resources": [] } ' --insecure 
@@ -4359,7 +4500,7 @@ Method: GET
 
 The request body should be a JSON object containing the following fields:
 
-```shell
+```bash
 curl '{host}/api/v1/developer/door_groups'
 -H 'Authorization: Bearer wHFmHR*****kD6wHg'
 -H 'accept: application/json'
@@ -4367,37 +4508,36 @@ curl '{host}/api/v1/developer/door_groups'
 --insecure 
 ```
 
-Response Sample   
+# Response Sample
 ```json
 {
     "code": "SUCCESS",
-    "data": [ 
+    "data": [
         {
-        "id": "5c496423-6d25-4e4f-8cdf-95ad5135188a",
+            "id": "5c496423-6d25-4e4f-8cdf-95ad5135188a",
+            "name": "Test",
+            "resources": [
+                {
+                    "id": "6ff875d2-af87-470b-9cb5-774c6596afc8",
+                    "type": "door"
+                }
+            ],
+            "type": "access"
         },
-        "name": "Test",
-        "resources": [ 
-            {
-            "id": "6ff875d2-af87-470b-9cb5-774c6596afc8",
-            },
-            "type": "door"
-        ]
-    ],
-    "type": "access"
-    ],
-    "id": "1907cc46-0a73-4077-94c1-95b625bdd0f8",
-    "name": "Test2",
-    "resources": [ 
         {
-        "id": "6ff875d2-af87-470b-9cb5-774c6596afc8",
-        },
-        "type": "door"
-    ]
-    ],
-    "type": "access"
+            "id": "1907cc46-0a73-4077-94c1-95b625bdd0f8",
+            "name": "Test2",
+            "resources": [
+                {
+                    "id": "6ff875d2-af87-470b-9cb5-774c6596afc8",
+                    "type": "door"
+                }
+            ],
+            "type": "access"
+        }
     ],
     "msg": "success"
-} 
+}
 ```
 
 # 7.6 Delete Door Group
@@ -4420,7 +4560,7 @@ Method: DELETE
 
 The request body should be a JSON object containing the following fields:
 
-```shell
+```bash
 curl -XDELETE '{host}/api/v1/developer/door_groups/0140fa3d-8973-4305-a0ce-5306ae277878'  
 -H 'Authorization: Bearer wHFmHR*****kD6wHg'  
 -H 'accept: application/json'  
@@ -4458,8 +4598,8 @@ Method: GET
 
 The request body should be a JSON object containing the following fields:
 
-```shell
-curl -x GET '{host}/api/v1/developer/doors/0ed545f8-2fcd-4839-9021-b39e707f6aa9'  
+```bash
+curl -XGET '{host}/api/v1/developer/doors/0ed545f8-2fcd-4839-9021-b39e707f6aa9'  
 -H 'Authorization: Bearer wHFmHR*****kD6wHg'  
 -H 'accept: application/json'  
 -H 'content-type: application/json'  
@@ -4473,14 +4613,15 @@ curl -x GET '{host}/api/v1/developer/doors/0ed545f8-2fcd-4839-9021-b39e707f6aa9'
     "code": "SUCCESS",
     "data": {
         "door_lock_relay_status": "lock",
-        "door_position_status": "", "floor_id": "3275af8d-3fa7-4902-a11b-011e41c8464a",
+        "door_position_status": "",
+        "floor_id": "3275af8d-3fa7-4902-a11b-011e41c8464a",
         "full_name": "UNVR - 1F - Main Door",
         "id": "0ed545f8-2fcd-4839-9021-b39e707f6aa9",
-        "is_bind Hubb": true,
+        "is_bind_hub": true,
         "name": "Main Door",
         "type": "door"
-   },
-    "msg": "success" 
+    "msg": "success"
+}
 ```
 
 # 7.8 Fetch All Doors
@@ -4491,11 +4632,11 @@ Request URL: /api/v1/developer/doors
 Permission Key: view:space   
 Method: GET
 
-Request Header   
+# Request Header
 
 <table><tr><td>Parameter</td><td>Required</td><td>Type</td><td>Description</td></tr><tr><td>Authorization</td><td>T</td><td>String</td><td>Token required for authentication and access control.</td></tr></table>
 
-Response Body   
+# Response Body
 
 <table><tr><td>Parameter</td><td>Required</td><td>Type</td><td>Description</td><td>Purpose</td><td>Related API</td></tr><tr><td>id</td><td>T</td><td>String</td><td>Identity ID of the door group.</td><td>1. Used to create a door group. 2. Used to unlock a door remotely, if the door is bound to a hub device.</td><td>/api/v1/developer/door_groups; /api/v1/developer/doors/:id/remote_unlock;</td></tr><tr><td>name</td><td>T</td><td>String</td><td>Name of the door.</td><td></td><td></td></tr><tr><td>full_name</td><td>T</td><td>String</td><td>Full name of the door.</td><td></td><td></td></tr><tr><td>floor_id</td><td>T</td><td>String</td><td>Identity ID of the floor.</td><td></td><td></td></tr><tr><td>type</td><td>T</td><td>String</td><td>Type of the door.</td><td></td><td></td></tr><tr><td>is_bind_hub</td><td>T</td><td>String</td><td>Indicate whether the door has bound to a hub device. It can only be used for remote opening if it&#x27;s bound.</td><td></td><td></td></tr><tr><td>door_lock_relay_status</td><td>T</td><td>String</td><td>Door lock status. enum door_lock_relay_status {lock, unlock}</td><td></td><td></td></tr><tr><td>door_position_status</td><td>T</td><td>String</td><td>DPS: Door position status, including both open and close. A null value means that no device is connected.</td><td></td><td></td></tr></table>
 
@@ -4504,7 +4645,7 @@ Response Body
 The request body should be a JSON object containing the following fields:
 
 ```bash
-curl -x GET '{host}/api/v1/developer/doors'  
+curl -XGET '{host}/api/v1/developer/doors'  
 -H 'Authorization: Bearer wHFmHR*****kD6wHg'  
 -H 'accept: application/json'  
 -H 'content-type: application/json'  
@@ -4516,29 +4657,30 @@ curl -x GET '{host}/api/v1/developer/doors'
 ```json
 {
     "code": "SUCCESS",
-    "data": [ 
+    "data": [
         {
-        "door_lock_relay_status": "unlock",
+            "door_lock_relay_status": "unlock",
+            "door_position_status": "open",
+            "floor_id": "23c5db06-b59b-494d-94f1-23e88fbe4909",
+            "full_name": "UNVR - 2F - A2 Door",
+            "id": "0ed545f8-2fcd-4839-9021-b39e707f6aa9",
+            "is_bind_hub": true,
+            "name": "A2 Door",
+            "type": "door"
         },
-        "door_position_status": "open",
-        "floor_id": "23c5db06-b59b-494d-94f1-23e88fbe4909",
-        "full_name": "UNVR - 2F - A2 Door",
-        "id": "0ed545f8-2fcd-4839-9021-b39e707f6aa9",
-        "is_bind_hub": true,
-        "name": "A2 Door",
-        "type": "door"
+        {
+            "door_lock_relay_status": "lock",
+            "door_position_status": "close",
+            "floor_id": "7c62b4b3-692f-44ea-8eb8-e212833b4e0f",
+            "full_name": "UNVR - 1F - Door 3855",
+            "id": "5785e97b-6123-4596-ba49-b6e51164db9b",
+            "is_bind_hub": true,
+            "name": "Door 3855",
+            "type": "door"
+        }
     ],
-    "door_lock_relay_status": "lock",
-    "door_position_status": "close",
-    "floor_id": "7c62b4b3-692f-44ea-8eb8-e212833b4e0f",
-    "full_name": "UNVR - 1F - Door 3855",
-    "id": "5785e97b-6123-4596-ba49-b6e51164db9b",
-    "is_bind_hub": true,
-    "name": "Door 3855",
-    "type": "door"
-    ],
-    ], 
-    "msg": "success" 
+    "msg": "success"
+}
 ```
 
 # 7.9 Remote Door Unlocking
@@ -4575,19 +4717,20 @@ If either actor_id or actor_name is provided, both must be included.
 
 # Request Sample
 
-```shell
-curl --location --request PUT 'https://192.168.1.1:12445/api/v1/developer/doors/CF4b9ee6-05cb-4799-a462-ec307fff2067/unlock' \
+```bash
+curl --location --request PUT \
+'https://192.168.1.1:12445/api/v1/developer/doors/CF4b9ee6-05cb-4799-a462-ec307fff2067/unlock' \
 --header 'Authorization: Bearer 5aIi+E7DidM2Xzbi6ewtAQ' \
 --header 'Content-Type: application/json' \
---data \
-"actor_id": "actoruuid",
-"actor_name": "actor name",
-"extra": \{
-	"extra_string": "test",
-	"extra_integer": 1,
-	"extraBoolean": true
-\}
-' 
+--data '{
+    "actor_id": "actoruuid",
+    "actor_name": "actor name",
+    "extra": {
+        "extra_string": "test",
+        "extra_integer": 1,
+        "extraBoolean": true
+    }
+}'
 ```
 
 # Response Sample
@@ -4621,85 +4764,88 @@ UniFi Access Requirement: 1.24.6 or later
 
 The request body should be a JSON object containing the following fields:
 
-```shell
-Customized 10-minute unlocked  
-curl -x PUT '{host}/api/v1/developer/doors/e4978b83-203d-4015-97df-b86efc91cb0c/lock_rule'  
--H 'Authorization: Bearer wHFmHR*****KD6wHg'  
--H 'accept: application/json'  
--H 'content-type: application/json'  
---data {'  
-    "type": "custom",  
-    "interval": 10  
-}  
---insecure  
-# Keep it unlocked  
-curl -x PUT '{host}/api/v1/developer/doors/e4978b83-203d-4015-97df-b86efc91cb0c/lock_rule' 
+**Customized 10-minute unlock**
+
+```bash
+curl -XPUT '{host}/api/v1/developer/doors/e4978b83-203d-4015-97df-b86efc91cb0c/lock_rule' \
+-H 'Authorization: Bearer wHFmHR*****kD6wHg' \
+-H 'accept: application/json' \
+-H 'content-type: application/json' \
+--data '{
+    "type": "custom",
+    "interval": 10
+}' \
+--insecure
 ```
 
-```shell
--H 'Authorization: Bearer wHFmHR*****kD6wHg'  
--H 'accept: application/json'  
--H 'content-type: application/json'  
---data {'  
-    "type": "keep_unlock"  
-}  
---insecure 
+**Keep it unlocked**
+
+```bash
+curl -XPUT '{host}/api/v1/developer/doors/e4978b83-203d-4015-97df-b86efc91cb0c/lock_rule' \
+-H 'Authorization: Bearer wHFmHR*****kD6wHg' \
+-H 'accept: application/json' \
+-H 'content-type: application/json' \
+--data '{
+    "type": "keep_unlock"
+}' \
+--insecure
 ```
 
-```shell
-Keep it locked  
-curl -x PUT '{host}/api/v1/developer/doors/e4978b83-203d-4015-97df-b86efc91cb0c/lock_rule'  
--H 'Authorization: Bearer wHFmHR*****kD6wHg'  
--H 'accept: application/json'  
--H 'content-type: application/json'  
---data {'  
-    "type": "keep_lock"  
-}  
---insecure 
+**Keep it locked**
+
+```bash
+curl -XPUT '{host}/api/v1/developer/doors/e4978b83-203d-4015-97df-b86efc91cb0c/lock_rule' \
+-H 'Authorization: Bearer wHFmHR*****kD6wHg' \
+-H 'accept: application/json' \
+-H 'content-type: application/json' \
+--data '{
+    "type": "keep_lock"
+}' \
+--insecure
 ```
 
-```txt
-Use reset to restore the temporary unlock schedule (e.g., "Unlock for 1 Hour") to its original locked state. This parameter is intended solely for resetting a temporary unlock schedule. If you wish to lock a door before its scheduled unlock time ends, use lock_early below instead. 
+> Use `reset` to restore the temporary unlock schedule (e.g., "Unlock for 1 Hour") to its original locked state. This parameter is intended solely for resetting a temporary unlock schedule. If you wish to lock a door before its scheduled unlock time ends, use `lock_early` below instead.
+
+**Reset temporary unlock**
+
+```bash
+curl -XPUT '{host}/api/v1/developer/doors/e4978b83-203d-4015-97df-b86efc91cb0c/lock_rule' \
+-H 'Authorization: Bearer wHFmHR*****kD6wHg' \
+-H 'accept: application/json' \
+-H 'content-type: application/json' \
+--data '{
+    "type": "reset"
+}' \
+--insecure
 ```
 
-```diff
-curl -x PUT '{host}/{api/v1/developer/doors/e4978b83-203d-4015-97df-b86efc91cb0c/lock_rule'  
--H 'Authorization: Bearer wHFmHR*****kD6wHg'  
--H 'accept: application/json'  
--H 'content-type: application/json'  
---data {'  
-    "type": "reset"  
-}  
---insecure 
+> If the door is currently on an unlock schedule, you can use `lock_early` to lock the door before the scheduled time ends. For instance, if the unlock schedule is set from 9:00 AM to 6:00 PM, you can use this parameter at 3:00 PM to end the schedule and lock the door earlier.
+
+**Lock early**
+
+```bash
+curl -XPUT '{host}/api/v1/developer/doors/e4978b83-203d-4015-97df-b86efc91cb0c/lock_rule' \
+-H 'Authorization: Bearer wHFmHR*****kD6wHg' \
+-H 'accept: application/json' \
+-H 'content-type: application/json' \
+--data '{
+    "type": "lock_early"
+}' \
+--insecure
 ```
 
-```txt
-If the door is currently on an unlock schedule, you can use lock_early to lock the door before the scheduled time ends. For instance, if the unlock schedule is set from 9:00 AM to 6:00 PM, you can use this parameter at 3:00 PM to end the schedule and lock the door earlier. 
-```
+> `lock_now` is used to terminate both the unlock schedule and any temporary unlock at the same time.
 
-```shell
-curl -x PUT '{host}/{api/v1/developer/doors/e4978b83-203d-4015-97df-b86efc91cb0c/lock_rule'  
--H 'Authorization: Bearer wHFmHR*****kD6wHg'  
--H 'accept: application/json'  
--H 'content-type: application/json'  
---data {'  
-    "type": "lock_now"  
-}  
---insecure 
-```
+**Lock now**
 
-```txt
-lock_now is used to terminate both the unlock schedule and any temporary unlock at the same time. 
-```
-
-```shell
-curl -x PUT '{host}/{api/v1/developer/doors/e4978b83-203d-4015-97df-b86efc91cb0c/lock_rule'  
--H 'Authorization: Bearer wHFmHR*****kD6wHg'  
--H 'accept: application/json'  
--H 'content-type: application/json'  
---data {'  
-    "type": "lock_now"  
-} 
+```bash
+curl -XPUT '{host}/api/v1/developer/doors/e4978b83-203d-4015-97df-b86efc91cb0c/lock_rule' \
+-H 'Authorization: Bearer wHFmHR*****kD6wHg' \
+-H 'accept: application/json' \
+-H 'content-type: application/json' \
+--data '{
+    "type": "lock_now"
+}'
 ```
 
 # Response Sample
@@ -4738,28 +4884,37 @@ UniFi Access Requirement: 1.24.6 or later
 The request body should be a JSON object containing the following fields:
 
 ```bash
-curl -x '{host}'/api/v1/developer/doors/e4978b83-203d-4015-97df-b86efc91cb0c/lock_rule'  
--H 'Authorization: Bearer wHFmHR*****kD6wHg'  
--H 'accept: application/json'  
--H 'content-type: application/json'  
---insecure 
+curl -XGET '{host}/api/v1/developer/doors/e4978b83-203d-4015-97df-b86efc91cb0c/lock_rule' \
+-H 'Authorization: Bearer wHFmHR*****kD6wHg' \
+-H 'accept: application/json' \
+-H 'content-type: application/json' \
+--insecure
 ```
 
 # Response Sample
 
-```jsonl
-Keep it locked   
-{ "code": "SUCCESS", "data": { "ended_time": 3602128309, "type": "keep_lock" }, "msg": "success"   
-}   
-# Keep it unlocked   
-{ "code": "SUCCESS", "data": { "ended_time": 3602128562, "type": "keep_unlock" }, "msg": "success"   
-}   
-# Customized unlock duration   
-{ "code": "SUCCESS", "data": { "ended_time": 1708673342, "type": "custom" }, "msg": "success"   
-}   
-The 'lock_early' is used to terminate doors in an unlock schedule early.   
-{ "code": "SUCCESS", "data": { "type": "lock_early", "ended_time": 1708673342, }, "msg": "success"   
-} 
+**Keep it locked:**
+
+```json
+{ "code": "SUCCESS", "data": { "ended_time": 3602128309, "type": "keep_lock" }, "msg": "success" }
+```
+
+**Keep it unlocked:**
+
+```json
+{ "code": "SUCCESS", "data": { "ended_time": 3602128562, "type": "keep_unlock" }, "msg": "success" }
+```
+
+**Customized unlock duration:**
+
+```json
+{ "code": "SUCCESS", "data": { "ended_time": 1708673342, "type": "custom" }, "msg": "success" }
+```
+
+**Lock early** (used to terminate doors in an unlock schedule early):
+
+```json
+{ "code": "SUCCESS", "data": { "type": "lock_early", "ended_time": 1708673342 }, "msg": "success" }
 ```
 
 # 7.12 Set Door Emergency Status
@@ -4783,36 +4938,39 @@ UniFi Access Requirement: 1.24.6 or later
 
 The request body should be a JSON object containing the following fields:
 
-```txt
-# Keep it locked  
-curl -x PUT '{host}/api/v1/developer/doors/settings/emergency'  
--H 'Authorization: Bearer wHFmHR*****kD6wHg'  
--H 'accept: application/json'  
--H 'content-type: application/json'  
---data {'  
+```bash
+# Keep it locked
+curl -XPUT '{host}/api/v1/developer/doors/settings/emergency' \
+-H 'Authorization: Bearer wHFmHR*****kD6wHg' \
+-H 'accept: application/json' \
+-H 'content-type: application/json' \
+--data '{
     "lockdown": true,
-    "evacuation": false  
-}  
---insecure  
-# Keep it unlocked  
-curl -x PUT '{host}/api/v1/developer/doors/settings/emergency'  
--H 'Authorization: Bearer wHFmHR*****kD6wHg'  
--H 'accept: application/json'  
--H 'content-type: application/json'  
---data {'  
+    "evacuation": false
+}' \
+--insecure
+
+# Keep it unlocked
+curl -XPUT '{host}/api/v1/developer/doors/settings/emergency' \
+-H 'Authorization: Bearer wHFmHR*****kD6wHg' \
+-H 'accept: application/json' \
+-H 'content-type: application/json' \
+--data '{
     "lockdown": false,
-    "evacuation": true  
-}  
---insecure 
-Restore the initial state or release the setting  
-curl -x PUT '{host}/api/v1/developer/doors/settings/emergency'  
--H 'Authorization: Bearer wHFmHR*****KD6wHg'  
--H 'accept: application/json'  
--H 'content-type: application/json'  
---data {'  
-    "lockdown": false,  
-    "evacuation": false}  
---insecure 
+    "evacuation": true
+}' \
+--insecure
+
+# Restore the initial state or release the setting
+curl -XPUT '{host}/api/v1/developer/doors/settings/emergency' \
+-H 'Authorization: Bearer wHFmHR*****kD6wHg' \
+-H 'accept: application/json' \
+-H 'content-type: application/json' \
+--data '{
+    "lockdown": false,
+    "evacuation": false
+}' \
+--insecure
 ```
 
 # Response Sample
@@ -4842,12 +5000,12 @@ UniFi Access Requirement: 1.24.6 or later
 
 The request body should be a JSON object containing the following fields:
 
-```shell
-curl -x '{host}/api/v1/developer/doors/settings/emergency'  
--H 'Authorization: Bearer wHFmHR*****kD6wHg'  
--H 'accept: application/json'  
--H 'content-type: application/json'  
---insecure 
+```bash
+curl -XGET '{host}/api/v1/developer/doors/settings/emergency' \
+-H 'Authorization: Bearer wHFmHR*****kD6wHg' \
+-H 'accept: application/json' \
+-H 'content-type: application/json' \
+--insecure
 ```
 
 # Response Sample
@@ -4885,15 +5043,17 @@ Method: GET
 
 # Response Body
 
-<table><tr><td>Parameter</td><td>Required</td><td>Type</td><td>Description</td><td>Purpose</td><td>Related API</td></tr><tr><td>id</td><td>T</td><td>String</td><td>Identity ID of the device.</td><td>Used for enrolling an NFC card.</td><td>/api/v1/developer/credentials/nfc_cards sessions</td></tr><tr><td>name</td><td>T</td><td>String</td><td>Name of the device.</td><td></td><td></td></tr><tr><td>type</td><td>T</td><td>String</td><td>Type of the device.</td><td></td><td></td></tr><tr><td>alias</td><td>T</td><td>String</td><td>Alias of the device.</td><td></td><td></td></tr></table>
+<table><tr><td>Parameter</td><td>Required</td><td>Type</td><td>Description</td><td>Purpose</td><td>Related API</td></tr><tr><td>id</td><td>T</td><td>String</td><td>Identity ID of the device.</td><td>Used for enrolling an NFC card.</td><td>/api/v1/developer/credentials/nfc_cards sessions</td></tr><tr><td>name</td><td>T</td><td>String</td><td>Name of the device.</td><td></td><td></td></tr><tr><td>type</td><td>T</td><td>String</td><td>Device model type (e.g., UA-G2-PRO, UAH-DOOR).</td><td></td><td></td></tr><tr><td>alias</td><td>T</td><td>String</td><td>Alias of the device.</td><td></td><td></td></tr><tr><td>capabilities</td><td>T</td><td>Array[String]</td><td>List of device capabilities (e.g., pin_code, nfc, face, qr_code).</td><td></td><td></td></tr><tr><td>connected_uah_id</td><td>T</td><td>String</td><td>MAC address of the connected UA Hub (empty for hubs themselves).</td><td></td><td></td></tr><tr><td>is_adopted</td><td>T</td><td>Boolean</td><td>Whether the device has been adopted.</td><td></td><td></td></tr><tr><td>is_connected</td><td>T</td><td>Boolean</td><td>Whether the device is currently connected.</td><td></td><td></td></tr><tr><td>is_managed</td><td>T</td><td>Boolean</td><td>Whether the device is managed.</td><td></td><td></td></tr><tr><td>is_online</td><td>T</td><td>Boolean</td><td>Whether the device is online.</td><td></td><td></td></tr><tr><td>location_id</td><td>T</td><td>String</td><td>Door ID the device is bound to.</td><td></td><td></td></tr></table>
+
+> **Note:** The `data` field is a **nested array** (array of arrays). Each inner array groups devices by door/location.
 
 # Request Sample: Shell/cURL
 
 ```bash
-curl '{host}/api/v1/developer/devices?refresh=true'  
--H 'Authorization: Bearer wHFmHR*****kD6wHg'  
--H 'accept: application/json'  
---insecure 
+curl '{host}/api/v1/developer/devices?refresh=true' \
+-H 'Authorization: Bearer wHFmHR*****kD6wHg' \
+-H 'accept: application/json' \
+--insecure
 ```
 
 # Response Body
@@ -4901,25 +5061,38 @@ curl '{host}/api/v1/developer/devices?refresh=true'
 ```json
 {
     "code": "SUCCESS",
-    "data": [ 
-        [ 
-            {"alias": "UNVR - Main Floor",
-                "id": "7483c2773855",
-                "name": "UA-HUB-3855",
-                "type": "UAH"
-        ],
-        {"alias": "UNVR - Main Floor",
-                "id": "f492bfd28ced",
-                "name": "UA-LITE-8CED",
-                "type": "UDA-LITE"
-        ],
-        {"alias": "UNVR - Main Floor",
-                "id": "0418d6a2bb7a",
-                "name": "UA-G2-PRO-BB7A",
+    "data": [
+        [
+            {
+                "alias": "",
+                "capabilities": ["pin_code", "nfc", "face", "qr_code", "is_reader", "support_reboot"],
+                "connected_uah_id": "58d61f25c2d5",
+                "id": "58d61f309629",
+                "is_adopted": true,
+                "is_connected": true,
+                "is_managed": true,
+                "is_online": true,
+                "location_id": "2ad41f5a-55ca-4751-b36e-432833638c62",
+                "name": "UA G2 Pro 9629",
                 "type": "UA-G2-PRO"
+            },
+            {
+                "alias": "",
+                "capabilities": ["unlock_failure_limit", "emergency_settings", "is_hub", "pin_code"],
+                "connected_uah_id": "",
+                "id": "58d61f25c2d5",
+                "is_adopted": true,
+                "is_connected": true,
+                "is_managed": true,
+                "is_online": true,
+                "location_id": "2ad41f5a-55ca-4751-b36e-432833638c62",
+                "name": "UA-HUB-DOOR-C2D5",
+                "type": "UAH-DOOR"
+            }
         ]
-    ], 
-"msg": "success" } 
+    ],
+    "msg": "success"
+}
 ```
 
 # 8.2 Fetch Access Device's Access Method Settings
@@ -4941,7 +5114,7 @@ UniFi Access Requirement: Version 3.3.10 or later
 
 # Request Sample: Shell/cURL
 
-```shell
+```bash
 curl --location 'https://192.168.1.1:12445/api/v1/developer/devices/942a6f4247b2/settings' \
 --header 'Authorization: Bearer bphw1H4jw7q9uQ751PN3Nw' 
 ```
@@ -4959,30 +5132,23 @@ curl --location 'https://192.168.1.1:12445/api/v1/developer/devices/942a6f4247b2
         "access_methods": {
             "bt_button": {
                 "enabled": "yes"
-            },
             "bt_tap": {
                 "enabled": "yes"
-            },
             "face": {
                 "anti_spoofing_level": "no",
                 "detect_distance": "far"
-            },
             "nfc": {
                 "enabled": "yes"
-            },
             "pin_code": {
                 "enabled": "yes",
                 "pin_code_shuffle": "no"
-            },
             "qr_code": {
                 "enabled": "yes"
-            },
             "touch_pass": {
                 "enabled": "yes"
             }
         },
         "device_id": "942a6f4247b2"
-    },
     "msg": "success"
 }
 ```
@@ -4996,15 +5162,15 @@ Permission Key: edit:device
 Method: PUT \   
 UniFi Access Requirement: Version 3.3.10 or later
 
-Request Header   
+# Request Header
 
 <table><tr><td>Parameter</td><td>Required</td><td>Type</td><td>Description</td></tr><tr><td>Authorization</td><td>T</td><td>String</td><td>Bearer Token required for authentication and access control.</td></tr><tr><td>Content-Type</td><td>T</td><td>String</td><td>Must be application/json.</td></tr></table>
 
-Request Path   
+# Request Path
 
 <table><tr><td>Parameter</td><td>Required</td><td>Type</td><td>Description</td><td>How to Get It?</td></tr><tr><td>device_id</td><td>T</td><td>String</td><td>Unique ID of the device.</td><td>Get it from the API /api/v1/developer/devices</td></tr></table>
 
-Request Body   
+# Request Body
 
 <table><tr><td>Parameter</td><td>Required</td><td>Type</td><td>Description</td><td>Example</td><td>How to Get It?</td></tr><tr><td>nfc</td><td>F</td><td>Object</td><td>NFC access method setting.</td><td></td><td></td></tr><tr><td>nfc.enabled</td><td>F</td><td>String</td><td>Indicates whether the NFC access method is enabled ("true" or "false").</td><td>"true"</td><td></td></tr><tr><td>bt_tap</td><td>F</td><td>Object</td><td>Mobile Tap (via Bluetooth) access method setting.</td><td></td><td></td></tr><tr><td>bt_tap.enabled</td><td>F</td><td>String</td><td>Indicates whether Mobile Tap is enabled ("true" or "false").</td><td>"true"</td><td></td></tr><tr><td>bt_button</td><td>F</td><td>Object</td><td>Mobile Unlock (via Bluetooth) access method setting.</td><td></td><td></td></tr><tr><td>bt_button.enabled</td><td>F</td><td>String</td><td>Indicates whether Mobile Unlock is enabled ("true" or "false").</td><td>"true"</td><td></td></tr><tr><td>bt_shake</td><td>F</td><td>Object</td><td>Mobile Shake (via Bluetooth) access method setting.</td><td></td><td></td></tr><tr><td>bt_shake.enabled</td><td>F</td><td>String</td><td>Indicates whether Mobile Shake is enabled ("true" or "false").</td><td>"false"</td><td></td></tr><tr><td>mobile_wave</td><td>F</td><td>Object</td><td>Mobile Wave access method setting.</td><td></td><td></td></tr><tr><td>mobile_wave.enabled</td><td>F</td><td>String</td><td>Indicates whether Mobile Wave is enabled ("true" or "false").</td><td>"true"</td><td></td></tr><tr><td>pin_code</td><td>F</td><td>Object</td><td>PIN access method setting.</td><td></td><td></td></tr><tr><td>pin_code.enabled</td><td>F</td><td>String</td><td>Indicates whether PIN is enabled ("true" or "false").</td><td>"true"</td><td></td></tr><tr><td>pin_code.pin_code_shuffle</td><td>F</td><td>String</td><td>Indicates whether PIN shuffle is enabled ("true" or "false").</td><td>"false"</td><td></td></tr><tr><td>face</td><td>F</td><td>Object</td><td>Face Unlock access method setting.</td><td></td><td></td></tr><tr><td>face.enabled</td><td>F</td><td>String</td><td>Indicates whether Face Unlock is enabled ("true" or "false").</td><td>"true"</td><td></td></tr><tr><td>face.anti_spoofing_level</td><td>F</td><td>String</td><td>enum anti spoofing_level {high, medium, no} Anti spoofing security level for Face Unlock.</td><td>"medium"</td><td></td></tr><tr><td>face.detect_distance</td><td>F</td><td>String</td><td>enum detect_distance {near, medium, far} Face Unlock detection distance setting.</td><td>"medium"</td><td></td></tr><tr><td>wave</td><td>F</td><td>Object</td><td>Hand Wave access method setting.</td><td></td><td></td></tr><tr><td>wave.enabled</td><td>F</td><td>String</td><td>Indicates whether Hand Wave is enabled ("true" or "false").</td><td>"false"</td><td></td></tr><tr><td>qr_code</td><td>F</td><td>Object</td><td>QR code access method setting.</td><td></td><td></td></tr><tr><td>qr_code.enabled</td><td>F</td><td>String</td><td>Indicates whether QR code is enabled ("true" or "false").</td><td>"true"</td><td></td></tr><tr><td>touch_pass</td><td>F</td><td>Object</td><td>Touch Pass access method setting.</td><td></td><td></td></tr><tr><td>touch_pass.enabled</td><td>F</td><td>String</td><td>Indicates whether Touch Pass is enabled ("true" or "false").</td><td>"true"</td><td></td></tr></table>
 
@@ -5016,15 +5182,22 @@ NOTE: anti_spoofing_level and detect_distance must use valid combinations to adj
 
 # Request Sample: Shell/cURL
 
-```shell
-curl --location --request PUT   
-'https://192.168.1.1:12445/api/v1/developer/devices/942a6f4247b2/settings'   
---header 'Authorization: Bearer N8oZJZ6U16i4mN6ZnRhw/A'   
---header 'Content-Type: application/json'   
---data'   
-"access_methods": { "bt_button": { "enabled": "yes" }, "bt_tap": { "enabled": "yes" }, "face": { "anti_spoofing_level": "medium", "detect_distance": "medium" }, "nfc": { "enabled": "yes" }, "pin_code": { "enabled": "yes", "pin_code_shuffle": "no" }, "qr_code": { "enabled": "yes" }, "touch_pass": { "enabled": "yes" }   
-} 
-} 
+```bash
+curl --location --request PUT \
+'https://192.168.1.1:12445/api/v1/developer/devices/942a6f4247b2/settings' \
+--header 'Authorization: Bearer N8oZJZ6U16i4mN6ZnRhw/A' \
+--header 'Content-Type: application/json' \
+--data '{
+    "access_methods": {
+        "bt_button": { "enabled": "yes" },
+        "bt_tap": { "enabled": "yes" },
+        "face": { "anti_spoofing_level": "medium", "detect_distance": "medium" },
+        "nfc": { "enabled": "yes" },
+        "pin_code": { "enabled": "yes", "pin_code_shuffle": "no" },
+        "qr_code": { "enabled": "yes" },
+        "touch_pass": { "enabled": "yes" }
+    }
+}'
 ```
 
 # Response Sample
@@ -5056,7 +5229,9 @@ UniFi Access Requirement: Version 4.0.10 or later
 
 # Request Body
 
-<table><tr><td>Parameter</td><td>Required</td><td>Type</td><td>Description</td><td>Example</td></tr><tr><td>room_name</td><td>F</td><td>String</td><td>Specifies the Intercom&#x27;s directory name to trigger the doorbell.</td><td>&quot;intercom directory name&quot;</td></tr><tr><td>cancel</td><td>F</td><td>Boolean</td><td>If set to true, cancels the previous doorbell if it&#x27;s still ringing.</td><td>false</td></tr></table>
+<table><tr><td>Parameter</td><td>Required</td><td>Type</td><td>Description</td><td>Example</td></tr><tr><td>room_name</td><td>T</td><td>String</td><td>Specifies the Intercom&#x27;s directory name to trigger the doorbell. Use empty string to ring the default doorbell.</td><td>&quot;intercom directory name&quot;</td></tr><tr><td>cancel</td><td>F</td><td>Boolean</td><td>If set to true, cancels the previous doorbell if it&#x27;s still ringing.</td><td>false</td></tr></table>
+
+> **Note (verified against live API):** `room_name` is required — omitting it or sending an empty body returns `CODE_PARAMS_INVALID`. An empty string `""` is accepted and rings the default doorbell.
 
 # Request Sample: Shell/cURL
 
@@ -5141,7 +5316,7 @@ curl '{host}/api/v1/developer/system/logs?page_size=1&page_num=25'
 } 
 ```
 
-Response Body
+# Response Body
 ```json
 {
     "code": "SUCCESS",
@@ -5157,18 +5332,15 @@ Response Body
                         "display_name": "N/A",
                         "id": "",
                         "type": "user"
-                    },
                     "authentication": {
                         "credential_provider": "NFC",
                         "issuer": "6FC02554"
-                    },
                     "event": {
                         "display_message": "Access Denied / Unknown (NFC)",
                         "published": 1689077487000,
                         "reason": "",
                         "result": "BLOCKED",
                         "type": "access.door.unlock"
-                    },
                     "target": [
                         {
                             "alternate_id": "",
@@ -5178,11 +5350,9 @@ Response Body
                             "type": "UAH"
                         }
                     ]
-                },
                 "tag": "access"
             }
         ]
-    },
     "page": 1,
     "total": 4
 }
@@ -5332,18 +5502,18 @@ UniFi Access Requirement: 1.24.6 or later
 
 # Request Sample: Shell/cURL
 
-```diff
-curl -XPOST '{host}'/api/v1/developer/users/identity/invitations'  
--H 'Authorization: Bearer wHFmHR*****kD6wHg'  
--H 'accept: application/json'  
--H 'content-type: application/json'  
---data-raw ['  
-{  
-    "user_id": "e0051e08-c4d5-43db-87c8-a9b19cb66513",  
-    "email": "example@*.com"  
-},  
-]  
---insecure 
+```bash
+curl -XPOST '{host}/api/v1/developer/users/identity/invitations' \
+-H 'Authorization: Bearer wHFmHR*****kD6wHg' \
+-H 'accept: application/json' \
+-H 'content-type: application/json' \
+--data-raw '[
+    {
+        "user_id": "e0051e08-c4d5-43db-87c8-a9b19cb66513",
+        "email": "example@*.com"
+    }
+]' \
+--insecure
 ```
 
 # Response Body
@@ -5382,12 +5552,13 @@ UniFi Access Requirement: 1.24.6 or later
 
 # Request Sample: Shell/cURL
 
-curl '\{\{host\} \}/api/v1/developer/users/identity/assignments?'  
-resource_type $\equiv$ ev stationed,wifi,vpn'  
--H 'Authorization: Bearer wHFmHR*****KD6wHg'  
--H 'accept: application/json'  
--H 'content-type: application/json'  
+```bash
+curl '{host}/api/v1/developer/users/identity/assignments?resource_type=evstation,wifi,vpn' \
+-H 'Authorization: Bearer wHFmHR*****kD6wHg' \
+-H 'accept: application/json' \
+-H 'content-type: application/json' \
 --insecure
+```
 
 # Response Sample
 
@@ -5399,7 +5570,6 @@ resource_type $\equiv$ ev stationed,wifi,vpn'
         "vpn": [
             {
             "deleted": false,
-            },
             "id": "65cff9a9c188cb71cfac8e9d",
             "metadata": null,
             "name": "UDM Pro",
@@ -5409,7 +5579,6 @@ resource_type $\equiv$ ev stationed,wifi,vpn'
     "wifi": [
         {
         "deleted": false,
-        },
         "id": "65cff9a8c188cb71cfac8e9a",
         "metadata": null,
         "name": "UniFi Identity",
@@ -5447,7 +5616,7 @@ curl -XPOST '{host}/api/v1/developer/users/b602879b-b857-400b-970b-336d4cb881ad/
 -H 'Authorization: Bearer wHFmHR*****kD6wHg'  
 -H 'accept: application/json'  
 -H 'content-type: application/json'  
---data {'  
+--data '{
     "resource_type": "wifi",  
     "resource_ids": [  
         "65cff9a8c188cb71cfac8e9a"  
@@ -5524,7 +5693,6 @@ curl -XGET '{host}'/api/v1/developer/users/b602879b-b857-400b-970b-336d4cb881ad/
                 "short_name": ""
             }
         ]
-    },
     "msg": "success"
 }
 ```
@@ -5634,7 +5802,6 @@ curl -XGET '{{host}}/api/v1/developer/user_groups/7476c839-8e10-472e-894f-c5b825
                 "short_name": ""
             }
         ]
-    },
     "msg": "success"
 }
 ```
@@ -5656,11 +5823,11 @@ UniFi Access Requirement: 1.20.11 or later
 # Request Sample: wscat
 
 ```bash
-wscat
-    --no-check
-    -C wss://192.168.1.1:12445/api/v1/developer/devices/notifications
-    -H "Authorization: Bearer qoFJM******9YQX0+g+g"
-    -H "Upgrade: websocket"
+wscat \
+    --no-check \
+    -C wss://192.168.1.1:12445/api/v1/developer/devices/notifications \
+    -H "Authorization: Bearer qoFJM******9YQX0+g+g" \
+    -H "Upgrade: websocket" \
     -H "Connection: Upgrade"
 ```
 

@@ -64,7 +64,6 @@ npx @openapitools/openapi-generator-cli generate -i openapi.yaml -g typescript-f
 ## Documentation
 
 - **[Usage Guide](docs/USAGE.md)** — Complete integration guide with endpoint reference, authentication, error codes, and tooling
-- **[使用指南（繁體中文）](docs/USAGE.zh-TW.md)** — 完整整合指南
 - **[Original PDF](docs/unifi-access-api-original.pdf)** — Ubiquiti's official API documentation
 
 ## Disclaimer
