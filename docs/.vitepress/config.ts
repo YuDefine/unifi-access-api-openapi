@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { useSidebar } from 'vitepress-openapi'
 import spec from '../../public/openapi.json' with { type: 'json' }
+import { devProxyPlugin } from './devProxyPlugin'
 
 const openApiSidebar = useSidebar({ spec })
 const apiQuickSearchSidebarEn = openApiSidebar.itemsByPaths({
@@ -75,6 +76,10 @@ export default defineConfig({
   title: 'UniFi Access API Docs',
   description: 'UniFi Access API 非官方說明文件',
   base: '/',
+
+  vite: {
+    plugins: [devProxyPlugin()],
+  },
 
   head: [
     [

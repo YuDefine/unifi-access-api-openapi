@@ -10,8 +10,15 @@ const OA_CUSTOM_SERVER_URL = '--oa-custom-server-url'
 const OA_USE_CUSTOM_SERVER = '--oa-use-custom-server'
 const OA_AUTH_BEARER = '--oa-authorization-bearerAuth'
 
+// Cookie name for dev proxy
+const PROXY_COOKIE = 'unifi-access-host'
+
 const host = ref(DEFAULT_HOST)
 const apiKey = ref(DEFAULT_APIKEY)
+
+const isDev = typeof location !== 'undefined' && (
+  location.hostname === 'localhost' || location.hostname === '127.0.0.1'
+)
 
 /**
  * Normalize user input to a full base URL: https://host:12445
@@ -38,6 +45,31 @@ function normalizeHost(input: string): string {
   }
 }
 
+/**
+ * Sync host to vitepress-openapi custom server URL.
+ * In dev mode: point to current origin (requests go through Vite proxy).
+ * In prod mode: point directly to the user's host.
+ */
+function syncOAServer(hostUrl: string) {
+  if (hostUrl) {
+    const oaServer = isDev ? location.origin : hostUrl
+    localStorage.setItem(OA_CUSTOM_SERVER_URL, oaServer)
+    localStorage.setItem(OA_USE_CUSTOM_SERVER, 'true')
+
+    // Set cookie for dev proxy middleware to read target host
+    if (isDev) {
+      document.cookie = `${PROXY_COOKIE}=${encodeURIComponent(hostUrl)}; path=/; SameSite=Lax`
+    }
+  } else {
+    localStorage.removeItem(OA_CUSTOM_SERVER_URL)
+    localStorage.setItem(OA_USE_CUSTOM_SERVER, 'false')
+
+    if (isDev) {
+      document.cookie = `${PROXY_COOKIE}=; path=/; max-age=0`
+    }
+  }
+}
+
 let initialized = false
 
 export function useHostConfig() {
@@ -45,15 +77,12 @@ export function useHostConfig() {
     const savedHost = localStorage.getItem(HOST_STORAGE_KEY)
     if (savedHost) {
       host.value = savedHost
-      // Sync saved host to vitepress-openapi on init
-      localStorage.setItem(OA_CUSTOM_SERVER_URL, savedHost)
-      localStorage.setItem(OA_USE_CUSTOM_SERVER, 'true')
+      syncOAServer(savedHost)
     }
 
     const savedKey = localStorage.getItem(APIKEY_STORAGE_KEY)
     if (savedKey) {
       apiKey.value = savedKey
-      // Sync saved API key to vitepress-openapi on init
       localStorage.setItem(OA_AUTH_BEARER, savedKey)
     }
 
@@ -62,20 +91,15 @@ export function useHostConfig() {
     watch(host, (val) => {
       if (val) {
         localStorage.setItem(HOST_STORAGE_KEY, val)
-        // Sync to vitepress-openapi: set custom server URL
-        localStorage.setItem(OA_CUSTOM_SERVER_URL, val)
-        localStorage.setItem(OA_USE_CUSTOM_SERVER, 'true')
       } else {
         localStorage.removeItem(HOST_STORAGE_KEY)
-        localStorage.removeItem(OA_CUSTOM_SERVER_URL)
-        localStorage.setItem(OA_USE_CUSTOM_SERVER, 'false')
       }
+      syncOAServer(val)
     })
 
     watch(apiKey, (val) => {
       if (val) {
         localStorage.setItem(APIKEY_STORAGE_KEY, val)
-        // Sync to vitepress-openapi: set bearer auth token
         localStorage.setItem(OA_AUTH_BEARER, val)
       } else {
         localStorage.removeItem(APIKEY_STORAGE_KEY)
