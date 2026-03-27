@@ -48,9 +48,10 @@
 
 此 API 允許您建立新訪客。
 
-請求 URL：/api/v1/developer/visitors
-權限金鑰：edit:visitor
-方法：POST
+| 請求 URL | `/api/v1/developer/visitors` |
+| :--- | :--- |
+| 權限金鑰 | `edit:visitor` |
+| 方法 | `POST` |
 
 
 ### 回應範例
@@ -222,9 +223,10 @@ curl '{host}'/api/v1/developer/visitors'
 
 此 API 允許您取得訪客詳細資訊。
 
-請求 URL：/api/v1/developer/visitors/:id
-權限金鑰：view:visitor
-方法：GET
+| 請求 URL | `/api/v1/developer/visitors/:id` |
+| :--- | :--- |
+| 權限金鑰 | `view:visitor` |
+| 方法 | `GET` |
 
 
 ### 回應範例
@@ -315,9 +317,10 @@ curl -XGET '{host}/api/v1/developer/visitors/76794bd8-98c0-49b6-9230-ba8c5812cf2
 
 此 API 允許您取得所有訪客的列表。
 
-請求 URL：/api/v1/developer/visitors
-權限金鑰：view:visitor
-方法：GET
+| 請求 URL | `/api/v1/developer/visitors` |
+| :--- | :--- |
+| 權限金鑰 | `view:visitor` |
+| 方法 | `GET` |
 注意：車牌功能將於 3.3.10 或更新版本支援
 
 
@@ -376,9 +379,10 @@ expand[]=access_policy&expand[]=resource&expand[]=schedule&expand[]=nfc_card&exp
 
 此 API 允許您更新訪客資訊。
 
-請求 URL：/api/v1/developer/visitors/:id
-權限金鑰：edit:visitor
-方法：PUT
+| 請求 URL | `/api/v1/developer/visitors/:id` |
+| :--- | :--- |
+| 權限金鑰 | `edit:visitor` |
+| 方法 | `PUT` |
 
 
 ### 回應範例
@@ -569,9 +573,10 @@ curl -XPUT '{{host}}/api/v1/developer/visitors/c81dfee6-5970-4938-bd30-40820e16e
 
 此 API 允許您刪除訪客。
 
-請求 URL：/api/v1/developer/visitors/:id
-權限金鑰：edit:visitor
-方法：DELETE
+| 請求 URL | `/api/v1/developer/visitors/:id` |
+| :--- | :--- |
+| 權限金鑰 | `edit:visitor` |
+| 方法 | `DELETE` |
 
 
 ### 回應範例
@@ -614,9 +619,10 @@ curl -XDELETE '{host}/api/v1/developer/visitors/c81dfee6-5970-4938-bd30-40820e16
 ## 指派 NFC 卡給訪客
 
 
-請求 URL：/api/v1/developer/visitors/:id/nfc_cards
-權限金鑰：edit:visitor
-方法：PUT
+| 請求 URL | `/api/v1/developer/visitors/:id/nfc_cards` |
+| :--- | :--- |
+| 權限金鑰 | `edit:visitor` |
+| 方法 | `PUT` |
 
 
 ### 請求範例：Shell/cURL
@@ -667,9 +673,10 @@ curl -XPUT '{host}/api/v1/developer/visitors/60b5c15e-9aff-4fc8-9547-d21d2e39c1f
 ## 取消指派訪客的 NFC 卡
 
 
-請求 URL：/api/v1/developer/visitors/:id/nfc_cards/delete
-權限金鑰：edit:visitor
-方法：PUT
+| 請求 URL | `/api/v1/developer/visitors/:id/nfc_cards/delete` |
+| :--- | :--- |
+| 權限金鑰 | `edit:visitor` |
+| 方法 | `PUT` |
 
 
 ### 請求範例：Shell/cURL
@@ -718,9 +725,10 @@ curl -XPUT '{host}/api/v1/developer/visitors/60b5c15e-9aff-4fc8-9547-d21d2e39c1f
 ## 指派 PIN 碼給訪客
 
 
-請求 URL：/api/v1/developer/visitors/:id/pin_codes
-權限金鑰：edit:visitor
-方法：PUT
+| 請求 URL | `/api/v1/developer/visitors/:id/pin_codes` |
+| :--- | :--- |
+| 權限金鑰 | `edit:visitor` |
+| 方法 | `PUT` |
 
 
 ### 請求範例：Shell/cURL
@@ -767,9 +775,10 @@ curl -XPUT '{host}/api/v1/developer/visitors/17d2f099-99df-429b-becb-1399a6937e5
 ## 取消指派訪客的 PIN 碼
 
 
-請求 URL：/api/v1/developer/visitors/:id/pin_codes
-權限金鑰：edit:visitor
-方法：DELETE
+| 請求 URL | `/api/v1/developer/visitors/:id/pin_codes` |
+| :--- | :--- |
+| 權限金鑰 | `edit:visitor` |
+| 方法 | `DELETE` |
 
 
 ### 請求範例：Shell/cURL
@@ -811,10 +820,11 @@ curl -XDELETE '{host}/api/v1/developer/visitors/17d2f099-99df-429b-becb-1399a693
 
 此 API 允許您指派 QR Code 給訪客。
 
-請求 URL：/api/v1/developer/visitors/:id/qr_codes
-權限金鑰：edit:visitor
-方法：PUT
-UniFi Access 需求：Version 3.3.10 或更新版本
+| 請求 URL | `/api/v1/developer/visitors/:id/qr_codes` |
+| :--- | :--- |
+| 權限金鑰 | `edit:visitor` |
+| 方法 | `PUT` |
+| UniFi Access 需求 | Version 3.3.10 或更新版本 |
 
 
 ### 請求範例：Shell/cURL
@@ -853,10 +863,11 @@ curl --location --request PUT 'https://192.168.1.1:12445/api/v1/developer/visito
 
 此 API 允許您從訪客取消指派（移除）QR Code。
 
-請求 URL：/api/v1/developer/visitors/:id/qr_codes
-權限金鑰：edit:visitor
-方法：DELETE
-UniFi Access 需求：Version 3.3.10 或更新版本
+| 請求 URL | `/api/v1/developer/visitors/:id/qr_codes` |
+| :--- | :--- |
+| 權限金鑰 | `edit:visitor` |
+| 方法 | `DELETE` |
+| UniFi Access 需求 | Version 3.3.10 或更新版本 |
 
 
 ### 請求範例：Shell/cURL
@@ -897,10 +908,11 @@ curl --location --request DELETE
 
 此 API 允許您指派一個或多個車牌號碼給訪客。
 
-請求 URL：/api/v1/developer/visitors/:id/license_plates
-權限金鑰：edit:visitor
-方法：PUT
-UniFi Access 需求：Version 3.3.10 或更新版本
+| 請求 URL | `/api/v1/developer/visitors/:id/license_plates` |
+| :--- | :--- |
+| 權限金鑰 | `edit:visitor` |
+| 方法 | `PUT` |
+| UniFi Access 需求 | Version 3.3.10 或更新版本 |
 
 
 ### 請求範例：Shell/cURL
@@ -942,10 +954,11 @@ curl --location --request PUT 'https://192.168.1.1:12445/api/v1/developer/visito
 
 此 API 允許您取消指派訪客的車牌號碼。
 
-請求 URL：/api/v1/developer/visitors/:visitor_id/license_plates/:license_plate_id
-權限金鑰：edit:visitor
-方法：DELETE
-UniFi Access 需求：Version 3.3.10 或更新版本
+| 請求 URL | `/api/v1/developer/visitors/:visitor_id/license_plates/:license_plate_id` |
+| :--- | :--- |
+| 權限金鑰 | `edit:visitor` |
+| 方法 | `DELETE` |
+| UniFi Access 需求 | Version 3.3.10 或更新版本 |
 
 
 ### 請求範例：Shell/cURL

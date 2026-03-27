@@ -28,9 +28,10 @@ Target(s): Additional information associated with the event. Note that each even
 
 This API enables you to fetch system logs.
 
-Request URL: /api/v1/developer/system/logs   
-Permission Key: view:system_log   
-Method: POST
+| Request URL | `/api/v1/developer/system/logs` |
+| :--- | :--- |
+| Permission Key | `view:system_log` |
+| Method | `POST` |
 
 ### Request Header
 
@@ -113,10 +114,11 @@ curl '{host}/api/v1/developer/system/logs?page_size=1&page_num=25'
 
 This API enables you to export system logs to a CSV file.
 
-Request URL: /api/v1/developer/system/logs/export   
-Permission Key: view:system_log   
-Method: POST   
-UniFi Access Requirement: 1.20.11 or later
+| Request URL | `/api/v1/developer/system/logs/export` |
+| :--- | :--- |
+| Permission Key | `view:system_log` |
+| Method | `POST` |
+| UniFi Access Requirement | 1.20.11 or later |
 
 ### Request Header
 
@@ -147,10 +149,11 @@ curl '{host}/api/v1/developer/system/logs/export'
 
 This API enables you to fetch the resources in system logs.
 
-Request URL: /api/v1/developer/system/logs/resource/:id   
-Permission Key: view:system_log   
-Method: GET   
-UniFi Access Requirement: 1.24.6 or later
+| Request URL | `/api/v1/developer/system/logs/resource/:id` |
+| :--- | :--- |
+| Permission Key | `view:system_log` |
+| Method | `GET` |
+| UniFi Access Requirement | 1.24.6 or later |
 
 ### Request Header
 
@@ -189,10 +192,11 @@ curl '{host}/api/v1/developer/system/logs/resource/0418d6a38f00-b6906057-2a90-44
 
 This API enables you to fetch static resources in system logs.
 
-Request URL: /api/v1/developer/system/static/:path   
-Permission Key: view:system_log   
-Method: GET   
-UniFi Access Requirement: 1.24.6 or later
+| Request URL | `/api/v1/developer/system/static/:path` |
+| :--- | :--- |
+| Permission Key | `view:system_log` |
+| Method | `GET` |
+| UniFi Access Requirement | 1.24.6 or later |
 
 ### Request Header
 

@@ -10,9 +10,10 @@ The APIs here are designed for managing visitors, including creating, viewing, a
 
 This API enables you to create a new visitor.
 
-Request URL: /api/v1/developer/visitors   
-Permission Key: edit:visitor   
-Method: POST
+| Request URL | `/api/v1/developer/visitors` |
+| :--- | :--- |
+| Permission Key | `edit:visitor` |
+| Method | `POST` |
 
 ### Request Header
 
@@ -140,9 +141,10 @@ curl '{host}'/api/v1/developer/visitors'
 
 This API enables you to fetch visitor details.
 
-Request URL: /api/v1/developer/visitors/:id   
-Permission Key: view:visitor   
-Method: GET
+| Request URL | `/api/v1/developer/visitors/:id` |
+| :--- | :--- |
+| Permission Key | `view:visitor` |
+| Method | `GET` |
 
 ### Request Header
 
@@ -226,9 +228,10 @@ curl -XGET '{host}/api/v1/developer/visitors/76794bd8-98c0-49b6-9230-ba8c5812cf2
 
 This API enables you to fetch the list of all visitors.
 
-Request URL: /api/v1/developer/visitors   
-Permission Key: view:visitor   
-Method: GET   
+| Request URL | `/api/v1/developer/visitors` |
+| :--- | :--- |
+| Permission Key | `view:visitor` |
+| Method | `GET` |
 Note: license plates will be supported by 3.3.10 or later
 
 ### Request Header
@@ -275,9 +278,10 @@ expand[]=access_policy&expand[]=resource&expand[]=schedule&expand[]=nfc_card&exp
 
 This API enables you to update a visitor.
 
-Request URL: /api/v1/developer/visitors/:id   
-Permission Key: edit:visitor   
-Method: PUT
+| Request URL | `/api/v1/developer/visitors/:id` |
+| :--- | :--- |
+| Permission Key | `edit:visitor` |
+| Method | `PUT` |
 
 ### Request Header
 
@@ -424,9 +428,10 @@ curl -XPUT '{{host}}/api/v1/developer/visitors/c81dfee6-5970-4938-bd30-40820e16e
 
 This API enables you to delete a visitor.
 
-Request URL: /api/v1/developer/visitors/:id   
-Permission Key: edit:visitor   
-Method: DELETE
+| Request URL | `/api/v1/developer/visitors/:id` |
+| :--- | :--- |
+| Permission Key | `edit:visitor` |
+| Method | `DELETE` |
 
 ### Request Header
 
@@ -460,9 +465,10 @@ curl -XDELETE '{host}/api/v1/developer/visitors/c81dfee6-5970-4938-bd30-40820e16
 
 ## Assign NFC Card To Visitor
 
-Request URL: /api/v1/developer/visitors/:id/nfc_cards   
-Permission Key: edit:visitor   
-Method: PUT
+| Request URL | `/api/v1/developer/visitors/:id/nfc_cards` |
+| :--- | :--- |
+| Permission Key | `edit:visitor` |
+| Method | `PUT` |
 
 ### Request Header
 
@@ -503,9 +509,10 @@ curl -XPUT '{host}/api/v1/developer/visitors/60b5c15e-9aff-4fc8-9547-d21d2e39c1f
 
 ## Unassign NFC Card From Visitor
 
-Request URL: /api/v1/developer/visitors/:id/nfc_cards/delete   
-Permission Key: edit:visitor   
-Method: PUT
+| Request URL | `/api/v1/developer/visitors/:id/nfc_cards/delete` |
+| :--- | :--- |
+| Permission Key | `edit:visitor` |
+| Method | `PUT` |
 
 ### Request Header
 
@@ -545,9 +552,10 @@ curl -XPUT '{host}/api/v1/developer/visitors/60b5c15e-9aff-4fc8-9547-d21d2e39c1f
 
 ## Assign PIN Code To Visitor
 
-Request URL: /api/v1/developer/visitors/:id/pin_codes   
-Permission Key: edit:visitor   
-Method: PUT
+| Request URL | `/api/v1/developer/visitors/:id/pin_codes` |
+| :--- | :--- |
+| Permission Key | `edit:visitor` |
+| Method | `PUT` |
 
 ### Request Header
 
@@ -586,9 +594,10 @@ curl -XPUT '{host}/api/v1/developer/visitors/17d2f099-99df-429b-becb-1399a6937e5
 
 ## Unassign PIN Code From Visitor
 
-Request URL: /api/v1/developer/visitors/:id/pin_codes   
-Permission Key: edit:visitor   
-Method: DELETE
+| Request URL | `/api/v1/developer/visitors/:id/pin_codes` |
+| :--- | :--- |
+| Permission Key | `edit:visitor` |
+| Method | `DELETE` |
 
 ### Request Header
 
@@ -623,10 +632,11 @@ curl -XDELETE '{host}/api/v1/developer/visitors/17d2f099-99df-429b-becb-1399a693
 
 This API allows you to assign a QR code to a visitor.
 
-Request URL: /api/v1/developer/visitors/:id/qr_codes   
-Permission Key: edit:visitor   
-Method: PUT   
-UniFi Access Requirement: Version 3.3.10 or later
+| Request URL | `/api/v1/developer/visitors/:id/qr_codes` |
+| :--- | :--- |
+| Permission Key | `edit:visitor` |
+| Method | `PUT` |
+| UniFi Access Requirement | Version 3.3.10 or later |
 
 ### Request Header
 
@@ -658,10 +668,11 @@ curl --location --request PUT 'https://192.168.1.1:12445/api/v1/developer/visito
 
 This API allows you to unassign (remove) a QR code from a visitor.
 
-Request URL: /api/v1/developer/visitors/:id/qr_codes   
-Permission Key: edit:visitor   
-Method: DELETE   
-UniFi Access Requirement: Version 3.3.10 or later
+| Request URL | `/api/v1/developer/visitors/:id/qr_codes` |
+| :--- | :--- |
+| Permission Key | `edit:visitor` |
+| Method | `DELETE` |
+| UniFi Access Requirement | Version 3.3.10 or later |
 
 ### Request Header
 
@@ -695,10 +706,11 @@ curl --location --request DELETE
 
 This API allows you to assign one or more license plate numbers to a visitor.
 
-Request URL: /api/v1/developer/visitors/:id/license_plates   
-Permission Key: edit:visitor   
-Method: PUT   
-UniFi Access Requirement: Version 3.3.10 or later
+| Request URL | `/api/v1/developer/visitors/:id/license_plates` |
+| :--- | :--- |
+| Permission Key | `edit:visitor` |
+| Method | `PUT` |
+| UniFi Access Requirement | Version 3.3.10 or later |
 
 ### Request Header
 
@@ -733,10 +745,11 @@ curl --location --request PUT 'https://192.168.1.1:12445/api/v1/developer/visito
 
 This API allows you to unassign a license plate number from a visitor.
 
-Request URL: /api/v1/developer/visitors/:visitor_id/license_plates/:license_plate_id   
-Permission Key: edit:visitor   
-Method: DELETE   
-UniFi Access Requirement: Version 3.3.10 or later
+| Request URL | `/api/v1/developer/visitors/:visitor_id/license_plates/:license_plate_id` |
+| :--- | :--- |
+| Permission Key | `edit:visitor` |
+| Method | `DELETE` |
+| UniFi Access Requirement | Version 3.3.10 or later |
 
 ### Request Header
 

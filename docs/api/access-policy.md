@@ -15,9 +15,10 @@ The APIs here are designed for managing door access policies. These policies can
 
 This API allows you to create an access policy.
 
-Request URL: /api/v1/developer/access_policies   
-Permission Key: edit:policy   
-Method: POST
+| Request URL | `/api/v1/developer/access_policies` |
+| :--- | :--- |
+| Permission Key | `edit:policy` |
+| Method | `POST` |
 
 ### Request Header
 
@@ -94,9 +95,10 @@ curl '{host}/api/v1/developer/access_policies' \
 
 This API allows you to update a policy.
 
-Request URL: /api/v1/developer/access_policies/:id   
-Permission Key: edit:policy   
-Method: PUT
+| Request URL | `/api/v1/developer/access_policies/:id` |
+| :--- | :--- |
+| Permission Key | `edit:policy` |
+| Method | `PUT` |
 
 ### Request Header
 
@@ -146,9 +148,10 @@ curl '{host}/api/v1/developer/access_policies/242c88e3-0524-42de-8447-45891c5df7
 
 This API allows you to delete an access policy.
 
-Request URL: /api/v1/developer/access_policies/:id   
-Permission Key: edit:policy   
-Method: DELETE
+| Request URL | `/api/v1/developer/access_policies/:id` |
+| :--- | :--- |
+| Permission Key | `edit:policy` |
+| Method | `DELETE` |
 
 ### Request Header
 
@@ -182,9 +185,10 @@ curl -XDELETE '{host}'/api/v1/developer/access_policies/460d0bcc-5d4f-4e7b-8a3c-
 
 This API allows you to fetch a policy details.
 
-Request URL: /api/v1/developer/access_policies/:id   
-Permission Key: view:policy   
-Method: GET
+| Request URL | `/api/v1/developer/access_policies/:id` |
+| :--- | :--- |
+| Permission Key | `view:policy` |
+| Method | `GET` |
 
 ### Request Header
 
@@ -244,9 +248,10 @@ curl '{host}/api/v1/developer/ccess_policy'
 
 This API allows you to fetch all access policies.
 
-Request URL: /api/v1/developer/access_policies   
-Permission Key: view:policy   
-Method: GET
+| Request URL | `/api/v1/developer/access_policies` |
+| :--- | :--- |
+| Permission Key | `view:policy` |
+| Method | `GET` |
 
 ### Request Header
 
@@ -339,9 +344,10 @@ A holiday group refers to a collection of holidays.
 
 This API allows you to create a holiday group.
 
-Request URL: /api/v1/developer/access_policies/holiday_groups   
-Permission Key: edit:policy   
-Method: POST
+| Request URL | `/api/v1/developer/access_policies/holiday_groups` |
+| :--- | :--- |
+| Permission Key | `edit:policy` |
+| Method | `POST` |
 
 ### Request Header
 
@@ -413,9 +419,10 @@ curl '{host}/api/v1/developer/access_policies/holiday_groups'
 
 This API allows you to update a holiday group.
 
-Request URL: /api/v1/developer/access_policies/holiday_groups/:id   
-Permission Key: edit:policy   
-Method: PUT
+| Request URL | `/api/v1/developer/access_policies/holiday_groups/:id` |
+| :--- | :--- |
+| Permission Key | `edit:policy` |
+| Method | `PUT` |
 
 ### Request Header
 
@@ -502,9 +509,10 @@ curl -XPUT '{host}/api/v1/developer/access_policies/holiday_groups/7be7a7a0-818f
 
 This API allows you to delete a holiday group.
 
-Request URL: /api/v1/developer/access_policies/holiday_groups/:id   
-Permission Key: edit:policy   
-Method: DELETE
+| Request URL | `/api/v1/developer/access_policies/holiday_groups/:id` |
+| :--- | :--- |
+| Permission Key | `edit:policy` |
+| Method | `DELETE` |
 
 ### Request Header
 
@@ -540,9 +548,10 @@ curl -XDELETE '{host}/api/v1/developer/access_policies/holiday_groups/7be7a7a0-8
 
 This API allows you to fetch a holiday group.
 
-Request URL: /api/v1/developer/access_policies/holiday_groups/:id   
-Permission Key: view:policy   
-Method: GET
+| Request URL | `/api/v1/developer/access_policies/holiday_groups/:id` |
+| :--- | :--- |
+| Permission Key | `view:policy` |
+| Method | `GET` |
 
 ### Request Header
 
@@ -608,8 +617,9 @@ curl -XGET '{host}/api/v1/developer/access_policies/holiday_groups/7be7a7a0-818f
 
 This API allows you to fetch the list of all holiday groups.
 
-Request URL: /api/v1/developer/access_policies/holiday_groups   
-Permission Key: view:policy
+| Request URL | `/api/v1/developer/access_policies/holiday_groups` |
+| :--- | :--- |
+| Permission Key | `view:policy` |
 
 ### Request Header
 
@@ -670,9 +680,10 @@ These schemas are utilized for creating time periods for daily visits from Sunda
 
 This API allows you to create a door access schedule.
 
-Request URL: /api/v1/developer/access_policies/schedules   
-Permission Key: edit:policy   
-Method: POST
+| Request URL | `/api/v1/developer/access_policies/schedules` |
+| :--- | :--- |
+| Permission Key | `edit:policy` |
+| Method | `POST` |
 
 ### Request Header
 
@@ -792,9 +803,10 @@ curl '{host}/api/v1/developer/access_policies/schedules' \
 
 This API allows you to update a door access schedule.
 
-Request URL: /api/v1/developer/access_policies/schedules/:id   
-Permission Key: edit:policy   
-Method: PUT
+| Request URL | `/api/v1/developer/access_policies/schedules/:id` |
+| :--- | :--- |
+| Permission Key | `edit:policy` |
+| Method | `PUT` |
 
 ### Request Header
 
@@ -870,9 +882,10 @@ curl -XPUT '{host}/api/v1/developer/access_policies/schedules/1d31b648-b8ff-4bd1
 
 This API allows you to fetch a door access schedule.
 
-Request URL: /api/v1/developer/access_policies/schedules/:id   
-Permission Key: view:policy   
-Method: GET
+| Request URL | `/api/v1/developer/access_policies/schedules/:id` |
+| :--- | :--- |
+| Permission Key | `view:policy` |
+| Method | `GET` |
 
 ### Request Header
 
@@ -983,9 +996,10 @@ curl --location '{host}/api/v1/developer/access_policies/schedules/908079e7-e26b
 
 This API allows you to fetch all door access schedules.
 
-Request URL: /api/v1/developer/access_policies/schedules   
-Permission Key: view:policy   
-Method: GET
+| Request URL | `/api/v1/developer/access_policies/schedules` |
+| :--- | :--- |
+| Permission Key | `view:policy` |
+| Method | `GET` |
 
 ### Request Header
 
@@ -1038,9 +1052,10 @@ curl --location '{host}'/api/v1/developer/access_policies/schedules'
 
 This API allows you to delete a door access schedule.
 
-Request URL: /api/v1/developer/access_policies/schedules/:id   
-Permission Key: edit:policy   
-Method: DELETE
+| Request URL | `/api/v1/developer/access_policies/schedules/:id` |
+| :--- | :--- |
+| Permission Key | `edit:policy` |
+| Method | `DELETE` |
 
 ### Request Header
 

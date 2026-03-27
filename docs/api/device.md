@@ -6,9 +6,10 @@ The APIs here are designed for device management, including obtaining device lis
 
 Obtain a list of all current devices. The device ID is required for enrolling an NFC card.
 
-Request URL: /api/v1/developer/devices   
-Permission Key: view:device   
-Method: GET
+| Request URL | `/api/v1/developer/devices` |
+| :--- | :--- |
+| Permission Key | `view:device` |
+| Method | `GET` |
 
 ### Request Header
 
@@ -88,10 +89,11 @@ curl '{host}/api/v1/developer/devices?refresh=true' \
 
 This API allows you to fetch the current access method settings of an Access device.
 
-Request URL: /api/v1/developer/devices/:device_id/settings   
-Permission Key: view:device   
-Method: GET   
-UniFi Access Requirement: Version 3.3.10 or later
+| Request URL | `/api/v1/developer/devices/:device_id/settings` |
+| :--- | :--- |
+| Permission Key | `view:device` |
+| Method | `GET` |
+| UniFi Access Requirement | Version 3.3.10 or later |
 
 ### Request Header
 
@@ -153,10 +155,11 @@ curl --location 'https://192.168.1.1:12445/api/v1/developer/devices/942a6f4247b2
 
 This API allows you to update the access method settings of an Access device.
 
-Request URL: /api/v1/developer/devices/:device_id/settings   
-Permission Key: edit:device   
-Method: PUT \   
-UniFi Access Requirement: Version 3.3.10 or later
+| Request URL | `/api/v1/developer/devices/:device_id/settings` |
+| :--- | :--- |
+| Permission Key | `edit:device` |
+| Method | `PUT` |
+| UniFi Access Requirement | Version 3.3.10 or later |
 
 ### Request Header
 
@@ -210,10 +213,11 @@ curl --location --request PUT \
 
 This API allows you to trigger the doorbell on an Intercom or Reader Pro.
 
-Request URL: /api/v1/developer/devices/:device_id/doorbell   
-Permission Key: edit:device   
-Method: POST   
-UniFi Access Requirement: Version 4.0.10 or later
+| Request URL | `/api/v1/developer/devices/:device_id/doorbell` |
+| :--- | :--- |
+| Permission Key | `edit:device` |
+| Method | `POST` |
+| UniFi Access Requirement | Version 4.0.10 or later |
 
 ### Request Header
 

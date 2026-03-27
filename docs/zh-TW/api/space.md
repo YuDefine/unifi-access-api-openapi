@@ -8,9 +8,10 @@
 
 取得目前所有樓層和門資源，用於存取政策和訪客指派。
 
-請求 URL: /api/v1/developer/door_groups/topology
-權限金鑰: view:space
-方法: GET
+| 請求 URL | `/api/v1/developer/door_groups/topology` |
+| :--- | :--- |
+| 權限金鑰 | `view:space` |
+| 方法 | `GET` |
 
 
 ### 請求範例
@@ -103,9 +104,10 @@ curl -X GET '{host}/api/v1/developer/door_groups/topology'
 
 此 API 允許您建立門群組。
 
-請求 URL: /api/v1/developer/door_groups
-權限金鑰: edit:space
-方法: POST
+| 請求 URL | `/api/v1/developer/door_groups` |
+| :--- | :--- |
+| 權限金鑰 | `edit:space` |
+| 方法 | `POST` |
 
 
 ### 請求範例
@@ -170,9 +172,10 @@ curl '{host}/api/v1/developer/door_groups'
 
 此 API 允許您取得門群組詳細資訊。
 
-請求 URL: /api/v1/developer/door_groups/:id
-權限金鑰: view:space
-方法: GET
+| 請求 URL | `/api/v1/developer/door_groups/:id` |
+| :--- | :--- |
+| 權限金鑰 | `view:space` |
+| 方法 | `GET` |
 
 
 ### 請求範例
@@ -245,9 +248,10 @@ curl '{host}/api/v1/developer/door_groups/d5573467-d6b3-4e8f-8e48-8a322b91664a'
 
 此 API 允許您查詢門群組詳細資訊。
 
-請求 URL：/api/v1/developer/door_groups/:id
-權限金鑰：view:space
-方法：GET
+| 請求 URL | `/api/v1/developer/door_groups/:id` |
+| :--- | :--- |
+| 權限金鑰 | `view:space` |
+| 方法 | `GET` |
 
 ### 請求標頭
 
@@ -278,9 +282,10 @@ curl '{host}/api/v1/developer/door_groups/d5573467-d6b3-4e8f-8e48-8a322b91664a'
 
 此 API 允許您更新門群組詳細資訊。
 
-請求 URL: /api/v1/developer/door_groups/:id
-權限金鑰: edit:space
-方法: PUT
+| 請求 URL | `/api/v1/developer/door_groups/:id` |
+| :--- | :--- |
+| 權限金鑰 | `edit:space` |
+| 方法 | `PUT` |
 
 
 ### 請求範例
@@ -349,9 +354,10 @@ curl -XPUT '{host}/api/v1/developer/door_groups/0140fa3d-8973-4305-a0ce-5306ae27
 
 此 API 允許您取得所有門群組的列表。
 
-請求 URL: /api/v1/developer/door_groups
-權限金鑰: view:space
-方法: GET
+| 請求 URL | `/api/v1/developer/door_groups` |
+| :--- | :--- |
+| 權限金鑰 | `view:space` |
+| 方法 | `GET` |
 
 
 ### 回應範例
@@ -421,9 +427,10 @@ curl '{host}/api/v1/developer/door_groups'
 
 此 API 允許您刪除門群組。
 
-請求 URL: /api/v1/developer/door_groups/:id
-權限金鑰: edit:space
-方法: DELETE
+| 請求 URL | `/api/v1/developer/door_groups/:id` |
+| :--- | :--- |
+| 權限金鑰 | `edit:space` |
+| 方法 | `DELETE` |
 
 
 ### 請求範例
@@ -466,9 +473,10 @@ curl -XDELETE '{host}/api/v1/developer/door_groups/0140fa3d-8973-4305-a0ce-5306a
 
 此 API 允許您取得門的詳細資訊。
 
-請求 URL: /api/v1/developer/doors/:id
-權限金鑰: view:space
-方法: GET
+| 請求 URL | `/api/v1/developer/doors/:id` |
+| :--- | :--- |
+| 權限金鑰 | `view:space` |
+| 方法 | `GET` |
 
 
 ### 請求範例
@@ -533,9 +541,10 @@ curl -XGET '{host}/api/v1/developer/doors/0ed545f8-2fcd-4839-9021-b39e707f6aa9'
 
 此 API 允許您取得所有門的列表。
 
-請求 URL: /api/v1/developer/doors
-權限金鑰: view:space
-方法: GET
+| 請求 URL | `/api/v1/developer/doors` |
+| :--- | :--- |
+| 權限金鑰 | `view:space` |
+| 方法 | `GET` |
 
 
 ### 請求範例
@@ -606,9 +615,10 @@ curl -XGET '{host}/api/v1/developer/doors'
 
 此 API 允許您遠端解鎖門。
 
-請求 URL: /api/v1/developer/doors/:id/unlock
-權限金鑰: edit:space
-方法: PUT
+| 請求 URL | `/api/v1/developer/doors/:id/unlock` |
+| :--- | :--- |
+| 權限金鑰 | `edit:space` |
+| 方法 | `PUT` |
 
 
 ### 請求範例
@@ -677,10 +687,11 @@ curl --location --request PUT \
 
 此 API 允許您臨時設定門的鎖定規則。
 
-請求 URL: /api/v1/developer/doors/:id/lock_rule
-權限金鑰: edit:space
-方法: PUT
-UniFi Access 需求: 1.24.6 或更新版本
+| 請求 URL | `/api/v1/developer/doors/:id/lock_rule` |
+| :--- | :--- |
+| 權限金鑰 | `edit:space` |
+| 方法 | `PUT` |
+| UniFi Access 需求 | 1.24.6 或更新版本 |
 
 
 ### 請求範例
@@ -806,10 +817,11 @@ curl -XPUT '{host}/api/v1/developer/doors/e4978b83-203d-4015-97df-b86efc91cb0c/l
 
 此 API 允許您取得門的鎖定規則。
 
-請求 URL: /api/v1/developer/doors/:id/lock_rule
-權限金鑰: view:space
-方法: GET
-UniFi Access 需求: 1.24.6 或更新版本
+| 請求 URL | `/api/v1/developer/doors/:id/lock_rule` |
+| :--- | :--- |
+| 權限金鑰 | `view:space` |
+| 方法 | `GET` |
+| UniFi Access 需求 | 1.24.6 或更新版本 |
 
 
 ### 請求範例
@@ -903,10 +915,11 @@ curl -XGET '{host}/api/v1/developer/doors/e4978b83-203d-4015-97df-b86efc91cb0c/l
 
 此 API 允許您設定所有門的緊急狀態。
 
-請求 URL: /api/v1/developer/doors/settings/emergency
-權限金鑰: edit:space
-方法: PUT
-UniFi Access 需求: 1.24.6 或更新版本
+| 請求 URL | `/api/v1/developer/doors/settings/emergency` |
+| :--- | :--- |
+| 權限金鑰 | `edit:space` |
+| 方法 | `PUT` |
+| UniFi Access 需求 | 1.24.6 或更新版本 |
 
 
 ### 請求範例
@@ -978,10 +991,11 @@ curl -XPUT '{host}/api/v1/developer/doors/settings/emergency' \
 
 此 API 允許您取得所有門的緊急狀態。
 
-請求 URL: /api/v1/developer/doors/settings/emergency
-權限金鑰: view:space
-方法: GET
-UniFi Access 需求: 1.24.6 或更新版本
+| 請求 URL | `/api/v1/developer/doors/settings/emergency` |
+| :--- | :--- |
+| 權限金鑰 | `view:space` |
+| 方法 | `GET` |
+| UniFi Access 需求 | 1.24.6 或更新版本 |
 
 
 ### 請求範例

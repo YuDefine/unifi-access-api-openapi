@@ -6,9 +6,10 @@ The APIs here are designed for managing spaces, including doors, door groups, an
 
 Fetch all current floor and door resources for access policy and visitor assignment purposes.
 
-Request URL: /api/v1/developer/door_groups/topology   
-Permission Key: view:space   
-Method: GET
+| Request URL | `/api/v1/developer/door_groups/topology` |
+| :--- | :--- |
+| Permission Key | `view:space` |
+| Method | `GET` |
 
 ### Request Header
 
@@ -84,9 +85,10 @@ curl -X GET '{host}/api/v1/developer/door_groups/topology'
 
 This API allows you to create a door group.
 
-Request URL: /api/v1/developer/door_groups   
-Permission Key: edit:space   
-Method: POST
+| Request URL | `/api/v1/developer/door_groups` |
+| :--- | :--- |
+| Permission Key | `edit:space` |
+| Method | `POST` |
 
 ### Request Header
 
@@ -137,9 +139,10 @@ curl '{host}/api/v1/developer/door_groups'
 
 This API allows you to fetch door group details.
 
-Request URL: /api/v1/developer/door_groups/:id   
-Permission Key: view:space   
-Method: GET
+| Request URL | `/api/v1/developer/door_groups/:id` |
+| :--- | :--- |
+| Permission Key | `view:space` |
+| Method | `GET` |
 
 ### Request Header
 
@@ -223,9 +226,10 @@ Customized groups:
 
 This API allows you to update door group details.
 
-Request URL: /api/v1/developer/door_groups/:id   
-Permission Key: edit:space   
-Method: PUT
+| Request URL | `/api/v1/developer/door_groups/:id` |
+| :--- | :--- |
+| Permission Key | `edit:space` |
+| Method | `PUT` |
 
 ### Request Header
 
@@ -277,9 +281,10 @@ curl -XPUT '{host}/api/v1/developer/door_groups/0140fa3d-8973-4305-a0ce-5306ae27
 
 This API allows you to fetch the list of all door groups.
 
-Request URL: /api/v1/developer/door_groups   
-Permission Key: view:space   
-Method: GET
+| Request URL | `/api/v1/developer/door_groups` |
+| :--- | :--- |
+| Permission Key | `view:space` |
+| Method | `GET` |
 
 ### Request Header
 
@@ -337,9 +342,10 @@ curl '{host}/api/v1/developer/door_groups'
 
 This API allows you to delete a door group.
 
-Request URL: /api/v1/developer/door_groups/:id   
-Permission Key: edit:space   
-Method: DELETE
+| Request URL | `/api/v1/developer/door_groups/:id` |
+| :--- | :--- |
+| Permission Key | `edit:space` |
+| Method | `DELETE` |
 
 ### Request Header
 
@@ -375,9 +381,10 @@ curl -XDELETE '{host}/api/v1/developer/door_groups/0140fa3d-8973-4305-a0ce-5306a
 
 This API allows you to fetch door details.
 
-Request URL: /api/v1/developer/doors/:id   
-Permission Key: view:space   
-Method: GET
+| Request URL | `/api/v1/developer/doors/:id` |
+| :--- | :--- |
+| Permission Key | `view:space` |
+| Method | `GET` |
 
 ### Request Header
 
@@ -426,9 +433,10 @@ curl -XGET '{host}/api/v1/developer/doors/0ed545f8-2fcd-4839-9021-b39e707f6aa9'
 
 This API allows you to fetch the list of all doors.
 
-Request URL: /api/v1/developer/doors   
-Permission Key: view:space   
-Method: GET
+| Request URL | `/api/v1/developer/doors` |
+| :--- | :--- |
+| Permission Key | `view:space` |
+| Method | `GET` |
 
 ### Request Header
 
@@ -485,9 +493,10 @@ curl -XGET '{host}/api/v1/developer/doors'
 
 This API allows you to remotely unlock a door.
 
-Request URL: /api/v1/developer/doors/:id/unlock   
-Permission Key: edit:space   
-Method: PUT
+| Request URL | `/api/v1/developer/doors/:id/unlock` |
+| :--- | :--- |
+| Permission Key | `edit:space` |
+| Method | `PUT` |
 
 ### Description:
 
@@ -545,10 +554,11 @@ curl --location --request PUT \
 
 This API allows you to temporarily set the locking rules for doors.
 
-Request URL: /api/v1/developer/doors/:id/lock_rule   
-Permission Key: edit:space   
-Method: PUT   
-UniFi Access Requirement: 1.24.6 or later
+| Request URL | `/api/v1/developer/doors/:id/lock_rule` |
+| :--- | :--- |
+| Permission Key | `edit:space` |
+| Method | `PUT` |
+| UniFi Access Requirement | 1.24.6 or later |
 
 ### Request Header
 
@@ -664,10 +674,11 @@ curl -XPUT '{host}/api/v1/developer/doors/e4978b83-203d-4015-97df-b86efc91cb0c/l
 
 This API allows you to fetch the locking rules for doors.
 
-Request URL: /api/v1/developer/doors/:id/lock_rule   
-Permission Key: view:space   
-Method: GET   
-UniFi Access Requirement: 1.24.6 or later
+| Request URL | `/api/v1/developer/doors/:id/lock_rule` |
+| :--- | :--- |
+| Permission Key | `view:space` |
+| Method | `GET` |
+| UniFi Access Requirement | 1.24.6 or later |
 
 ### Request Header
 
@@ -751,10 +762,11 @@ curl -XGET '{host}/api/v1/developer/doors/e4978b83-203d-4015-97df-b86efc91cb0c/l
 
 This API allows you to set the emergency status for all doors.
 
-Request URL: /api/v1/developer/doors/settings/emergency   
-Permission Key: edit:space   
-Method: PUT   
-UniFi Access Requirement: 1.24.6 or later
+| Request URL | `/api/v1/developer/doors/settings/emergency` |
+| :--- | :--- |
+| Permission Key | `edit:space` |
+| Method | `PUT` |
+| UniFi Access Requirement | 1.24.6 or later |
 
 ### Request Header
 
@@ -817,10 +829,11 @@ curl -XPUT '{host}/api/v1/developer/doors/settings/emergency' \
 
 This API allows you to fetch the emergency status for all doors.
 
-Request URL: /api/v1/developer/doors/settings/emergency   
-Permission Key: view:space   
-Method: GET   
-UniFi Access Requirement: 1.24.6 or later
+| Request URL | `/api/v1/developer/doors/settings/emergency` |
+| :--- | :--- |
+| Permission Key | `view:space` |
+| Method | `GET` |
+| UniFi Access Requirement | 1.24.6 or later |
 
 ### Request Header
 

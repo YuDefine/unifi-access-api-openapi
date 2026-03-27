@@ -8,10 +8,11 @@
 
 此 API 可讓您發送邀請，邀請使用者加入 UniFi Identity。
 
-請求 URL: /api/v1/developer/users/identity/invitations
-權限金鑰: edit:user
-方法: POST
-UniFi Access 需求: 1.24.6 或更新版本
+| 請求 URL | `/api/v1/developer/users/identity/invitations` |
+| :--- | :--- |
+| 權限金鑰 | `edit:user` |
+| 方法 | `POST` |
+| UniFi Access 需求 | 1.24.6 或更新版本 |
 
 
 ### 請求範例: Shell/cURL
@@ -78,10 +79,11 @@ curl -XPOST '{host}/api/v1/developer/users/identity/invitations' \
 
 此 API 可讓您取得可用的 UniFi Identity 資源。
 
-請求 URL: /api/v1/developer/users/identity/assignments
-權限金鑰: view:user
-方法: GET
-UniFi Access 需求: 1.24.6 或更新版本
+| 請求 URL | `/api/v1/developer/users/identity/assignments` |
+| :--- | :--- |
+| 權限金鑰 | `view:user` |
+| 方法 | `GET` |
+| UniFi Access 需求 | 1.24.6 或更新版本 |
 
 
 ### 請求範例: Shell/cURL
@@ -153,10 +155,11 @@ curl '{host}/api/v1/developer/users/identity/assignments?resource_type=evstation
 
 此 API 可讓您將 UniFi Identity 資源指派給使用者。
 
-請求 URL: /api/v1/developer/users/:id/identity/assignments
-權限金鑰: edit:user
-方法: POST
-UniFi Access 需求: 1.24.6 或更新版本
+| 請求 URL | `/api/v1/developer/users/:id/identity/assignments` |
+| :--- | :--- |
+| 權限金鑰 | `edit:user` |
+| 方法 | `POST` |
+| UniFi Access 需求 | 1.24.6 或更新版本 |
 
 
 ### 請求範例: Shell/cURL
@@ -211,11 +214,13 @@ curl -XPOST '{host}/api/v1/developer/users/b602879b-b857-400b-970b-336d4cb881ad/
 
 此 API 可讓您取得指派給使用者的 UniFi Identity 資源。
 
-請求 URL: /api/v1/developer/users/:id/identity/assignments
-權限金鑰: view:user
+| 請求 URL | `/api/v1/developer/users/:id/identity/assignments` |
+| :--- | :--- |
+| 權限金鑰 | `view:user` |
 
-方法: GET
-UniFi Access 需求: 1.24.6 或更新版本
+| 方法 | `GET` |
+| :--- | :--- |
+| UniFi Access 需求 | 1.24.6 或更新版本 |
 
 
 ### 請求範例: Shell/cURL
@@ -290,10 +295,11 @@ curl -XGET '{host}'/api/v1/developer/users/b602879b-b857-400b-970b-336d4cb881ad/
 
 此 API 可讓您將 UniFi Identity 資源指派給使用者群組。
 
-請求 URL: /api/v1/developer/user_groups/:id/identity/assignments
-權限金鑰: edit:user
-方法: POST
-UniFi Access 需求: 2.2.0 或更新版本
+| 請求 URL | `/api/v1/developer/user_groups/:id/identity/assignments` |
+| :--- | :--- |
+| 權限金鑰 | `edit:user` |
+| 方法 | `POST` |
+| UniFi Access 需求 | 2.2.0 或更新版本 |
 
 
 ### 請求範例: Shell/cURL
@@ -347,10 +353,11 @@ curl -XPOST '{{host}}/api/v1/developer/user_groups/7476c839-8e10-472e-894f-c5b82
 
 此 API 可讓您取得指派給使用者群組的 UniFi Identity 資源。
 
-請求 URL: /api/v1/developer/user_groups/:id/identity/assignments
-權限金鑰: view:user
-方法: GET
-UniFi Access 需求: 2.2.0 或更新版本
+| 請求 URL | `/api/v1/developer/user_groups/:id/identity/assignments` |
+| :--- | :--- |
+| 權限金鑰 | `view:user` |
+| 方法 | `GET` |
+| UniFi Access 需求 | 2.2.0 或更新版本 |
 
 
 ### 請求範例: Shell/cURL

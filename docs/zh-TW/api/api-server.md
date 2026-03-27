@@ -8,10 +8,11 @@
 
 此 API 可讓您更新 Access API 的 HTTPS 憑證，僅適用於連接埠 12445。**請注意，需要重新啟動 Access 應用程式才能套用這些變更。** 如果私鑰與憑證不匹配，將會產生「參數錯誤」訊息。
 
-請求 URL: /api/v1/developer/api_server/certificates
-權限金鑰: edit:api_server
-方法: POST
-UniFi Access 需求: 2.2.10 或更新版本
+| 請求 URL | `/api/v1/developer/api_server/certificates` |
+| :--- | :--- |
+| 權限金鑰 | `edit:api_server` |
+| 方法 | `POST` |
+| UniFi Access 需求 | 2.2.10 或更新版本 |
 
 
 ### 回應範例
@@ -52,10 +53,11 @@ curl -XPOST '{{host}}/api/v1/developer/api_server/certificates'
 
 此 API 可讓您刪除 Access API 的 HTTPS 憑證，僅適用於連接埠 12445。**請注意，需要重新啟動 Access 應用程式才能套用這些變更。**
 
-請求 URL: /api/v1/developer/api_server/certificates
-權限金鑰: edit:api_server
-方法: DELETE
-UniFi Access 需求: 2.2.10 或更新版本
+| 請求 URL | `/api/v1/developer/api_server/certificates` |
+| :--- | :--- |
+| 權限金鑰 | `edit:api_server` |
+| 方法 | `DELETE` |
+| UniFi Access 需求 | 2.2.10 或更新版本 |
 
 
 ### 回應範例

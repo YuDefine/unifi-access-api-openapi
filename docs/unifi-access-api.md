@@ -301,9 +301,10 @@ PENDING: A new admin account has been invited by the SSO account, but the invita
 
 This API allows you to register a new user.
 
-Request URL: /api/v1/developer/users   
-Permission Key: edit:user   
-Method: POST
+| Request URL | `/api/v1/developer/users` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `POST` |
 
 # Request Header
 
@@ -347,9 +348,10 @@ curl '{host}/api/v1/developer/users'
 
 This API allows you to update user details.
 
-Request URL: /api/v1/developer/users/:id   
-Permission Key: edit:user   
-Method: PUT
+| Request URL | `/api/v1/developer/users/:id` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `PUT` |
 
 # Request Header
 
@@ -398,9 +400,10 @@ curl -XPUT '{host}}/api/v1/developer/user'
 
 This API allows you to fetch user details.
 
-Request URL: /api/v1/developer/users/:id   
-Permission Key: view:user   
-Method: GET
+| Request URL | `/api/v1/developer/users/:id` |
+| :--- | :--- |
+| Permission Key | `view:user` |
+| Method | `GET` |
 
 # Request Header
 
@@ -494,9 +497,10 @@ curl -XGET '{host}/api/v1/developer/users/348e868e-534a-4ace-ba77-ce80394e31e3? 
 
 This API allows you to fetch all users.
 
-Request URL: /api/v1/developer/users   
-Permission Key: view:user   
-Method: GET
+| Request URL | `/api/v1/developer/users` |
+| :--- | :--- |
+| Permission Key | `view:user` |
+| Method | `GET` |
 
 # Request Header
 
@@ -623,9 +627,10 @@ curl -XGET '{host}/api/v1/developer/users?page_num=1&page_size=25&expand[]=acces
 
 # 3.6 Assign Access Policy to User
 
-Request URL: /api/v1/developer/users/:id/access_policies   
-Permission Key: edit:user   
-Method: PUT
+| Request URL | `/api/v1/developer/users/:id/access_policies` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `PUT` |
 
 # Request Header
 
@@ -671,9 +676,10 @@ curl -XPUT '{host}/api/v1/developer/users/38857332-7a5e-4bb6-8837-651b2a47cea5/a
 
 # 3.7 Assign NFC Card to User
 
-Request URL: /api/v1/developer/users/:id/nfc_cards   
-Permission Key: edit:user   
-Method: PUT
+| Request URL | `/api/v1/developer/users/:id/nfc_cards` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `PUT` |
 
 # Request Header
 
@@ -709,9 +715,10 @@ curl -XPUT '{host}/api/v1/developer/users/17d2f099-99df-429b-becb-1399a6937e5a/n
 
 # 3.8 Unassign NFC Card from User
 
-Request URL: /api/v1/developer/users/:id/nfc_cards/delete   
-Permission Key: edit:user   
-Method: PUT
+| Request URL | `/api/v1/developer/users/:id/nfc_cards/delete` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `PUT` |
 
 # Request Header
 
@@ -748,9 +755,10 @@ curl -XDELETE '{host}/api/v1/developer/users/17d2f099-99df-429b-becb-1399a6937e5
 
 # 3.9 Assign PIN Code to User
 
-Request URL: /api/v1/developer/users/:id/pin_codes   
-Permission Key: edit:user   
-Method: PUT
+| Request URL | `/api/v1/developer/users/:id/pin_codes` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `PUT` |
 
 # Request Header
 
@@ -787,9 +795,10 @@ curl -XPUT '{host}/api/v1/developer/users/17d2f099-99df-429b-becb-1399a6937e5a/p
 
 # 3.10 Unassign PIN Code from User
 
-Request URL: /api/v1/developer/users/:id/pin_codes   
-Permission Key: edit:user   
-Method: DELETE
+| Request URL | `/api/v1/developer/users/:id/pin_codes` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `DELETE` |
 
 # Request Header
 
@@ -819,10 +828,11 @@ curl -XDELETE '{host}/api/v1/developer/users/17d2f099-99df-429b-becb-1399a6937e5
 
 # 3.11 Create User Group
 
-Request URL: /api/v1/developer/user_groups   
-Permission Key: edit:user   
-Method: POST   
-UniFi Access Requirement: 2.2.6 or later   
+| Request URL | `/api/v1/developer/user_groups` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `POST` |
+| UniFi Access Requirement | 2.2.6 or later |
 API version: v1
 
 # Request Header
@@ -859,10 +869,11 @@ curl -XPOST '{host}/api/v1/developer/user_groups'
 
 # 3.12 Fetch All User Groups
 
-Request URL: /api/v1/developer/user_groups   
-Permission Key: view:user   
-Method: GET   
-UniFi Access Requirement: 2.2.6 or later   
+| Request URL | `/api/v1/developer/user_groups` |
+| :--- | :--- |
+| Permission Key | `view:user` |
+| Method | `GET` |
+| UniFi Access Requirement | 2.2.6 or later |
 API version: v1
 
 # Request Header
@@ -902,10 +913,11 @@ curl -XGET '{host}/api/v1/developer/developer/user_groups'
 
 # 3.13 Fetch User Group
 
-Request URL: /api/v1/developer/user_groups/:id   
-Permission Key: view:user   
-Method: GET   
-UniFi Access Requirement: 2.2.6 or later   
+| Request URL | `/api/v1/developer/user_groups/:id` |
+| :--- | :--- |
+| Permission Key | `view:user` |
+| Method | `GET` |
+| UniFi Access Requirement | 2.2.6 or later |
 API version: v1
 
 # Request Header
@@ -947,10 +959,11 @@ curl -XGET '{host}/api/v1/developer/developer/user_groups/75011ee6-b7ab-4927-9d9
 
 # 3.14 Update User Group
 
-Request URL: /api/v1/developer/user_groups/:id   
-Permission Key: edit:user   
-Method: PUT   
-UniFi Access Requirement: 2.2.6 or later   
+| Request URL | `/api/v1/developer/user_groups/:id` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `PUT` |
+| UniFi Access Requirement | 2.2.6 or later |
 API version: v1
 
 # Request Header
@@ -989,10 +1002,11 @@ curl -XPUT '{host}/api/v1/developer/user_groups/75011ee6-b7ab-4927-9d9f-dd08ef0a
 
 # 3.15 Delete User Group
 
-Request URL: /api/v1/developer/user_groups/:id   
-Permission Key: edit:user   
-Method: DELETE   
-UniFi Access Requirement: 2.2.6 or later   
+| Request URL | `/api/v1/developer/user_groups/:id` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `DELETE` |
+| UniFi Access Requirement | 2.2.6 or later |
 API version: v1
 
 # Request Header
@@ -1023,10 +1037,11 @@ curl -XDELETE '{host}/api/v1/developer/developer/user_groups/75011ee6-b7ab-4927-
 
 # 3.16 Assign User to User Group
 
-Request URL: /api/v1/developer/user_groups/:id/users   
-Permission Key: edit:user   
-Method: POST   
-UniFi Access Requirement: 2.2.6 or later   
+| Request URL | `/api/v1/developer/user_groups/:id/users` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `POST` |
+| UniFi Access Requirement | 2.2.6 or later |
 API version: v1
 
 # Request Header
@@ -1062,10 +1077,11 @@ curl -XPOST '{host}/api/v1/developer/user_groups/75011ee6-b7ab-4927-9d9f-dd08ef0
 
 # 3.17 Unassign User from User Group
 
-Request URL: /api/v1/developer/user_groups/:id/users/delete   
-Permission Key: edit:user   
-Method: POST   
-UniFi Access Requirement: 2.2.6 or later   
+| Request URL | `/api/v1/developer/user_groups/:id/users/delete` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `POST` |
+| UniFi Access Requirement | 2.2.6 or later |
 API version: v1
 
 # Request Header
@@ -1103,10 +1119,11 @@ curl -XPOST '{host}/api/v1/developer/user_groups/75011ee6-b7ab-4927-9d9f-dd08ef0
 
 This API allows you to fetch only the users in a user group, excluding any subgroups.
 
-Request URL: /api/v1/developer/user_groups/:id/users   
-Permission Key: view:user   
-Method: GET   
-UniFi Access Requirement: 2.2.6 or later   
+| Request URL | `/api/v1/developer/user_groups/:id/users` |
+| :--- | :--- |
+| Permission Key | `view:user` |
+| Method | `GET` |
+| UniFi Access Requirement | 2.2.6 or later |
 API version: v1
 
 # Request Header
@@ -1147,10 +1164,11 @@ curl -XGET '{host}/api/v1/developer/user_groups/23676a54-382e-4121-AA80-878d2d9b
 
 This API allows you to fetch all users in a user group, including those in subgroups.
 
-Request URL: /api/v1/developer/user_groups/:id/users/all   
-Permission Key: view:user   
-Method: GET   
-UniFi Access Requirement: 2.2.6 or later   
+| Request URL | `/api/v1/developer/user_groups/:id/users/all` |
+| :--- | :--- |
+| Permission Key | `view:user` |
+| Method | `GET` |
+| UniFi Access Requirement | 2.2.6 or later |
 API version: v1
 
 # Request Header
@@ -1207,10 +1225,11 @@ curl -XGET '{host}'/api/v1/developer/user_groups/23676a54-382e-4121-AA80-878d2d9
 
 This API allows you to fetch the access policies assigned to a user.
 
-Request URL: /api/v1/developer/users/:id/access_policies   
-Permission Key: view:user   
-Method: GET   
-UniFi Access Requirement: 2.2.6 or later   
+| Request URL | `/api/v1/developer/users/:id/access_policies` |
+| :--- | :--- |
+| Permission Key | `view:user` |
+| Method | `GET` |
+| UniFi Access Requirement | 2.2.6 or later |
 API version: v1
 
 # Request Header
@@ -1268,10 +1287,11 @@ curl -XGET '{host}/users/27aa91ac-2924-43d4-82e1-24b6a570d29e/access_policies? o
 
 This API is used to assign access policies to a user group.
 
-Request URL: /api/v1/developer/user_groups/:id/access_policies   
-Permission Key: edit:user   
-Method: PUT   
-UniFi Access Requirement: 2.2.6 or later   
+| Request URL | `/api/v1/developer/user_groups/:id/access_policies` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `PUT` |
+| UniFi Access Requirement | 2.2.6 or later |
 API version: v1
 
 # Request Header
@@ -1313,10 +1333,11 @@ curl -XPUT '{host}/user_groups/23676a54-382e-4121-AA80-878d2d9bacaa/access_polic
 
 This API allows you to fetch the access policies assigned to a user group.
 
-Request URL: /api/v1/developer/user_groups/:id/access_policies   
-Permission Key: view:user   
-Method: GET   
-UniFi Access Requirement: 2.2.6 or later   
+| Request URL | `/api/v1/developer/user_groups/:id/access_policies` |
+| :--- | :--- |
+| Permission Key | `view:user` |
+| Method | `GET` |
+| UniFi Access Requirement | 2.2.6 or later |
 API version: v1
 
 # Request Header
@@ -1373,10 +1394,11 @@ curl -XGET '{host}/user_groups/23676a54-382e-4121-AA80-878d2d9bacaa/access_polic
 
 This API allows you to delete a user whose status is disabled.
 
-Request URL: /api/v1/developer/users/:id   
-Permission Key: edit:user   
-Method: DELETE   
-UniFi Access Requirement: 3.1.30 or later   
+| Request URL | `/api/v1/developer/users/:id` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `DELETE` |
+| UniFi Access Requirement | 3.1.30 or later |
 API version: v1   
 Note: Only users with a disabled can be deleted.
 
@@ -1410,10 +1432,11 @@ curl -XDELETE '{host}/api/v1/developer/developer/users/348e868e-534a-4ace-ba77-c
 
 This API allows you to fetch all users.
 
-Request URL: /api/v1/developer/users/search   
-Permission Key: view:user   
-Method: GET   
-UniFi Access Requirement: 3.1.30 or later
+| Request URL | `/api/v1/developer/users/search` |
+| :--- | :--- |
+| Permission Key | `view:user` |
+| Method | `GET` |
+| UniFi Access Requirement | 3.1.30 or later |
 
 # Request Header
 
@@ -1468,10 +1491,11 @@ curl -XGET '{host}/api/v1/developer/users/search?keyword=Name&user_id=472cabd2-0
 
 This API assigns a suspended or inactive Touch Pass to a specific user.
 
-Request URL: /api/v1/developer/users/:user_id/touch_passes/:touch_pass_id   
-Permission Key: edit:user   
-Method: PUT   
-UniFi Access Requirement: Version 3.2.20 or later
+| Request URL | `/api/v1/developer/users/:user_id/touch_passes/:touch_pass_id` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `PUT` |
+| UniFi Access Requirement | Version 3.2.20 or later |
 
 # Request Header
 
@@ -1515,10 +1539,11 @@ curl --location --request PUT '{host}/api/v1/developer/users/cadb8707-a2c1-4407-
 
 This API unassigns a Touch Pass from a specific user.
 
-Request URL: /api/v1/developer/users/:user_id/touch_passes/:touch_pass_id   
-Permission Key: edit:user   
-Method: DELETE   
-UniFi Access Requirement: Version 3.2.20 or later
+| Request URL | `/api/v1/developer/users/:user_id/touch_passes/:touch_pass_id` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `DELETE` |
+| UniFi Access Requirement | Version 3.2.20 or later |
 
 # Request Header
 
@@ -1565,10 +1590,11 @@ curl --location --request DELETE 'https://192.168.1.1:12445/api/v1/developer/use
 
 This API allows assigning unassigned Touch Passes to users using their email addresses.
 
-Request URL: /api/v1/developer/users/touch_passes/assign   
-Permission Key: edit:user   
-Method: PUT   
-UniFi Access Requirement: Version 3.2.20 or later
+| Request URL | `/api/v1/developer/users/touch_passes/assign` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `PUT` |
+| UniFi Access Requirement | Version 3.2.20 or later |
 
 # Request Header
 
@@ -1624,10 +1650,11 @@ curl --location --request PUT \
 
 This API allows you to assign one or more license plate numbers to a specific user.
 
-Request URL: /api/v1/developer/users/:id/license_plates   
-Permission Key: edit:user   
-Method: PUT   
-UniFi Access Requirement: Version 3.3.10 or later
+| Request URL | `/api/v1/developer/users/:id/license_plates` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `PUT` |
+| UniFi Access Requirement | Version 3.3.10 or later |
 
 # Request Header
 
@@ -1667,10 +1694,11 @@ curl --location --request PUT 'https://192.168.1.1:12445/api/v1/developer/users/
 
 This API allows you to unassign a license plate number from a user.
 
-Request URL: /api/v1/developer/users/:user_id/license_plates/:license_plate_id   
-Permission Key: edit:user   
-Method: DELETE   
-UniFi Access Requirement: Version 3.3.10 or later
+| Request URL | `/api/v1/developer/users/:user_id/license_plates/:license_plate_id` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `DELETE` |
+| UniFi Access Requirement | Version 3.3.10 or later |
 
 # Request Header
 
@@ -1701,10 +1729,11 @@ curl --location --request DELETE 'https://192.168.1.1:12445/api/v1/developer/use
 
 This API allows you to upload a profile picture for a user.
 
-Request URL: /api/v1/developer/users/:id/avatar   
-Permission Key: edit:user   
-Method: POST   
-UniFi Access Requirement: Version 3.3.10 or later   
+| Request URL | `/api/v1/developer/users/:id/avatar` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `POST` |
+| UniFi Access Requirement | Version 3.3.10 or later |
 Note: Updating the profile picture is supported only for local users. UI Account users must update their profile picture through the UI Account interface (https://account.ui.com/).
 
 # Request Header
@@ -1750,9 +1779,10 @@ The APIs here are designed for managing visitors, including creating, viewing, a
 
 This API enables you to create a new visitor.
 
-Request URL: /api/v1/developer/visitors   
-Permission Key: edit:visitor   
-Method: POST
+| Request URL | `/api/v1/developer/visitors` |
+| :--- | :--- |
+| Permission Key | `edit:visitor` |
+| Method | `POST` |
 
 # Request Header
 
@@ -1879,9 +1909,10 @@ curl '{host}'/api/v1/developer/visitors'
 
 This API enables you to fetch visitor details.
 
-Request URL: /api/v1/developer/visitors/:id   
-Permission Key: view:visitor   
-Method: GET
+| Request URL | `/api/v1/developer/visitors/:id` |
+| :--- | :--- |
+| Permission Key | `view:visitor` |
+| Method | `GET` |
 
 # Request Header
 
@@ -1962,9 +1993,10 @@ curl -XGET '{host}/api/v1/developer/visitors/76794bd8-98c0-49b6-9230-ba8c5812cf2
 
 This API enables you to fetch the list of all visitors.
 
-Request URL: /api/v1/developer/visitors   
-Permission Key: view:visitor   
-Method: GET   
+| Request URL | `/api/v1/developer/visitors` |
+| :--- | :--- |
+| Permission Key | `view:visitor` |
+| Method | `GET` |
 Note: license plates will be supported by 3.3.10 or later
 
 # Request Header
@@ -2011,9 +2043,10 @@ expand[]=access_policy&expand[]=resource&expand[]=schedule&expand[]=nfc_card&exp
 
 This API enables you to update a visitor.
 
-Request URL: /api/v1/developer/visitors/:id   
-Permission Key: edit:visitor   
-Method: PUT
+| Request URL | `/api/v1/developer/visitors/:id` |
+| :--- | :--- |
+| Permission Key | `edit:visitor` |
+| Method | `PUT` |
 
 # Request Header
 
@@ -2159,9 +2192,10 @@ curl -XPUT '{{host}}/api/v1/developer/visitors/c81dfee6-5970-4938-bd30-40820e16e
 
 This API enables you to delete a visitor.
 
-Request URL: /api/v1/developer/visitors/:id   
-Permission Key: edit:visitor   
-Method: DELETE
+| Request URL | `/api/v1/developer/visitors/:id` |
+| :--- | :--- |
+| Permission Key | `edit:visitor` |
+| Method | `DELETE` |
 
 # Request Header
 
@@ -2191,9 +2225,10 @@ curl -XDELETE '{host}/api/v1/developer/visitors/c81dfee6-5970-4938-bd30-40820e16
 
 # 4.7 Assign NFC Card To Visitor
 
-Request URL: /api/v1/developer/visitors/:id/nfc_cards   
-Permission Key: edit:visitor   
-Method: PUT
+| Request URL | `/api/v1/developer/visitors/:id/nfc_cards` |
+| :--- | :--- |
+| Permission Key | `edit:visitor` |
+| Method | `PUT` |
 
 # Request Header
 
@@ -2231,9 +2266,10 @@ curl -XPUT '{host}/api/v1/developer/visitors/60b5c15e-9aff-4fc8-9547-d21d2e39c1f
 
 # 4.8 Unassign NFC Card From Visitor
 
-Request URL: /api/v1/developer/visitors/:id/nfc_cards/delete   
-Permission Key: edit:visitor   
-Method: PUT
+| Request URL | `/api/v1/developer/visitors/:id/nfc_cards/delete` |
+| :--- | :--- |
+| Permission Key | `edit:visitor` |
+| Method | `PUT` |
 
 # Request Header
 
@@ -2270,9 +2306,10 @@ curl -XPUT '{host}/api/v1/developer/visitors/60b5c15e-9aff-4fc8-9547-d21d2e39c1f
 
 # 4.9 Assign PIN Code To Visitor
 
-Request URL: /api/v1/developer/visitors/:id/pin_codes   
-Permission Key: edit:visitor   
-Method: PUT
+| Request URL | `/api/v1/developer/visitors/:id/pin_codes` |
+| :--- | :--- |
+| Permission Key | `edit:visitor` |
+| Method | `PUT` |
 
 # Request Header
 
@@ -2308,9 +2345,10 @@ curl -XPUT '{host}/api/v1/developer/visitors/17d2f099-99df-429b-becb-1399a6937e5
 
 # 4.10 Unassign PIN Code From Visitor
 
-Request URL: /api/v1/developer/visitors/:id/pin_codes   
-Permission Key: edit:visitor   
-Method: DELETE
+| Request URL | `/api/v1/developer/visitors/:id/pin_codes` |
+| :--- | :--- |
+| Permission Key | `edit:visitor` |
+| Method | `DELETE` |
 
 # Request Header
 
@@ -2342,10 +2380,11 @@ curl -XDELETE '{host}/api/v1/developer/visitors/17d2f099-99df-429b-becb-1399a693
 
 This API allows you to assign a QR code to a visitor.
 
-Request URL: /api/v1/developer/visitors/:id/qr_codes   
-Permission Key: edit:visitor   
-Method: PUT   
-UniFi Access Requirement: Version 3.3.10 or later
+| Request URL | `/api/v1/developer/visitors/:id/qr_codes` |
+| :--- | :--- |
+| Permission Key | `edit:visitor` |
+| Method | `PUT` |
+| UniFi Access Requirement | Version 3.3.10 or later |
 
 # Request Header
 
@@ -2377,10 +2416,11 @@ curl --location --request PUT 'https://192.168.1.1:12445/api/v1/developer/visito
 
 This API allows you to unassign (remove) a QR code from a visitor.
 
-Request URL: /api/v1/developer/visitors/:id/qr_codes   
-Permission Key: edit:visitor   
-Method: DELETE   
-UniFi Access Requirement: Version 3.3.10 or later
+| Request URL | `/api/v1/developer/visitors/:id/qr_codes` |
+| :--- | :--- |
+| Permission Key | `edit:visitor` |
+| Method | `DELETE` |
+| UniFi Access Requirement | Version 3.3.10 or later |
 
 # Request Header
 
@@ -2414,10 +2454,11 @@ curl --location --request DELETE
 
 This API allows you to assign one or more license plate numbers to a visitor.
 
-Request URL: /api/v1/developer/visitors/:id/license_plates   
-Permission Key: edit:visitor   
-Method: PUT   
-UniFi Access Requirement: Version 3.3.10 or later
+| Request URL | `/api/v1/developer/visitors/:id/license_plates` |
+| :--- | :--- |
+| Permission Key | `edit:visitor` |
+| Method | `PUT` |
+| UniFi Access Requirement | Version 3.3.10 or later |
 
 # Request Header
 
@@ -2452,10 +2493,11 @@ curl --location --request PUT 'https://192.168.1.1:12445/api/v1/developer/visito
 
 This API allows you to unassign a license plate number from a visitor.
 
-Request URL: /api/v1/developer/visitors/:visitor_id/license_plates/:license_plate_id   
-Permission Key: edit:visitor   
-Method: DELETE   
-UniFi Access Requirement: Version 3.3.10 or later
+| Request URL | `/api/v1/developer/visitors/:visitor_id/license_plates/:license_plate_id` |
+| :--- | :--- |
+| Permission Key | `edit:visitor` |
+| Method | `DELETE` |
+| UniFi Access Requirement | Version 3.3.10 or later |
 
 # Request Header
 
@@ -2497,9 +2539,10 @@ The APIs here are designed for managing door access policies. These policies can
 
 This API allows you to create an access policy.
 
-Request URL: /api/v1/developer/access_policies   
-Permission Key: edit:policy   
-Method: POST
+| Request URL | `/api/v1/developer/access_policies` |
+| :--- | :--- |
+| Permission Key | `edit:policy` |
+| Method | `POST` |
 
 # Request Header
 
@@ -2576,9 +2619,10 @@ curl '{host}/api/v1/developer/access_policies' \
 
 This API allows you to update a policy.
 
-Request URL: /api/v1/developer/access_policies/:id   
-Permission Key: edit:policy   
-Method: PUT
+| Request URL | `/api/v1/developer/access_policies/:id` |
+| :--- | :--- |
+| Permission Key | `edit:policy` |
+| Method | `PUT` |
 
 # Request Header
 
@@ -2628,9 +2672,10 @@ curl '{host}/api/v1/developer/access_policies/242c88e3-0524-42de-8447-45891c5df7
 
 This API allows you to delete an access policy.
 
-Request URL: /api/v1/developer/access_policies/:id   
-Permission Key: edit:policy   
-Method: DELETE
+| Request URL | `/api/v1/developer/access_policies/:id` |
+| :--- | :--- |
+| Permission Key | `edit:policy` |
+| Method | `DELETE` |
 
 # Request Header
 
@@ -2660,9 +2705,10 @@ curl -XDELETE '{host}'/api/v1/developer/access_policies/460d0bcc-5d4f-4e7b-8a3c-
 
 This API allows you to fetch a policy details.
 
-Request URL: /api/v1/developer/access_policies/:id   
-Permission Key: view:policy   
-Method: GET
+| Request URL | `/api/v1/developer/access_policies/:id` |
+| :--- | :--- |
+| Permission Key | `view:policy` |
+| Method | `GET` |
 
 # Request Header
 
@@ -2713,9 +2759,10 @@ curl '{host}/api/v1/developer/ccess_policy'
 
 This API allows you to fetch all access policies.
 
-Request URL: /api/v1/developer/access_policies   
-Permission Key: view:policy   
-Method: GET
+| Request URL | `/api/v1/developer/access_policies` |
+| :--- | :--- |
+| Permission Key | `view:policy` |
+| Method | `GET` |
 
 # Request Header
 
@@ -2788,9 +2835,10 @@ A holiday group refers to a collection of holidays.
 
 This API allows you to create a holiday group.
 
-Request URL: /api/v1/developer/access_policies/holiday_groups   
-Permission Key: edit:policy   
-Method: POST
+| Request URL | `/api/v1/developer/access_policies/holiday_groups` |
+| :--- | :--- |
+| Permission Key | `edit:policy` |
+| Method | `POST` |
 
 # Request Header
 
@@ -2857,9 +2905,10 @@ curl '{host}/api/v1/developer/access_policies/holiday_groups'
 
 This API allows you to update a holiday group.
 
-Request URL: /api/v1/developer/access_policies/holiday_groups/:id   
-Permission Key: edit:policy   
-Method: PUT
+| Request URL | `/api/v1/developer/access_policies/holiday_groups/:id` |
+| :--- | :--- |
+| Permission Key | `edit:policy` |
+| Method | `PUT` |
 
 # Request Header
 
@@ -2945,9 +2994,10 @@ curl -XPUT '{host}/api/v1/developer/access_policies/holiday_groups/7be7a7a0-818f
 
 This API allows you to delete a holiday group.
 
-Request URL: /api/v1/developer/access_policies/holiday_groups/:id   
-Permission Key: edit:policy   
-Method: DELETE
+| Request URL | `/api/v1/developer/access_policies/holiday_groups/:id` |
+| :--- | :--- |
+| Permission Key | `edit:policy` |
+| Method | `DELETE` |
 
 # Request Header
 
@@ -2979,9 +3029,10 @@ curl -XDELETE '{host}/api/v1/developer/access_policies/holiday_groups/7be7a7a0-8
 
 This API allows you to fetch a holiday group.
 
-Request URL: /api/v1/developer/access_policies/holiday_groups/:id   
-Permission Key: view:policy   
-Method: GET
+| Request URL | `/api/v1/developer/access_policies/holiday_groups/:id` |
+| :--- | :--- |
+| Permission Key | `view:policy` |
+| Method | `GET` |
 
 # Request Header
 
@@ -3042,8 +3093,9 @@ curl -XGET '{host}/api/v1/developer/access_policies/holiday_groups/7be7a7a0-818f
 
 This API allows you to fetch the list of all holiday groups.
 
-Request URL: /api/v1/developer/access_policies/holiday_groups   
-Permission Key: view:policy
+| Request URL | `/api/v1/developer/access_policies/holiday_groups` |
+| :--- | :--- |
+| Permission Key | `view:policy` |
 
 # Request Header
 
@@ -3104,9 +3156,10 @@ These schemas are utilized for creating time periods for daily visits from Sunda
 
 This API allows you to create a door access schedule.
 
-Request URL: /api/v1/developer/access_policies/schedules   
-Permission Key: edit:policy   
-Method: POST
+| Request URL | `/api/v1/developer/access_policies/schedules` |
+| :--- | :--- |
+| Permission Key | `edit:policy` |
+| Method | `POST` |
 
 # Request Header
 
@@ -3223,9 +3276,10 @@ curl '{host}/api/v1/developer/access_policies/schedules' \
 
 This API allows you to update a door access schedule.
 
-Request URL: /api/v1/developer/access_policies/schedules/:id   
-Permission Key: edit:policy   
-Method: PUT
+| Request URL | `/api/v1/developer/access_policies/schedules/:id` |
+| :--- | :--- |
+| Permission Key | `edit:policy` |
+| Method | `PUT` |
 
 # Request Header
 
@@ -3297,9 +3351,10 @@ curl -XPUT '{host}/api/v1/developer/access_policies/schedules/1d31b648-b8ff-4bd1
 
 This API allows you to fetch a door access schedule.
 
-Request URL: /api/v1/developer/access_policies/schedules/:id   
-Permission Key: view:policy   
-Method: GET
+| Request URL | `/api/v1/developer/access_policies/schedules/:id` |
+| :--- | :--- |
+| Permission Key | `view:policy` |
+| Method | `GET` |
 
 # Request Header
 
@@ -3335,9 +3390,10 @@ curl --location '{host}/api/v1/developer/access_policies/schedules/908079e7-e26b
 
 This API allows you to fetch all door access schedules.
 
-Request URL: /api/v1/developer/access_policies/schedules   
-Permission Key: view:policy   
-Method: GET
+| Request URL | `/api/v1/developer/access_policies/schedules` |
+| :--- | :--- |
+| Permission Key | `view:policy` |
+| Method | `GET` |
 
 # Request Header
 
@@ -3371,9 +3427,10 @@ curl --location '{host}'/api/v1/developer/access_policies/schedules'
 
 This API allows you to delete a door access schedule.
 
-Request URL: /api/v1/developer/access_policies/schedules/:id   
-Permission Key: edit:policy   
-Method: DELETE
+| Request URL | `/api/v1/developer/access_policies/schedules/:id` |
+| :--- | :--- |
+| Permission Key | `edit:policy` |
+| Method | `DELETE` |
 
 # Request Header
 
@@ -3409,9 +3466,10 @@ The APIs here are designed for managing PIN codes, NFC cards, and other related 
 
 This API enables you to generate a PIN code. A PIN code can be assigned to a visitor or user, and once assigned, they can use it to unlock doors.
 
-Request URL: /api/v1/developer/credentials/pin_codes   
-Permission Key: view:credential   
-Method: POST
+| Request URL | `/api/v1/developer/credentials/pin_codes` |
+| :--- | :--- |
+| Permission Key | `view:credential` |
+| Method | `POST` |
 
 # Request Header
 
@@ -3447,9 +3505,10 @@ curl --location --request POST '{host}/api/v1/developer/credentials/pin_codes'
 
 Wake up a UA reader and create a session to enroll an NFC card.
 
-Request URL: /api/v1/developer/credentials/nfc_cards/sessions   
-Permission Key: edit:credential   
-Method: POST
+| Request URL | `/api/v1/developer/credentials/nfc_cards/sessions` |
+| :--- | :--- |
+| Permission Key | `edit:credential` |
+| Method | `POST` |
 
 # Request Header
 
@@ -3490,9 +3549,10 @@ curl '{host}/api/v1/developer/credentials/nfc_cards sessions'
 
 This API enables you to poll a UA reader to fetch the NFC card enrollment status and the generated card tokens.
 
-Request URL: /api/v1/developer/credentials/nfc_cards/sessions/:id   
-Permission Key: edit:credential   
-Method: GET
+| Request URL | `/api/v1/developer/credentials/nfc_cards/sessions/:id` |
+| :--- | :--- |
+| Permission Key | `edit:credential` |
+| Method | `GET` |
 
 # Request Header
 
@@ -3526,9 +3586,10 @@ GET /api/v1/developer/credentials/nfc_cards/sections/e8a97c52-6676-4c48-8589-bd5
 
 This API enables you to remove a session created for enrolling an NFC card.
 
-Request URL: /api/v1/developer/credentials/nfc_cards/sessions/:id   
-Permission Key: edit:credential   
-Method: DELETE
+| Request URL | `/api/v1/developer/credentials/nfc_cards/sessions/:id` |
+| :--- | :--- |
+| Permission Key | `edit:credential` |
+| Method | `DELETE` |
 
 # Request Header
 
@@ -3561,10 +3622,11 @@ enroll-nfc-card
 
 This API allows you to fetch NFC card details.
 
-Request URL: /api/v1/developer/credentials/nfc_cards/tokens/:token   
-Permission Key: view:credential   
-Method: GET   
-UniFi Access Requirement: Version 1.22.16 or later
+| Request URL | `/api/v1/developer/credentials/nfc_cards/tokens/:token` |
+| :--- | :--- |
+| Permission Key | `view:credential` |
+| Method | `GET` |
+| UniFi Access Requirement | Version 1.22.16 or later |
 
 # Request Header
 
@@ -3619,10 +3681,11 @@ curl -XGET
 
 This API allows you to fetch all NFC cards.
 
-Request URL: /api/v1/developer/credentials/nfc_cards/tokens   
-Permission Key: view:credential   
-Method: GET   
-UniFi Access Requirement: Version 1.22.16 or later
+| Request URL | `/api/v1/developer/credentials/nfc_cards/tokens` |
+| :--- | :--- |
+| Permission Key | `view:credential` |
+| Method | `GET` |
+| UniFi Access Requirement | Version 1.22.16 or later |
 
 # Request Header
 
@@ -3702,10 +3765,11 @@ curl -XGET '{host}/api/v1/developer/credentials/nfc_cards/tokens?page_num=1&page
 
 This API allows you to delete an NFC card.
 
-Request URL: /api/v1/developer/credentials/nfc_cards/tokens/:token   
-Permission Key: edit:credential   
-Method: DELETE   
-UniFi Access Requirement: Version 1.22.16 or later
+| Request URL | `/api/v1/developer/credentials/nfc_cards/tokens/:token` |
+| :--- | :--- |
+| Permission Key | `edit:credential` |
+| Method | `DELETE` |
+| UniFi Access Requirement | Version 1.22.16 or later |
 
 # Request Header
 
@@ -3738,10 +3802,11 @@ curl -XDELETE
 
 This API allows you to update an NFC card.
 
-Request URL: /api/v1/developer/credentials/nfc_cards/tokens/:token   
-Permission Key: edit:credential   
-Method: PUT   
-UniFi Access Requirement: Version 3.1.30 or later
+| Request URL | `/api/v1/developer/credentials/nfc_cards/tokens/:token` |
+| :--- | :--- |
+| Permission Key | `edit:credential` |
+| Method | `PUT` |
+| UniFi Access Requirement | Version 3.1.30 or later |
 
 # Request Header
 
@@ -3786,10 +3851,11 @@ curl -XPUT \
 
 This API allows you to fetch a list of Touch Passes, filtered by status.
 
-Request URL: /api/v1/developer/credentials/touch_passes   
-Permission Key: view:credential   
-Method: GET   
-UniFi Access Requirement: Version 3.2.20 or later   
+| Request URL | `/api/v1/developer/credentials/touch_passes` |
+| :--- | :--- |
+| Permission Key | `view:credential` |
+| Method | `GET` |
+| UniFi Access Requirement | Version 3.2.20 or later |
 Note: If user_status is UNLINK , it indicates the associated user is no longer linked (i.e., the user is
 
 considered lost or removed from the system).
@@ -3855,10 +3921,11 @@ page_num=1&page_size=10&status=PENDING'
 
 This API allows you to search for Touch Passes using filter conditions, such as card ID.
 
-Request URL: /api/v1/developer/credentials/touch_passes/search   
-Permission Key: view:credential   
-Method: GET   
-UniFi Access Requirement: Version 3.2.20 or later   
+| Request URL | `/api/v1/developer/credentials/touch_passes/search` |
+| :--- | :--- |
+| Permission Key | `view:credential` |
+| Method | `GET` |
+| UniFi Access Requirement | Version 3.2.20 or later |
 Note: If user_status is UNLINK , it indicates the associated user is no longer linked (i.e., the user is considered lost or removed from the system).
 
 # Request Header
@@ -3910,10 +3977,11 @@ curl --location --request GET
 
 This API allows you to fetch all suspended or inactive Touch Passes that can be reassigned.
 
-Request URL: /api/v1/developer/credentials/touch_passes/assignable   
-Permission Key: view:credential   
-Method: GET   
-UniFi Access Requirement: Version 3.2.20 or later
+| Request URL | `/api/v1/developer/credentials/touch_passes/assignable` |
+| :--- | :--- |
+| Permission Key | `view:credential` |
+| Method | `GET` |
+| UniFi Access Requirement | Version 3.2.20 or later |
 
 # Request Header
 
@@ -3976,10 +4044,11 @@ curl --location --request GET
 
 This API allows you to update a Touch Pass's card name, modify its status ( ACTIVE / SUSPENDED ), and unbundle devices ( bundle_status: DISABLED ).
 
-Request URL: /api/v1/developer/credentials/touch_passes/:id   
-Permission Key: edit:credential   
-Method: PUT   
-UniFi Access Requirement: Version 3.2.20 or later   
+| Request URL | `/api/v1/developer/credentials/touch_passes/:id` |
+| :--- | :--- |
+| Permission Key | `edit:credential` |
+| Method | `PUT` |
+| UniFi Access Requirement | Version 3.2.20 or later |
 Note: If user_status is UNLINK , it indicates the associated user is no longer linked (i.e., the user is considered lost or removed from the system).
 
 # Request Header
@@ -4059,10 +4128,11 @@ curl --location --request PUT \
 
 This API retrieves detailed information about a specific Touch Pass using its ID.
 
-Request URL: /api/v1/developer/credentials/touch_passes/:id   
-Permission Key: view:credential   
-Method: GET   
-UniFi Access Requirement: Version 3.2.20 or later   
+| Request URL | `/api/v1/developer/credentials/touch_passes/:id` |
+| :--- | :--- |
+| Permission Key | `view:credential` |
+| Method | `GET` |
+| UniFi Access Requirement | Version 3.2.20 or later |
 Note: If user_status is UNLINK , it indicates the associated user is no longer linked (i.e., the user is considered lost or removed from the system).
 
 <table><tr><td>Parameter</td><td>Required</td><td>Type</td><td>Description</td></tr><tr><td>Authorization</td><td>T</td><td>String</td><td>Token required for authentication and access control.</td></tr></table>
@@ -4113,11 +4183,13 @@ curl --location --request GET \
 
 This API allows you to purchase new Touch Passes. Ensure a valid payment method is configured in the Access web application before using this API.
 
-Request URL: /api/v1/developer/credentials/touch_passes
+| Request URL | `/api/v1/developer/credentials/touch_passes` |
+| :--- | :--- |
 
-Permission Key: edit:credential   
-Method: POST   
-UniFi Access Requirement: Version 3.2.20 or later
+| Permission Key | `edit:credential` |
+| :--- | :--- |
+| Method | `POST` |
+| UniFi Access Requirement | Version 3.2.20 or later |
 
 # Request Header
 
@@ -4165,10 +4237,11 @@ curl --location 'https://192.168.1.1:12445/api/v1/developer/credentials/touch_pa
 
 This API allows you to download a QR code image by its ID.
 
-Request URL: /api/v1/developer/credentials/qr_codes/download/:visitor_id   
-Permission Key: view:credential   
-Method: GET   
-UniFi Access Requirement: Version 3.3.10 or later
+| Request URL | `/api/v1/developer/credentials/qr_codes/download/:visitor_id` |
+| :--- | :--- |
+| Permission Key | `view:credential` |
+| Method | `GET` |
+| UniFi Access Requirement | Version 3.3.10 or later |
 
 # Request Header
 
@@ -4193,10 +4266,11 @@ curl --location --request GET
 
 This API allows you to import third-party NFC card IDs by uploading a CSV file into the Access system.
 
-Request URL: /api/v1/developer/credentials/nfc_cards/import   
-Permission Key: edit:credential   
-Method: POST   
-UniFi Access Requirement: Version 3.3.10 or later
+| Request URL | `/api/v1/developer/credentials/nfc_cards/import` |
+| :--- | :--- |
+| Permission Key | `edit:credential` |
+| Method | `POST` |
+| UniFi Access Requirement | Version 3.3.10 or later |
 
 # Request Header
 
@@ -4258,9 +4332,10 @@ The APIs here are designed for managing spaces, including doors, door groups, an
 
 Fetch all current floor and door resources for access policy and visitor assignment purposes.
 
-Request URL: /api/v1/developer/door_groups/topology   
-Permission Key: view:space   
-Method: GET
+| Request URL | `/api/v1/developer/door_groups/topology` |
+| :--- | :--- |
+| Permission Key | `view:space` |
+| Method | `GET` |
 
 # Request Header
 
@@ -4336,9 +4411,10 @@ curl -X GET '{host}/api/v1/developer/door_groups/topology'
 
 This API allows you to create a door group.
 
-Request URL: /api/v1/developer/door_groups   
-Permission Key: edit:space   
-Method: POST
+| Request URL | `/api/v1/developer/door_groups` |
+| :--- | :--- |
+| Permission Key | `edit:space` |
+| Method | `POST` |
 
 # Request Header
 
@@ -4388,9 +4464,10 @@ curl '{host}/api/v1/developer/door_groups'
 
 This API allows you to fetch door group details.
 
-Request URL: /api/v1/developer/door_groups/:id   
-Permission Key: view:space   
-Method: GET
+| Request URL | `/api/v1/developer/door_groups/:id` |
+| :--- | :--- |
+| Permission Key | `view:space` |
+| Method | `GET` |
 
 # Request Header
 
@@ -4431,9 +4508,10 @@ Group type is building
 
 This API allows you to update door group details.
 
-Request URL: /api/v1/developer/door_groups/:id   
-Permission Key: edit:space   
-Method: PUT
+| Request URL | `/api/v1/developer/door_groups/:id` |
+| :--- | :--- |
+| Permission Key | `edit:space` |
+| Method | `PUT` |
 
 # Request Header
 
@@ -4484,9 +4562,10 @@ curl -XPUT '{host}/api/v1/developer/door_groups/0140fa3d-8973-4305-a0ce-5306ae27
 
 This API allows you to fetch the list of all door groups.
 
-Request URL: /api/v1/developer/door_groups   
-Permission Key: view:space   
-Method: GET
+| Request URL | `/api/v1/developer/door_groups` |
+| :--- | :--- |
+| Permission Key | `view:space` |
+| Method | `GET` |
 
 # Request Header
 
@@ -4544,9 +4623,10 @@ curl '{host}/api/v1/developer/door_groups'
 
 This API allows you to delete a door group.
 
-Request URL: /api/v1/developer/door_groups/:id   
-Permission Key: edit:space   
-Method: DELETE
+| Request URL | `/api/v1/developer/door_groups/:id` |
+| :--- | :--- |
+| Permission Key | `edit:space` |
+| Method | `DELETE` |
 
 # Request Header
 
@@ -4578,9 +4658,10 @@ curl -XDELETE '{host}/api/v1/developer/door_groups/0140fa3d-8973-4305-a0ce-5306a
 
 This API allows you to fetch door details.
 
-Request URL: /api/v1/developer/doors/:id   
-Permission Key: view:space   
-Method: GET
+| Request URL | `/api/v1/developer/doors/:id` |
+| :--- | :--- |
+| Permission Key | `view:space` |
+| Method | `GET` |
 
 # Request Header
 
@@ -4628,9 +4709,10 @@ curl -XGET '{host}/api/v1/developer/doors/0ed545f8-2fcd-4839-9021-b39e707f6aa9'
 
 This API allows you to fetch the list of all doors.
 
-Request URL: /api/v1/developer/doors   
-Permission Key: view:space   
-Method: GET
+| Request URL | `/api/v1/developer/doors` |
+| :--- | :--- |
+| Permission Key | `view:space` |
+| Method | `GET` |
 
 # Request Header
 
@@ -4687,9 +4769,10 @@ curl -XGET '{host}/api/v1/developer/doors'
 
 This API allows you to remotely unlock a door.
 
-Request URL: /api/v1/developer/doors/:id/unlock   
-Permission Key: edit:space   
-Method: PUT
+| Request URL | `/api/v1/developer/doors/:id/unlock` |
+| :--- | :--- |
+| Permission Key | `edit:space` |
+| Method | `PUT` |
 
 # Description:
 
@@ -4743,10 +4826,11 @@ curl --location --request PUT \
 
 This API allows you to temporarily set the locking rules for doors.
 
-Request URL: /api/v1/developer/doors/:id/lock_rule   
-Permission Key: edit:space   
-Method: PUT   
-UniFi Access Requirement: 1.24.6 or later
+| Request URL | `/api/v1/developer/doors/:id/lock_rule` |
+| :--- | :--- |
+| Permission Key | `edit:space` |
+| Method | `PUT` |
+| UniFi Access Requirement | 1.24.6 or later |
 
 # Request Header
 
@@ -4862,10 +4946,11 @@ curl -XPUT '{host}/api/v1/developer/doors/e4978b83-203d-4015-97df-b86efc91cb0c/l
 
 This API allows you to fetch the locking rules for doors.
 
-Request URL: /api/v1/developer/doors/:id/lock_rule   
-Permission Key: view:space   
-Method: GET   
-UniFi Access Requirement: 1.24.6 or later
+| Request URL | `/api/v1/developer/doors/:id/lock_rule` |
+| :--- | :--- |
+| Permission Key | `view:space` |
+| Method | `GET` |
+| UniFi Access Requirement | 1.24.6 or later |
 
 # Request Header
 
@@ -4921,10 +5006,11 @@ curl -XGET '{host}/api/v1/developer/doors/e4978b83-203d-4015-97df-b86efc91cb0c/l
 
 This API allows you to set the emergency status for all doors.
 
-Request URL: /api/v1/developer/doors/settings/emergency   
-Permission Key: edit:space   
-Method: PUT   
-UniFi Access Requirement: 1.24.6 or later
+| Request URL | `/api/v1/developer/doors/settings/emergency` |
+| :--- | :--- |
+| Permission Key | `edit:space` |
+| Method | `PUT` |
+| UniFi Access Requirement | 1.24.6 or later |
 
 # Request Header
 
@@ -4983,10 +5069,11 @@ curl -XPUT '{host}/api/v1/developer/doors/settings/emergency' \
 
 This API allows you to fetch the emergency status for all doors.
 
-Request URL: /api/v1/developer/doors/settings/emergency   
-Permission Key: view:space   
-Method: GET   
-UniFi Access Requirement: 1.24.6 or later
+| Request URL | `/api/v1/developer/doors/settings/emergency` |
+| :--- | :--- |
+| Permission Key | `view:space` |
+| Method | `GET` |
+| UniFi Access Requirement | 1.24.6 or later |
 
 # Request Header
 
@@ -5029,9 +5116,10 @@ The APIs here are designed for device management, including obtaining device lis
 
 Obtain a list of all current devices. The device ID is required for enrolling an NFC card.
 
-Request URL: /api/v1/developer/devices   
-Permission Key: view:device   
-Method: GET
+| Request URL | `/api/v1/developer/devices` |
+| :--- | :--- |
+| Permission Key | `view:device` |
+| Method | `GET` |
 
 # Request Header
 
@@ -5099,10 +5187,11 @@ curl '{host}/api/v1/developer/devices?refresh=true' \
 
 This API allows you to fetch the current access method settings of an Access device.
 
-Request URL: /api/v1/developer/devices/:device_id/settings   
-Permission Key: view:device   
-Method: GET   
-UniFi Access Requirement: Version 3.3.10 or later
+| Request URL | `/api/v1/developer/devices/:device_id/settings` |
+| :--- | :--- |
+| Permission Key | `view:device` |
+| Method | `GET` |
+| UniFi Access Requirement | Version 3.3.10 or later |
 
 # Request Header
 
@@ -5157,10 +5246,11 @@ curl --location 'https://192.168.1.1:12445/api/v1/developer/devices/942a6f4247b2
 
 This API allows you to update the access method settings of an Access device.
 
-Request URL: /api/v1/developer/devices/:device_id/settings   
-Permission Key: edit:device   
-Method: PUT \   
-UniFi Access Requirement: Version 3.3.10 or later
+| Request URL | `/api/v1/developer/devices/:device_id/settings` |
+| :--- | :--- |
+| Permission Key | `edit:device` |
+| Method | `PUT` |
+| UniFi Access Requirement | Version 3.3.10 or later |
 
 # Request Header
 
@@ -5214,10 +5304,11 @@ curl --location --request PUT \
 
 This API allows you to trigger the doorbell on an Intercom or Reader Pro.
 
-Request URL: /api/v1/developer/devices/:device_id/doorbell   
-Permission Key: edit:device   
-Method: POST   
-UniFi Access Requirement: Version 4.0.10 or later
+| Request URL | `/api/v1/developer/devices/:device_id/doorbell` |
+| :--- | :--- |
+| Permission Key | `edit:device` |
+| Method | `POST` |
+| UniFi Access Requirement | Version 4.0.10 or later |
 
 # Request Header
 
@@ -5282,9 +5373,10 @@ Target(s): Additional information associated with the event. Note that each even
 
 This API enables you to fetch system logs.
 
-Request URL: /api/v1/developer/system/logs   
-Permission Key: view:system_log   
-Method: POST
+| Request URL | `/api/v1/developer/system/logs` |
+| :--- | :--- |
+| Permission Key | `view:system_log` |
+| Method | `POST` |
 
 # Request Header
 
@@ -5362,10 +5454,11 @@ curl '{host}/api/v1/developer/system/logs?page_size=1&page_num=25'
 
 This API enables you to export system logs to a CSV file.
 
-Request URL: /api/v1/developer/system/logs/export   
-Permission Key: view:system_log   
-Method: POST   
-UniFi Access Requirement: 1.20.11 or later
+| Request URL | `/api/v1/developer/system/logs/export` |
+| :--- | :--- |
+| Permission Key | `view:system_log` |
+| Method | `POST` |
+| UniFi Access Requirement | 1.20.11 or later |
 
 # Request Header
 
@@ -5396,10 +5489,11 @@ curl '{host}/api/v1/developer/system/logs/export'
 
 This API enables you to fetch the resources in system logs.
 
-Request URL: /api/v1/developer/system/logs/resource/:id   
-Permission Key: view:system_log   
-Method: GET   
-UniFi Access Requirement: 1.24.6 or later
+| Request URL | `/api/v1/developer/system/logs/resource/:id` |
+| :--- | :--- |
+| Permission Key | `view:system_log` |
+| Method | `GET` |
+| UniFi Access Requirement | 1.24.6 or later |
 
 # Request Header
 
@@ -5438,10 +5532,11 @@ curl '{host}/api/v1/developer/system/logs/resource/0418d6a38f00-b6906057-2a90-44
 
 This API enables you to fetch static resources in system logs.
 
-Request URL: /api/v1/developer/system/static/:path   
-Permission Key: view:system_log   
-Method: GET   
-UniFi Access Requirement: 1.24.6 or later
+| Request URL | `/api/v1/developer/system/static/:path` |
+| :--- | :--- |
+| Permission Key | `view:system_log` |
+| Method | `GET` |
+| UniFi Access Requirement | 1.24.6 or later |
 
 # Request Header
 
@@ -5487,10 +5582,11 @@ The APIs here are designed for the UniFi Identity app.
 
 This API enables you to send invitations and invite users to join UniFi Identity.
 
-Request URL: /api/v1/developer/users/identity/invitations   
-Permission Key: edit:user   
-Method: POST   
-UniFi Access Requirement: 1.24.6 or later
+| Request URL | `/api/v1/developer/users/identity/invitations` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `POST` |
+| UniFi Access Requirement | 1.24.6 or later |
 
 # Request Header
 
@@ -5531,10 +5627,11 @@ Success
 
 This API enables you to fetch the available UniFi Identity resources.
 
-Request URL: /api/v1/developer/users/identity/assignments   
-Permission Key: view:user   
-Method: GET   
-UniFi Access Requirement: 1.24.6 or later
+| Request URL | `/api/v1/developer/users/identity/assignments` |
+| :--- | :--- |
+| Permission Key | `view:user` |
+| Method | `GET` |
+| UniFi Access Requirement | 1.24.6 or later |
 
 # Request Header
 
@@ -5591,10 +5688,11 @@ curl '{host}/api/v1/developer/users/identity/assignments?resource_type=evstation
 
 This API enables you to assign UniFi Identity resources to users.
 
-Request URL: /api/v1/developer/users/:id/identity/assignments   
-Permission Key: edit:user   
-Method: POST   
-UniFi Access Requirement: 1.24.6 or later
+| Request URL | `/api/v1/developer/users/:id/identity/assignments` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `POST` |
+| UniFi Access Requirement | 1.24.6 or later |
 
 # Request Header
 
@@ -5635,11 +5733,13 @@ curl -XPOST '{host}/api/v1/developer/users/b602879b-b857-400b-970b-336d4cb881ad/
 
 This API enables you to fetch the UniFi Identity resources assigned to users.
 
-Request URL: /api/v1/developer/users/:id/identity/assignments   
-Permission Key: view:user
+| Request URL | `/api/v1/developer/users/:id/identity/assignments` |
+| :--- | :--- |
+| Permission Key | `view:user` |
 
-Method: GET   
-UniFi Access Requirement: 1.24.6 or later
+| Method | `GET` |
+| :--- | :--- |
+| UniFi Access Requirement | 1.24.6 or later |
 
 # Request Header
 
@@ -5701,10 +5801,11 @@ curl -XGET '{host}'/api/v1/developer/users/b602879b-b857-400b-970b-336d4cb881ad/
 
 This API enables you to assign UniFi Identity resources to user groups.
 
-Request URL: /api/v1/developer/user_groups/:id/identity/assignments   
-Permission Key: edit:user   
-Method: POST   
-UniFi Access Requirement: 2.2.0 or later
+| Request URL | `/api/v1/developer/user_groups/:id/identity/assignments` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `POST` |
+| UniFi Access Requirement | 2.2.0 or later |
 
 # Request Header
 
@@ -5748,10 +5849,11 @@ curl -XPOST '{{host}}/api/v1/developer/user_groups/7476c839-8e10-472e-894f-c5b82
 
 This API enables you to fetch the UniFi Identity resources assigned to user groups.
 
-Request URL: /api/v1/developer/user_groups/:id/identity/assignments   
-Permission Key: view:user   
-Method: GET   
-UniFi Access Requirement: 2.2.0 or later
+| Request URL | `/api/v1/developer/user_groups/:id/identity/assignments` |
+| :--- | :--- |
+| Permission Key | `view:user` |
+| Method | `GET` |
+| UniFi Access Requirement | 2.2.0 or later |
 
 # Request Header
 
@@ -5814,11 +5916,12 @@ curl -XGET '{{host}}/api/v1/developer/user_groups/7476c839-8e10-472e-894f-c5b825
 
 This API enables you to fetch notifications, such as doorbell notifications.
 
-Request URL: /api/v1/developer/devices/notifications   
-Permission Key: view:device   
-Protocol: WebSocket   
-Method: GET   
-UniFi Access Requirement: 1.20.11 or later
+| Request URL | `/api/v1/developer/devices/notifications` |
+| :--- | :--- |
+| Permission Key | `view:device` |
+| Protocol | `WebSocket` |
+| Method | `GET` |
+| UniFi Access Requirement | 1.20.11 or later |
 
 # Request Sample: wscat
 
@@ -5935,10 +6038,11 @@ Remote door unlock by admin: [access.data.device.remote_unlock]
 
 This API enables you to fetch the available webhook endpoints.
 
-Request URL: /api/v1/developer/webhooks/endpoints   
-Permission Key: view:webhook   
-Method: GET   
-UniFi Access Requirement: 2.2.10 or later
+| Request URL | `/api/v1/developer/webhooks/endpoints` |
+| :--- | :--- |
+| Permission Key | `view:webhook` |
+| Method | `GET` |
+| UniFi Access Requirement | 2.2.10 or later |
 
 # Request Header
 
@@ -5989,10 +6093,11 @@ curl '{{host}}/api/v1/developer/webhooks/endpoints'
 
 This API enables you to add a webhook endpoint.
 
-Request URL: /api/v1/developer/webhooks/endpoints   
-Permission Key: edit:webhook   
-Method: POST   
-UniFi Access Requirement: 2.2.10 or later
+| Request URL | `/api/v1/developer/webhooks/endpoints` |
+| :--- | :--- |
+| Permission Key | `edit:webhook` |
+| Method | `POST` |
+| UniFi Access Requirement | 2.2.10 or later |
 
 # Request Header
 
@@ -6055,10 +6160,11 @@ curl -XPOST '{{host}}/api/v1/developer/webhooks/endpoints'
 
 This API enables you to update the available webhook endpoints.
 
-Request URL: /api/v1/developer/webhooks/endpoints/:id   
-Permission Key: edit:webhook   
-Method: PUT   
-UniFi Access Requirement: 2.2.10 or later
+| Request URL | `/api/v1/developer/webhooks/endpoints/:id` |
+| :--- | :--- |
+| Permission Key | `edit:webhook` |
+| Method | `PUT` |
+| UniFi Access Requirement | 2.2.10 or later |
 
 # Request Header
 
@@ -6126,10 +6232,11 @@ curl -XPUT '{{host}}/api/v1/developer/webhooks/endpoints/a22ee283-c91f-432b-9d0f
 
 This API enables you to delete the available webhook endpoints.
 
-Request URL: /api/v1/developer/webhooks/endpoints/:id   
-Permission Key: edit:webhook   
-Method: DELETE   
-UniFi Access Requirement: 2.2.10 or later
+| Request URL | `/api/v1/developer/webhooks/endpoints/:id` |
+| :--- | :--- |
+| Permission Key | `edit:webhook` |
+| Method | `DELETE` |
+| UniFi Access Requirement | 2.2.10 or later |
 
 # Request Header
 
@@ -6162,9 +6269,10 @@ curl -XDELETE '{{host}}/api/v1/developer/webhooks/endpoints/a22ee283-c91f-432b-9
 
 The following samples demonstrate how to receive webhook messages. Note that the secret needs to be adjusted to the assigned secret. These are just examples; in actual use, HTTPS and a custom URL should be used.
 
-Request URL: Your webhook endpoint   
-Method: POST   
-UniFi Access Requirement: 2.2.10 or later
+| Request URL | Your webhook endpoint |
+| :--- | :--- |
+| Method | `POST` |
+| UniFi Access Requirement | 2.2.10 or later |
 
 <table><tr><td>Parameter</td><td>Required</td><td>Type</td><td>Description</td><td>Example</td></tr><tr><td>Signature</td><td>T</td><td>String</td><td>Contains request time(t) and signature(v1)</td><td>t=1695902233,v1=a7ea8840af212767d7795481bed914a9f2ea7241d35212b597bec13aa4bfa06b</td></tr></table>
 
@@ -6178,10 +6286,11 @@ UniFi Access Requirement: 2.2.10 or later
 
 This API allows you to update the HTTPS certificate for the Access API, applicable only to port 12445. **Please note that restarting the Access application is necessary to apply these changes.** If the Private Key and Certificate do not match, it will result in a "parameter error" message.
 
-Request URL: /api/v1/developer/api_server/certificates   
-Permission Key: edit:api_server   
-Method: POST   
-UniFi Access Requirement: Version 2.2.10 or later
+| Request URL | `/api/v1/developer/api_server/certificates` |
+| :--- | :--- |
+| Permission Key | `edit:api_server` |
+| Method | `POST` |
+| UniFi Access Requirement | Version 2.2.10 or later |
 
 # Request Header
 
@@ -6214,10 +6323,11 @@ curl -XPOST '{{host}}/api/v1/developer/api_server/certificates'
 
 This API allows you to delete the HTTPS certificate for the Access API, applicable only to port 12445. **Please note that restarting the Access application is necessary to apply these changes.**
 
-Request URL: /api/v1/developer/api_server/certificates   
-Permission Key: edit:api_server   
-Method: DELETE   
-UniFi Access Requirement: Version 2.2.10 or later
+| Request URL | `/api/v1/developer/api_server/certificates` |
+| :--- | :--- |
+| Permission Key | `edit:api_server` |
+| Method | `DELETE` |
+| UniFi Access Requirement | Version 2.2.10 or later |
 
 # Request Header
 

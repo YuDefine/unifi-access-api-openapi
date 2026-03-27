@@ -24,9 +24,10 @@ outline: 2
 
 此 API 允許您建立存取政策。
 
-請求 URL: /api/v1/developer/access_policies
-權限金鑰: edit:policy
-方法: POST
+| 請求 URL | `/api/v1/developer/access_policies` |
+| :--- | :--- |
+| 權限金鑰 | `edit:policy` |
+| 方法 | `POST` |
 
 
 ### 請求範例: Shell/cURL
@@ -116,9 +117,10 @@ curl '{host}/api/v1/developer/access_policies' \
 
 此 API 允許您更新政策。
 
-請求 URL: /api/v1/developer/access_policies/:id
-權限金鑰: edit:policy
-方法: PUT
+| 請求 URL | `/api/v1/developer/access_policies/:id` |
+| :--- | :--- |
+| 權限金鑰 | `edit:policy` |
+| 方法 | `PUT` |
 
 
 ### 請求範例: Shell/cURL
@@ -183,9 +185,10 @@ curl '{host}/api/v1/developer/access_policies/242c88e3-0524-42de-8447-45891c5df7
 
 此 API 允許您刪除存取政策。
 
-請求 URL: /api/v1/developer/access_policies/:id
-權限金鑰: edit:policy
-方法: DELETE
+| 請求 URL | `/api/v1/developer/access_policies/:id` |
+| :--- | :--- |
+| 權限金鑰 | `edit:policy` |
+| 方法 | `DELETE` |
 
 
 ### 請求範例: Shell/cURL
@@ -226,9 +229,10 @@ curl -XDELETE '{host}'/api/v1/developer/access_policies/460d0bcc-5d4f-4e7b-8a3c-
 
 此 API 允許您取得政策詳情。
 
-請求 URL: /api/v1/developer/access_policies/:id
-權限金鑰: view:policy
-方法: GET
+| 請求 URL | `/api/v1/developer/access_policies/:id` |
+| :--- | :--- |
+| 權限金鑰 | `view:policy` |
+| 方法 | `GET` |
 
 
 ### 請求範例: Shell/cURL
@@ -297,9 +301,10 @@ curl '{host}/api/v1/developer/ccess_policy'
 
 此 API 允許您取得所有存取政策。
 
-請求 URL: /api/v1/developer/access_policies
-權限金鑰: view:policy
-方法: GET
+| 請求 URL | `/api/v1/developer/access_policies` |
+| :--- | :--- |
+| 權限金鑰 | `view:policy` |
+| 方法 | `GET` |
 
 
 ### 請求範例: Shell/cURL
@@ -411,9 +416,10 @@ curl '{host}/api/v1/developer/access_policies'
 
 此 API 允許您建立假日群組。
 
-請求 URL: /api/v1/developer/access_policies/holiday_groups
-權限金鑰: edit:policy
-方法: POST
+| 請求 URL | `/api/v1/developer/access_policies/holiday_groups` |
+| :--- | :--- |
+| 權限金鑰 | `edit:policy` |
+| 方法 | `POST` |
 
 
 ### 請求範例: Shell/cURL
@@ -502,9 +508,10 @@ curl '{host}/api/v1/developer/access_policies/holiday_groups'
 
 此 API 允許您更新假日群組。
 
-請求 URL: /api/v1/developer/access_policies/holiday_groups/:id
-權限金鑰: edit:policy
-方法: PUT
+| 請求 URL | `/api/v1/developer/access_policies/holiday_groups/:id` |
+| :--- | :--- |
+| 權限金鑰 | `edit:policy` |
+| 方法 | `PUT` |
 
 
 ### 請求範例: Shell/cURL
@@ -610,9 +617,10 @@ curl -XPUT '{host}/api/v1/developer/access_policies/holiday_groups/7be7a7a0-818f
 
 此 API 允許您刪除假日群組。
 
-請求 URL: /api/v1/developer/access_policies/holiday_groups/:id
-權限金鑰: edit:policy
-方法: DELETE
+| 請求 URL | `/api/v1/developer/access_policies/holiday_groups/:id` |
+| :--- | :--- |
+| 權限金鑰 | `edit:policy` |
+| 方法 | `DELETE` |
 
 
 ### 請求範例: Shell/cURL
@@ -655,9 +663,10 @@ curl -XDELETE '{host}/api/v1/developer/access_policies/holiday_groups/7be7a7a0-8
 
 此 API 允許您取得假日群組。
 
-請求 URL: /api/v1/developer/access_policies/holiday_groups/:id
-權限金鑰: view:policy
-方法: GET
+| 請求 URL | `/api/v1/developer/access_policies/holiday_groups/:id` |
+| :--- | :--- |
+| 權限金鑰 | `view:policy` |
+| 方法 | `GET` |
 
 
 ### 請求範例: Shell/cURL
@@ -732,8 +741,9 @@ curl -XGET '{host}/api/v1/developer/access_policies/holiday_groups/7be7a7a0-818f
 
 此 API 允許您取得所有假日群組的列表。
 
-請求 URL: /api/v1/developer/access_policies/holiday_groups
-權限金鑰: view:policy
+| 請求 URL | `/api/v1/developer/access_policies/holiday_groups` |
+| :--- | :--- |
+| 權限金鑰 | `view:policy` |
 
 
 ### 請求範例: Shell/cURL
@@ -830,9 +840,10 @@ curl -XGET '{host}/api/v1/developer/access_policies/holiday_groups'
 
 此 API 允許您建立門禁存取排程。
 
-請求 URL: /api/v1/developer/access_policies/schedules
-權限金鑰: edit:policy
-方法: POST
+| 請求 URL | `/api/v1/developer/access_policies/schedules` |
+| :--- | :--- |
+| 權限金鑰 | `edit:policy` |
+| 方法 | `POST` |
 
 
 ### 請求範例: Shell/cURL
@@ -987,9 +998,10 @@ curl '{host}/api/v1/developer/access_policies/schedules' \
 
 此 API 允許您更新門禁存取排程。
 
-請求 URL: /api/v1/developer/access_policies/schedules/:id
-權限金鑰: edit:policy
-方法: PUT
+| 請求 URL | `/api/v1/developer/access_policies/schedules/:id` |
+| :--- | :--- |
+| 權限金鑰 | `edit:policy` |
+| 方法 | `PUT` |
 
 
 ### 請求範例: Shell/cURL
@@ -1084,9 +1096,10 @@ curl -XPUT '{host}/api/v1/developer/access_policies/schedules/1d31b648-b8ff-4bd1
 
 此 API 允許您取得門禁存取排程。
 
-請求 URL: /api/v1/developer/access_policies/schedules/:id
-權限金鑰: view:policy
-方法: GET
+| 請求 URL | `/api/v1/developer/access_policies/schedules/:id` |
+| :--- | :--- |
+| 權限金鑰 | `view:policy` |
+| 方法 | `GET` |
 
 
 ### 請求範例: Shell/cURL
@@ -1209,9 +1222,10 @@ curl --location '{host}/api/v1/developer/access_policies/schedules/908079e7-e26b
 
 此 API 允許您取得所有門禁存取排程。
 
-請求 URL: /api/v1/developer/access_policies/schedules
-權限金鑰: view:policy
-方法: GET
+| 請求 URL | `/api/v1/developer/access_policies/schedules` |
+| :--- | :--- |
+| 權限金鑰 | `view:policy` |
+| 方法 | `GET` |
 
 
 ### 請求範例: Shell/cURL
@@ -1271,9 +1285,10 @@ curl --location '{host}'/api/v1/developer/access_policies/schedules'
 
 此 API 允許您刪除門禁存取排程。
 
-請求 URL: /api/v1/developer/access_policies/schedules/:id
-權限金鑰: edit:policy
-方法: DELETE
+| 請求 URL | `/api/v1/developer/access_policies/schedules/:id` |
+| :--- | :--- |
+| 權限金鑰 | `edit:policy` |
+| 方法 | `DELETE` |
 
 
 ### 請求範例: Shell/cURL

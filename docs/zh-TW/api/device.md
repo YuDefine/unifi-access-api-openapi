@@ -8,9 +8,10 @@
 
 取得目前所有裝置的列表。註冊 NFC 卡時需要裝置 ID。
 
-請求 URL: /api/v1/developer/devices
-權限金鑰: view:device
-方法: GET
+| 請求 URL | `/api/v1/developer/devices` |
+| :--- | :--- |
+| 權限金鑰 | `view:device` |
+| 方法 | `GET` |
 
 
 ### 請求範例: Shell/cURL
@@ -109,10 +110,11 @@ curl '{host}/api/v1/developer/devices?refresh=true' \
 
 此 API 允許您取得 Access 裝置目前的存取方式設定。
 
-請求 URL: /api/v1/developer/devices/:device_id/settings
-權限金鑰: view:device
-方法: GET
-UniFi Access 需求: 版本 3.3.10 或更新
+| 請求 URL | `/api/v1/developer/devices/:device_id/settings` |
+| :--- | :--- |
+| 權限金鑰 | `view:device` |
+| 方法 | `GET` |
+| UniFi Access 需求 | 版本 3.3.10 或更新 |
 
 
 ### 請求範例: Shell/cURL
@@ -205,10 +207,11 @@ curl --location 'https://192.168.1.1:12445/api/v1/developer/devices/942a6f4247b2
 
 此 API 允許您更新 Access 裝置的存取方式設定。
 
-請求 URL: /api/v1/developer/devices/:device_id/settings
-權限金鑰: edit:device
-方法: PUT \
-UniFi Access 需求: 版本 3.3.10 或更新
+| 請求 URL | `/api/v1/developer/devices/:device_id/settings` |
+| :--- | :--- |
+| 權限金鑰 | `edit:device` |
+| 方法 | `PUT` |
+| UniFi Access 需求 | 版本 3.3.10 或更新 |
 
 
 ### 請求範例: Shell/cURL
@@ -294,10 +297,11 @@ curl --location --request PUT \
 
 此 API 允許您觸發 Intercom 或 Reader Pro 上的門鈴。
 
-請求 URL: /api/v1/developer/devices/:device_id/doorbell
-權限金鑰: edit:device
-方法: POST
-UniFi Access 需求: 版本 4.0.10 或更新
+| 請求 URL | `/api/v1/developer/devices/:device_id/doorbell` |
+| :--- | :--- |
+| 權限金鑰 | `edit:device` |
+| 方法 | `POST` |
+| UniFi Access 需求 | 版本 4.0.10 或更新 |
 
 
 ### 請求範例: Shell/cURL

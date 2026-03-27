@@ -6,11 +6,12 @@
 
 This API enables you to fetch notifications, such as doorbell notifications.
 
-Request URL: /api/v1/developer/devices/notifications   
-Permission Key: view:device   
-Protocol: WebSocket   
-Method: GET   
-UniFi Access Requirement: 1.20.11 or later
+| Request URL | `/api/v1/developer/devices/notifications` |
+| :--- | :--- |
+| Permission Key | `view:device` |
+| Protocol | `WebSocket` |
+| Method | `GET` |
+| UniFi Access Requirement | 1.20.11 or later |
 
 ### Request Sample: wscat
 
@@ -127,10 +128,11 @@ Remote door unlock by admin: [access.data.device.remote_unlock]
 
 This API enables you to fetch the available webhook endpoints.
 
-Request URL: /api/v1/developer/webhooks/endpoints   
-Permission Key: view:webhook   
-Method: GET   
-UniFi Access Requirement: 2.2.10 or later
+| Request URL | `/api/v1/developer/webhooks/endpoints` |
+| :--- | :--- |
+| Permission Key | `view:webhook` |
+| Method | `GET` |
+| UniFi Access Requirement | 2.2.10 or later |
 
 ### Request Header
 
@@ -181,10 +183,11 @@ curl '{{host}}/api/v1/developer/webhooks/endpoints'
 
 This API enables you to add a webhook endpoint.
 
-Request URL: /api/v1/developer/webhooks/endpoints   
-Permission Key: edit:webhook   
-Method: POST   
-UniFi Access Requirement: 2.2.10 or later
+| Request URL | `/api/v1/developer/webhooks/endpoints` |
+| :--- | :--- |
+| Permission Key | `edit:webhook` |
+| Method | `POST` |
+| UniFi Access Requirement | 2.2.10 or later |
 
 ### Request Header
 
@@ -247,10 +250,11 @@ curl -XPOST '{{host}}/api/v1/developer/webhooks/endpoints'
 
 This API enables you to update the available webhook endpoints.
 
-Request URL: /api/v1/developer/webhooks/endpoints/:id   
-Permission Key: edit:webhook   
-Method: PUT   
-UniFi Access Requirement: 2.2.10 or later
+| Request URL | `/api/v1/developer/webhooks/endpoints/:id` |
+| :--- | :--- |
+| Permission Key | `edit:webhook` |
+| Method | `PUT` |
+| UniFi Access Requirement | 2.2.10 or later |
 
 ### Request Header
 
@@ -318,10 +322,11 @@ curl -XPUT '{{host}}/api/v1/developer/webhooks/endpoints/a22ee283-c91f-432b-9d0f
 
 This API enables you to delete the available webhook endpoints.
 
-Request URL: /api/v1/developer/webhooks/endpoints/:id   
-Permission Key: edit:webhook   
-Method: DELETE   
-UniFi Access Requirement: 2.2.10 or later
+| Request URL | `/api/v1/developer/webhooks/endpoints/:id` |
+| :--- | :--- |
+| Permission Key | `edit:webhook` |
+| Method | `DELETE` |
+| UniFi Access Requirement | 2.2.10 or later |
 
 ### Request Header
 
@@ -354,9 +359,10 @@ curl -XDELETE '{{host}}/api/v1/developer/webhooks/endpoints/a22ee283-c91f-432b-9
 
 The following samples demonstrate how to receive webhook messages. Note that the secret needs to be adjusted to the assigned secret. These are just examples; in actual use, HTTPS and a custom URL should be used.
 
-Request URL: Your webhook endpoint   
-Method: POST   
-UniFi Access Requirement: 2.2.10 or later
+| Request URL | Your webhook endpoint |
+| :--- | :--- |
+| Method | `POST` |
+| UniFi Access Requirement | 2.2.10 or later |
 
 <table><tr><td>Parameter</td><td>Required</td><td>Type</td><td>Description</td><td>Example</td></tr><tr><td>Signature</td><td>T</td><td>String</td><td>Contains request time(t) and signature(v1)</td><td>t=1695902233,v1=a7ea8840af212767d7795481bed914a9f2ea7241d35212b597bec13aa4bfa06b</td></tr></table>
 

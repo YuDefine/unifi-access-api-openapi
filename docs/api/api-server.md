@@ -6,10 +6,11 @@
 
 This API allows you to update the HTTPS certificate for the Access API, applicable only to port 12445. **Please note that restarting the Access application is necessary to apply these changes.** If the Private Key and Certificate do not match, it will result in a "parameter error" message.
 
-Request URL: /api/v1/developer/api_server/certificates   
-Permission Key: edit:api_server   
-Method: POST   
-UniFi Access Requirement: Version 2.2.10 or later
+| Request URL | `/api/v1/developer/api_server/certificates` |
+| :--- | :--- |
+| Permission Key | `edit:api_server` |
+| Method | `POST` |
+| UniFi Access Requirement | Version 2.2.10 or later |
 
 ### Request Header
 
@@ -42,10 +43,11 @@ curl -XPOST '{{host}}/api/v1/developer/api_server/certificates'
 
 This API allows you to delete the HTTPS certificate for the Access API, applicable only to port 12445. **Please note that restarting the Access application is necessary to apply these changes.**
 
-Request URL: /api/v1/developer/api_server/certificates   
-Permission Key: edit:api_server   
-Method: DELETE   
-UniFi Access Requirement: Version 2.2.10 or later
+| Request URL | `/api/v1/developer/api_server/certificates` |
+| :--- | :--- |
+| Permission Key | `edit:api_server` |
+| Method | `DELETE` |
+| UniFi Access Requirement | Version 2.2.10 or later |
 
 ### Request Header
 

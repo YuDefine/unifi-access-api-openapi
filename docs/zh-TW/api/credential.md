@@ -8,9 +8,10 @@
 
 此 API 讓您產生 PIN 碼。PIN 碼可指派給訪客或使用者，指派後即可用於解鎖門禁。
 
-請求 URL: /api/v1/developer/credentials/pin_codes
-權限金鑰: view:credential
-方法: POST
+| 請求 URL | `/api/v1/developer/credentials/pin_codes` |
+| :--- | :--- |
+| 權限金鑰 | `view:credential` |
+| 方法 | `POST` |
 
 
 ### 請求範例: Shell/cURL
@@ -53,9 +54,10 @@ curl --location --request POST '{host}/api/v1/developer/credentials/pin_codes'
 
 喚醒 UA 讀取器並建立工作階段以註冊 NFC 卡。
 
-請求 URL: /api/v1/developer/credentials/nfc_cards/sessions
-權限金鑰: edit:credential
-方法: POST
+| 請求 URL | `/api/v1/developer/credentials/nfc_cards/sessions` |
+| :--- | :--- |
+| 權限金鑰 | `edit:credential` |
+| 方法 | `POST` |
 
 
 ### 請求範例
@@ -106,9 +108,10 @@ curl '{host}/api/v1/developer/credentials/nfc_cards sessions'
 
 此 API 讓您輪詢 UA 讀取器以取得 NFC 卡註冊狀態及產生的卡片 Token。
 
-請求 URL: /api/v1/developer/credentials/nfc_cards/sessions/:id
-權限金鑰: edit:credential
-方法: GET
+| 請求 URL | `/api/v1/developer/credentials/nfc_cards/sessions/:id` |
+| :--- | :--- |
+| 權限金鑰 | `edit:credential` |
+| 方法 | `GET` |
 
 
 ### 回應範例
@@ -152,9 +155,10 @@ GET /api/v1/developer/credentials/nfc_cards/sections/e8a97c52-6676-4c48-8589-bd5
 
 此 API 讓您移除為註冊 NFC 卡而建立的工作階段。
 
-請求 URL: /api/v1/developer/credentials/nfc_cards/sessions/:id
-權限金鑰: edit:credential
-方法: DELETE
+| 請求 URL | `/api/v1/developer/credentials/nfc_cards/sessions/:id` |
+| :--- | :--- |
+| 權限金鑰 | `edit:credential` |
+| 方法 | `DELETE` |
 
 
 ### 請求範例
@@ -211,10 +215,11 @@ enroll-nfc-card
 
 此 API 允許您取得 NFC 卡詳情。
 
-請求 URL: /api/v1/developer/credentials/nfc_cards/tokens/:token
-權限金鑰: view:credential
-方法: GET
-UniFi Access 需求: 版本 1.22.16 或更新
+| 請求 URL | `/api/v1/developer/credentials/nfc_cards/tokens/:token` |
+| :--- | :--- |
+| 權限金鑰 | `view:credential` |
+| 方法 | `GET` |
+| UniFi Access 需求 | 版本 1.22.16 或更新 |
 
 
 ### 回應範例
@@ -280,10 +285,11 @@ curl -XGET
 
 此 API 允許您取得所有 NFC 卡。
 
-請求 URL: /api/v1/developer/credentials/nfc_cards/tokens
-權限金鑰: view:credential
-方法: GET
-UniFi Access 需求: 版本 1.22.16 或更新
+| 請求 URL | `/api/v1/developer/credentials/nfc_cards/tokens` |
+| :--- | :--- |
+| 權限金鑰 | `view:credential` |
+| 方法 | `GET` |
+| UniFi Access 需求 | 版本 1.22.16 或更新 |
 
 
 ### 回應範例
@@ -371,10 +377,11 @@ curl -XGET '{host}/api/v1/developer/credentials/nfc_cards/tokens?page_num=1&page
 
 此 API 允許您刪除 NFC 卡。
 
-請求 URL: /api/v1/developer/credentials/nfc_cards/tokens/:token
-權限金鑰: edit:credential
-方法: DELETE
-UniFi Access 需求: 版本 1.22.16 或更新
+| 請求 URL | `/api/v1/developer/credentials/nfc_cards/tokens/:token` |
+| :--- | :--- |
+| 權限金鑰 | `edit:credential` |
+| 方法 | `DELETE` |
+| UniFi Access 需求 | 版本 1.22.16 或更新 |
 
 
 ### 回應範例
@@ -418,10 +425,11 @@ curl -XDELETE
 
 此 API 允許您更新 NFC 卡。
 
-請求 URL: /api/v1/developer/credentials/nfc_cards/tokens/:token
-權限金鑰: edit:credential
-方法: PUT
-UniFi Access 需求: 版本 3.1.30 或更新
+| 請求 URL | `/api/v1/developer/credentials/nfc_cards/tokens/:token` |
+| :--- | :--- |
+| 權限金鑰 | `edit:credential` |
+| 方法 | `PUT` |
+| UniFi Access 需求 | 版本 3.1.30 或更新 |
 
 
 ### 回應範例
@@ -499,10 +507,11 @@ curl -XPUT \
 
 此 API 允許您取得依狀態篩選的 Touch Pass 列表。
 
-請求 URL: /api/v1/developer/credentials/touch_passes
-權限金鑰: view:credential
-方法: GET
-UniFi Access 需求: 版本 3.2.20 或更新
+| 請求 URL | `/api/v1/developer/credentials/touch_passes` |
+| :--- | :--- |
+| 權限金鑰 | `view:credential` |
+| 方法 | `GET` |
+| UniFi Access 需求 | 版本 3.2.20 或更新 |
 注意: 若 user_status 為 UNLINK，表示關聯的使用者已不再連結（即該使用者被視為遺失或已從系統移除）。
 
 
@@ -596,10 +605,11 @@ page_num=1&page_size=10&status=PENDING'
 
 此 API 允許您使用篩選條件（例如卡片 ID）搜尋 Touch Pass。
 
-請求 URL: /api/v1/developer/credentials/touch_passes/search
-權限金鑰: view:credential
-方法: GET
-UniFi Access 需求: 版本 3.2.20 或更新
+| 請求 URL | `/api/v1/developer/credentials/touch_passes/search` |
+| :--- | :--- |
+| 權限金鑰 | `view:credential` |
+| 方法 | `GET` |
+| UniFi Access 需求 | 版本 3.2.20 或更新 |
 注意: 若 user_status 為 UNLINK，表示關聯的使用者已不再連結（即該使用者被視為遺失或已從系統移除）。
 
 
@@ -659,10 +669,11 @@ curl --location --request GET
 
 此 API 允許您取得所有已暫停或未啟用、可重新指派的 Touch Pass。
 
-請求 URL: /api/v1/developer/credentials/touch_passes/assignable
-權限金鑰: view:credential
-方法: GET
-UniFi Access 需求: 版本 3.2.20 或更新
+| 請求 URL | `/api/v1/developer/credentials/touch_passes/assignable` |
+| :--- | :--- |
+| 權限金鑰 | `view:credential` |
+| 方法 | `GET` |
+| UniFi Access 需求 | 版本 3.2.20 或更新 |
 
 
 ### 回應範例
@@ -742,10 +753,11 @@ curl --location --request GET
 
 此 API 允許您更新 Touch Pass 的卡片名稱、修改其狀態（ACTIVE / SUSPENDED），以及解除綁定裝置（bundle_status: DISABLED）。
 
-請求 URL: /api/v1/developer/credentials/touch_passes/:id
-權限金鑰: edit:credential
-方法: PUT
-UniFi Access 需求: 版本 3.2.20 或更新
+| 請求 URL | `/api/v1/developer/credentials/touch_passes/:id` |
+| :--- | :--- |
+| 權限金鑰 | `edit:credential` |
+| 方法 | `PUT` |
+| UniFi Access 需求 | 版本 3.2.20 或更新 |
 注意: 若 user_status 為 UNLINK，表示關聯的使用者已不再連結（即該使用者被視為遺失或已從系統移除）。
 
 
@@ -859,10 +871,11 @@ curl --location --request PUT \
 
 此 API 使用 ID 擷取特定 Touch Pass 的詳細資訊。
 
-請求 URL: /api/v1/developer/credentials/touch_passes/:id
-權限金鑰: view:credential
-方法: GET
-UniFi Access 需求: 版本 3.2.20 或更新
+| 請求 URL | `/api/v1/developer/credentials/touch_passes/:id` |
+| :--- | :--- |
+| 權限金鑰 | `view:credential` |
+| 方法 | `GET` |
+| UniFi Access 需求 | 版本 3.2.20 或更新 |
 注意: 若 user_status 為 UNLINK，表示關聯的使用者已不再連結（即該使用者被視為遺失或已從系統移除）。
 
 | 參數 | 必填 | 型別 | 說明 |
@@ -921,11 +934,13 @@ curl --location --request GET \
 
 此 API 允許您購買新的 Touch Pass。使用此 API 前，請確保已在 Access 網頁應用程式中設定有效的付款方式。
 
-請求 URL: /api/v1/developer/credentials/touch_passes
+| 請求 URL | `/api/v1/developer/credentials/touch_passes` |
+| :--- | :--- |
 
-權限金鑰: edit:credential
-方法: POST
-UniFi Access 需求: 版本 3.2.20 或更新
+| 權限金鑰 | `edit:credential` |
+| :--- | :--- |
+| 方法 | `POST` |
+| UniFi Access 需求 | 版本 3.2.20 或更新 |
 
 
 ### 回應範例
@@ -993,10 +1008,11 @@ curl --location 'https://192.168.1.1:12445/api/v1/developer/credentials/touch_pa
 
 此 API 允許您依 ID 下載 QR Code 圖片。
 
-請求 URL: /api/v1/developer/credentials/qr_codes/download/:visitor_id
-權限金鑰: view:credential
-方法: GET
-UniFi Access 需求: 版本 3.3.10 或更新
+| 請求 URL | `/api/v1/developer/credentials/qr_codes/download/:visitor_id` |
+| :--- | :--- |
+| 權限金鑰 | `view:credential` |
+| 方法 | `GET` |
+| UniFi Access 需求 | 版本 3.3.10 或更新 |
 
 
 ### 請求範例: Shell/cURL
@@ -1028,10 +1044,11 @@ curl --location --request GET
 
 此 API 允許您透過上傳 CSV 檔案將第三方 NFC 卡 ID 匯入 Access 系統。
 
-請求 URL: /api/v1/developer/credentials/nfc_cards/import
-權限金鑰: edit:credential
-方法: POST
-UniFi Access 需求: 版本 3.3.10 或更新
+| 請求 URL | `/api/v1/developer/credentials/nfc_cards/import` |
+| :--- | :--- |
+| 權限金鑰 | `edit:credential` |
+| 方法 | `POST` |
+| UniFi Access 需求 | 版本 3.3.10 或更新 |
 
 
 ### 請求範例: Shell/cURL

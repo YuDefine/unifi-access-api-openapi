@@ -6,10 +6,11 @@ The APIs here are designed for the UniFi Identity app.
 
 This API enables you to send invitations and invite users to join UniFi Identity.
 
-Request URL: /api/v1/developer/users/identity/invitations   
-Permission Key: edit:user   
-Method: POST   
-UniFi Access Requirement: 1.24.6 or later
+| Request URL | `/api/v1/developer/users/identity/invitations` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `POST` |
+| UniFi Access Requirement | 1.24.6 or later |
 
 ### Request Header
 
@@ -68,10 +69,11 @@ If there is a failure to send an email:
 
 This API enables you to fetch the available UniFi Identity resources.
 
-Request URL: /api/v1/developer/users/identity/assignments   
-Permission Key: view:user   
-Method: GET   
-UniFi Access Requirement: 1.24.6 or later
+| Request URL | `/api/v1/developer/users/identity/assignments` |
+| :--- | :--- |
+| Permission Key | `view:user` |
+| Method | `GET` |
+| UniFi Access Requirement | 1.24.6 or later |
 
 ### Request Header
 
@@ -131,10 +133,11 @@ curl '{host}/api/v1/developer/users/identity/assignments?resource_type=evstation
 
 This API enables you to assign UniFi Identity resources to users.
 
-Request URL: /api/v1/developer/users/:id/identity/assignments   
-Permission Key: edit:user   
-Method: POST   
-UniFi Access Requirement: 1.24.6 or later
+| Request URL | `/api/v1/developer/users/:id/identity/assignments` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `POST` |
+| UniFi Access Requirement | 1.24.6 or later |
 
 ### Request Header
 
@@ -179,11 +182,13 @@ curl -XPOST '{host}/api/v1/developer/users/b602879b-b857-400b-970b-336d4cb881ad/
 
 This API enables you to fetch the UniFi Identity resources assigned to users.
 
-Request URL: /api/v1/developer/users/:id/identity/assignments   
-Permission Key: view:user
+| Request URL | `/api/v1/developer/users/:id/identity/assignments` |
+| :--- | :--- |
+| Permission Key | `view:user` |
 
-Method: GET   
-UniFi Access Requirement: 1.24.6 or later
+| Method | `GET` |
+| :--- | :--- |
+| UniFi Access Requirement | 1.24.6 or later |
 
 ### Request Header
 
@@ -246,10 +251,11 @@ curl -XGET '{host}'/api/v1/developer/users/b602879b-b857-400b-970b-336d4cb881ad/
 
 This API enables you to assign UniFi Identity resources to user groups.
 
-Request URL: /api/v1/developer/user_groups/:id/identity/assignments   
-Permission Key: edit:user   
-Method: POST   
-UniFi Access Requirement: 2.2.0 or later
+| Request URL | `/api/v1/developer/user_groups/:id/identity/assignments` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `POST` |
+| UniFi Access Requirement | 2.2.0 or later |
 
 ### Request Header
 
@@ -293,10 +299,11 @@ curl -XPOST '{{host}}/api/v1/developer/user_groups/7476c839-8e10-472e-894f-c5b82
 
 This API enables you to fetch the UniFi Identity resources assigned to user groups.
 
-Request URL: /api/v1/developer/user_groups/:id/identity/assignments   
-Permission Key: view:user   
-Method: GET   
-UniFi Access Requirement: 2.2.0 or later
+| Request URL | `/api/v1/developer/user_groups/:id/identity/assignments` |
+| :--- | :--- |
+| Permission Key | `view:user` |
+| Method | `GET` |
+| UniFi Access Requirement | 2.2.0 or later |
 
 ### Request Header
 

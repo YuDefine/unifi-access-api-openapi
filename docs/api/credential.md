@@ -6,9 +6,10 @@ The APIs here are designed for managing PIN codes, NFC cards, and other related 
 
 This API enables you to generate a PIN code. A PIN code can be assigned to a visitor or user, and once assigned, they can use it to unlock doors.
 
-Request URL: /api/v1/developer/credentials/pin_codes   
-Permission Key: view:credential   
-Method: POST
+| Request URL | `/api/v1/developer/credentials/pin_codes` |
+| :--- | :--- |
+| Permission Key | `view:credential` |
+| Method | `POST` |
 
 ### Request Header
 
@@ -44,9 +45,10 @@ curl --location --request POST '{host}/api/v1/developer/credentials/pin_codes'
 
 Wake up a UA reader and create a session to enroll an NFC card.
 
-Request URL: /api/v1/developer/credentials/nfc_cards/sessions   
-Permission Key: edit:credential   
-Method: POST
+| Request URL | `/api/v1/developer/credentials/nfc_cards/sessions` |
+| :--- | :--- |
+| Permission Key | `edit:credential` |
+| Method | `POST` |
 
 ### Request Header
 
@@ -87,9 +89,10 @@ curl '{host}/api/v1/developer/credentials/nfc_cards sessions'
 
 This API enables you to poll a UA reader to fetch the NFC card enrollment status and the generated card tokens.
 
-Request URL: /api/v1/developer/credentials/nfc_cards/sessions/:id   
-Permission Key: edit:credential   
-Method: GET
+| Request URL | `/api/v1/developer/credentials/nfc_cards/sessions/:id` |
+| :--- | :--- |
+| Permission Key | `edit:credential` |
+| Method | `GET` |
 
 ### Request Header
 
@@ -123,9 +126,10 @@ GET /api/v1/developer/credentials/nfc_cards/sections/e8a97c52-6676-4c48-8589-bd5
 
 This API enables you to remove a session created for enrolling an NFC card.
 
-Request URL: /api/v1/developer/credentials/nfc_cards/sessions/:id   
-Permission Key: edit:credential   
-Method: DELETE
+| Request URL | `/api/v1/developer/credentials/nfc_cards/sessions/:id` |
+| :--- | :--- |
+| Permission Key | `edit:credential` |
+| Method | `DELETE` |
 
 ### Request Header
 
@@ -162,10 +166,11 @@ enroll-nfc-card
 
 This API allows you to fetch NFC card details.
 
-Request URL: /api/v1/developer/credentials/nfc_cards/tokens/:token   
-Permission Key: view:credential   
-Method: GET   
-UniFi Access Requirement: Version 1.22.16 or later
+| Request URL | `/api/v1/developer/credentials/nfc_cards/tokens/:token` |
+| :--- | :--- |
+| Permission Key | `view:credential` |
+| Method | `GET` |
+| UniFi Access Requirement | Version 1.22.16 or later |
 
 ### Request Header
 
@@ -224,10 +229,11 @@ curl -XGET
 
 This API allows you to fetch all NFC cards.
 
-Request URL: /api/v1/developer/credentials/nfc_cards/tokens   
-Permission Key: view:credential   
-Method: GET   
-UniFi Access Requirement: Version 1.22.16 or later
+| Request URL | `/api/v1/developer/credentials/nfc_cards/tokens` |
+| :--- | :--- |
+| Permission Key | `view:credential` |
+| Method | `GET` |
+| UniFi Access Requirement | Version 1.22.16 or later |
 
 ### Request Header
 
@@ -307,10 +313,11 @@ curl -XGET '{host}/api/v1/developer/credentials/nfc_cards/tokens?page_num=1&page
 
 This API allows you to delete an NFC card.
 
-Request URL: /api/v1/developer/credentials/nfc_cards/tokens/:token   
-Permission Key: edit:credential   
-Method: DELETE   
-UniFi Access Requirement: Version 1.22.16 or later
+| Request URL | `/api/v1/developer/credentials/nfc_cards/tokens/:token` |
+| :--- | :--- |
+| Permission Key | `edit:credential` |
+| Method | `DELETE` |
+| UniFi Access Requirement | Version 1.22.16 or later |
 
 ### Request Header
 
@@ -347,10 +354,11 @@ curl -XDELETE
 
 This API allows you to update an NFC card.
 
-Request URL: /api/v1/developer/credentials/nfc_cards/tokens/:token   
-Permission Key: edit:credential   
-Method: PUT   
-UniFi Access Requirement: Version 3.1.30 or later
+| Request URL | `/api/v1/developer/credentials/nfc_cards/tokens/:token` |
+| :--- | :--- |
+| Permission Key | `edit:credential` |
+| Method | `PUT` |
+| UniFi Access Requirement | Version 3.1.30 or later |
 
 ### Request Header
 
@@ -399,10 +407,11 @@ curl -XPUT \
 
 This API allows you to fetch a list of Touch Passes, filtered by status.
 
-Request URL: /api/v1/developer/credentials/touch_passes   
-Permission Key: view:credential   
-Method: GET   
-UniFi Access Requirement: Version 3.2.20 or later   
+| Request URL | `/api/v1/developer/credentials/touch_passes` |
+| :--- | :--- |
+| Permission Key | `view:credential` |
+| Method | `GET` |
+| UniFi Access Requirement | Version 3.2.20 or later |
 Note: If user_status is UNLINK , it indicates the associated user is no longer linked (i.e., the user is
 
 considered lost or removed from the system).
@@ -489,10 +498,11 @@ page_num=1&page_size=10&status=PENDING'
 
 This API allows you to search for Touch Passes using filter conditions, such as card ID.
 
-Request URL: /api/v1/developer/credentials/touch_passes/search   
-Permission Key: view:credential   
-Method: GET   
-UniFi Access Requirement: Version 3.2.20 or later   
+| Request URL | `/api/v1/developer/credentials/touch_passes/search` |
+| :--- | :--- |
+| Permission Key | `view:credential` |
+| Method | `GET` |
+| UniFi Access Requirement | Version 3.2.20 or later |
 Note: If user_status is UNLINK , it indicates the associated user is no longer linked (i.e., the user is considered lost or removed from the system).
 
 ### Request Header
@@ -545,10 +555,11 @@ curl --location --request GET
 
 This API allows you to fetch all suspended or inactive Touch Passes that can be reassigned.
 
-Request URL: /api/v1/developer/credentials/touch_passes/assignable   
-Permission Key: view:credential   
-Method: GET   
-UniFi Access Requirement: Version 3.2.20 or later
+| Request URL | `/api/v1/developer/credentials/touch_passes/assignable` |
+| :--- | :--- |
+| Permission Key | `view:credential` |
+| Method | `GET` |
+| UniFi Access Requirement | Version 3.2.20 or later |
 
 ### Request Header
 
@@ -611,10 +622,11 @@ curl --location --request GET
 
 This API allows you to update a Touch Pass's card name, modify its status ( ACTIVE / SUSPENDED ), and unbundle devices ( bundle_status: DISABLED ).
 
-Request URL: /api/v1/developer/credentials/touch_passes/:id   
-Permission Key: edit:credential   
-Method: PUT   
-UniFi Access Requirement: Version 3.2.20 or later   
+| Request URL | `/api/v1/developer/credentials/touch_passes/:id` |
+| :--- | :--- |
+| Permission Key | `edit:credential` |
+| Method | `PUT` |
+| UniFi Access Requirement | Version 3.2.20 or later |
 Note: If user_status is UNLINK , it indicates the associated user is no longer linked (i.e., the user is considered lost or removed from the system).
 
 ### Request Header
@@ -695,10 +707,11 @@ curl --location --request PUT \
 
 This API retrieves detailed information about a specific Touch Pass using its ID.
 
-Request URL: /api/v1/developer/credentials/touch_passes/:id   
-Permission Key: view:credential   
-Method: GET   
-UniFi Access Requirement: Version 3.2.20 or later   
+| Request URL | `/api/v1/developer/credentials/touch_passes/:id` |
+| :--- | :--- |
+| Permission Key | `view:credential` |
+| Method | `GET` |
+| UniFi Access Requirement | Version 3.2.20 or later |
 Note: If user_status is UNLINK , it indicates the associated user is no longer linked (i.e., the user is considered lost or removed from the system).
 
 <table><tr><td>Parameter</td><td>Required</td><td>Type</td><td>Description</td></tr><tr><td>Authorization</td><td>T</td><td>String</td><td>Token required for authentication and access control.</td></tr></table>
@@ -750,11 +763,13 @@ curl --location --request GET \
 
 This API allows you to purchase new Touch Passes. Ensure a valid payment method is configured in the Access web application before using this API.
 
-Request URL: /api/v1/developer/credentials/touch_passes
+| Request URL | `/api/v1/developer/credentials/touch_passes` |
+| :--- | :--- |
 
-Permission Key: edit:credential   
-Method: POST   
-UniFi Access Requirement: Version 3.2.20 or later
+| Permission Key | `edit:credential` |
+| :--- | :--- |
+| Method | `POST` |
+| UniFi Access Requirement | Version 3.2.20 or later |
 
 ### Request Header
 
@@ -803,10 +818,11 @@ curl --location 'https://192.168.1.1:12445/api/v1/developer/credentials/touch_pa
 
 This API allows you to download a QR code image by its ID.
 
-Request URL: /api/v1/developer/credentials/qr_codes/download/:visitor_id   
-Permission Key: view:credential   
-Method: GET   
-UniFi Access Requirement: Version 3.3.10 or later
+| Request URL | `/api/v1/developer/credentials/qr_codes/download/:visitor_id` |
+| :--- | :--- |
+| Permission Key | `view:credential` |
+| Method | `GET` |
+| UniFi Access Requirement | Version 3.3.10 or later |
 
 ### Request Header
 
@@ -831,10 +847,11 @@ curl --location --request GET
 
 This API allows you to import third-party NFC card IDs by uploading a CSV file into the Access system.
 
-Request URL: /api/v1/developer/credentials/nfc_cards/import   
-Permission Key: edit:credential   
-Method: POST   
-UniFi Access Requirement: Version 3.3.10 or later
+| Request URL | `/api/v1/developer/credentials/nfc_cards/import` |
+| :--- | :--- |
+| Permission Key | `edit:credential` |
+| Method | `POST` |
+| UniFi Access Requirement | Version 3.3.10 or later |
 
 ### Request Header
 

@@ -12,9 +12,10 @@ PENDING: A new admin account has been invited by the SSO account, but the invita
 
 This API allows you to register a new user.
 
-Request URL: /api/v1/developer/users   
-Permission Key: edit:user   
-Method: POST
+| Request URL | `/api/v1/developer/users` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `POST` |
 
 ### Request Header
 
@@ -67,9 +68,10 @@ curl '{host}/api/v1/developer/users'
 
 This API allows you to update user details.
 
-Request URL: /api/v1/developer/users/:id   
-Permission Key: edit:user   
-Method: PUT
+| Request URL | `/api/v1/developer/users/:id` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `PUT` |
 
 ### Request Header
 
@@ -122,9 +124,10 @@ curl -XPUT '{host}}/api/v1/developer/user'
 
 This API allows you to fetch user details.
 
-Request URL: /api/v1/developer/users/:id   
-Permission Key: view:user   
-Method: GET
+| Request URL | `/api/v1/developer/users/:id` |
+| :--- | :--- |
+| Permission Key | `view:user` |
+| Method | `GET` |
 
 ### Request Header
 
@@ -220,9 +223,10 @@ curl -XGET '{host}/api/v1/developer/users/348e868e-534a-4ace-ba77-ce80394e31e3? 
 
 This API allows you to fetch all users.
 
-Request URL: /api/v1/developer/users   
-Permission Key: view:user   
-Method: GET
+| Request URL | `/api/v1/developer/users` |
+| :--- | :--- |
+| Permission Key | `view:user` |
+| Method | `GET` |
 
 ### Request Header
 
@@ -351,9 +355,10 @@ curl -XGET '{host}/api/v1/developer/users?page_num=1&page_size=25&expand[]=acces
 
 ## Assign Access Policy to User
 
-Request URL: /api/v1/developer/users/:id/access_policies   
-Permission Key: edit:user   
-Method: PUT
+| Request URL | `/api/v1/developer/users/:id/access_policies` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `PUT` |
 
 ### Request Header
 
@@ -402,9 +407,10 @@ curl -XPUT '{host}/api/v1/developer/users/38857332-7a5e-4bb6-8837-651b2a47cea5/a
 
 ## Assign NFC Card to User
 
-Request URL: /api/v1/developer/users/:id/nfc_cards   
-Permission Key: edit:user   
-Method: PUT
+| Request URL | `/api/v1/developer/users/:id/nfc_cards` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `PUT` |
 
 ### Request Header
 
@@ -443,9 +449,10 @@ curl -XPUT '{host}/api/v1/developer/users/17d2f099-99df-429b-becb-1399a6937e5a/n
 
 ## Unassign NFC Card from User
 
-Request URL: /api/v1/developer/users/:id/nfc_cards/delete   
-Permission Key: edit:user   
-Method: PUT
+| Request URL | `/api/v1/developer/users/:id/nfc_cards/delete` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `PUT` |
 
 ### Request Header
 
@@ -485,9 +492,10 @@ curl -XDELETE '{host}/api/v1/developer/users/17d2f099-99df-429b-becb-1399a6937e5
 
 ## Assign PIN Code to User
 
-Request URL: /api/v1/developer/users/:id/pin_codes   
-Permission Key: edit:user   
-Method: PUT
+| Request URL | `/api/v1/developer/users/:id/pin_codes` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `PUT` |
 
 ### Request Header
 
@@ -527,9 +535,10 @@ curl -XPUT '{host}/api/v1/developer/users/17d2f099-99df-429b-becb-1399a6937e5a/p
 
 ## Unassign PIN Code from User
 
-Request URL: /api/v1/developer/users/:id/pin_codes   
-Permission Key: edit:user   
-Method: DELETE
+| Request URL | `/api/v1/developer/users/:id/pin_codes` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `DELETE` |
 
 ### Request Header
 
@@ -562,10 +571,11 @@ curl -XDELETE '{host}/api/v1/developer/users/17d2f099-99df-429b-becb-1399a6937e5
 
 ## Create User Group
 
-Request URL: /api/v1/developer/user_groups   
-Permission Key: edit:user   
-Method: POST   
-UniFi Access Requirement: 2.2.6 or later   
+| Request URL | `/api/v1/developer/user_groups` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `POST` |
+| UniFi Access Requirement | 2.2.6 or later |
 API version: v1
 
 ### Request Header
@@ -605,10 +615,11 @@ curl -XPOST '{host}/api/v1/developer/user_groups'
 
 ## Fetch All User Groups
 
-Request URL: /api/v1/developer/user_groups   
-Permission Key: view:user   
-Method: GET   
-UniFi Access Requirement: 2.2.6 or later   
+| Request URL | `/api/v1/developer/user_groups` |
+| :--- | :--- |
+| Permission Key | `view:user` |
+| Method | `GET` |
+| UniFi Access Requirement | 2.2.6 or later |
 API version: v1
 
 ### Request Header
@@ -649,10 +660,11 @@ curl -XGET '{host}/api/v1/developer/developer/user_groups'
 
 ## Fetch User Group
 
-Request URL: /api/v1/developer/user_groups/:id   
-Permission Key: view:user   
-Method: GET   
-UniFi Access Requirement: 2.2.6 or later   
+| Request URL | `/api/v1/developer/user_groups/:id` |
+| :--- | :--- |
+| Permission Key | `view:user` |
+| Method | `GET` |
+| UniFi Access Requirement | 2.2.6 or later |
 API version: v1
 
 ### Request Header
@@ -695,10 +707,11 @@ curl -XGET '{host}/api/v1/developer/developer/user_groups/75011ee6-b7ab-4927-9d9
 
 ## Update User Group
 
-Request URL: /api/v1/developer/user_groups/:id   
-Permission Key: edit:user   
-Method: PUT   
-UniFi Access Requirement: 2.2.6 or later   
+| Request URL | `/api/v1/developer/user_groups/:id` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `PUT` |
+| UniFi Access Requirement | 2.2.6 or later |
 API version: v1
 
 ### Request Header
@@ -740,10 +753,11 @@ curl -XPUT '{host}/api/v1/developer/user_groups/75011ee6-b7ab-4927-9d9f-dd08ef0a
 
 ## Delete User Group
 
-Request URL: /api/v1/developer/user_groups/:id   
-Permission Key: edit:user   
-Method: DELETE   
-UniFi Access Requirement: 2.2.6 or later   
+| Request URL | `/api/v1/developer/user_groups/:id` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `DELETE` |
+| UniFi Access Requirement | 2.2.6 or later |
 API version: v1
 
 ### Request Header
@@ -777,10 +791,11 @@ curl -XDELETE '{host}/api/v1/developer/developer/user_groups/75011ee6-b7ab-4927-
 
 ## Assign User to User Group
 
-Request URL: /api/v1/developer/user_groups/:id/users   
-Permission Key: edit:user   
-Method: POST   
-UniFi Access Requirement: 2.2.6 or later   
+| Request URL | `/api/v1/developer/user_groups/:id/users` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `POST` |
+| UniFi Access Requirement | 2.2.6 or later |
 API version: v1
 
 ### Request Header
@@ -819,10 +834,11 @@ curl -XPOST '{host}/api/v1/developer/user_groups/75011ee6-b7ab-4927-9d9f-dd08ef0
 
 ## Unassign User from User Group
 
-Request URL: /api/v1/developer/user_groups/:id/users/delete   
-Permission Key: edit:user   
-Method: POST   
-UniFi Access Requirement: 2.2.6 or later   
+| Request URL | `/api/v1/developer/user_groups/:id/users/delete` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `POST` |
+| UniFi Access Requirement | 2.2.6 or later |
 API version: v1
 
 ### Request Header
@@ -863,10 +879,11 @@ curl -XPOST '{host}/api/v1/developer/user_groups/75011ee6-b7ab-4927-9d9f-dd08ef0
 
 This API allows you to fetch only the users in a user group, excluding any subgroups.
 
-Request URL: /api/v1/developer/user_groups/:id/users   
-Permission Key: view:user   
-Method: GET   
-UniFi Access Requirement: 2.2.6 or later   
+| Request URL | `/api/v1/developer/user_groups/:id/users` |
+| :--- | :--- |
+| Permission Key | `view:user` |
+| Method | `GET` |
+| UniFi Access Requirement | 2.2.6 or later |
 API version: v1
 
 ### Request Header
@@ -909,10 +926,11 @@ curl -XGET '{host}/api/v1/developer/user_groups/23676a54-382e-4121-AA80-878d2d9b
 
 This API allows you to fetch all users in a user group, including those in subgroups.
 
-Request URL: /api/v1/developer/user_groups/:id/users/all   
-Permission Key: view:user   
-Method: GET   
-UniFi Access Requirement: 2.2.6 or later   
+| Request URL | `/api/v1/developer/user_groups/:id/users/all` |
+| :--- | :--- |
+| Permission Key | `view:user` |
+| Method | `GET` |
+| UniFi Access Requirement | 2.2.6 or later |
 API version: v1
 
 ### Request Header
@@ -970,10 +988,11 @@ curl -XGET '{host}'/api/v1/developer/user_groups/23676a54-382e-4121-AA80-878d2d9
 
 This API allows you to fetch the access policies assigned to a user.
 
-Request URL: /api/v1/developer/users/:id/access_policies   
-Permission Key: view:user   
-Method: GET   
-UniFi Access Requirement: 2.2.6 or later   
+| Request URL | `/api/v1/developer/users/:id/access_policies` |
+| :--- | :--- |
+| Permission Key | `view:user` |
+| Method | `GET` |
+| UniFi Access Requirement | 2.2.6 or later |
 API version: v1
 
 ### Request Header
@@ -1032,10 +1051,11 @@ curl -XGET '{host}/users/27aa91ac-2924-43d4-82e1-24b6a570d29e/access_policies? o
 
 This API is used to assign access policies to a user group.
 
-Request URL: /api/v1/developer/user_groups/:id/access_policies   
-Permission Key: edit:user   
-Method: PUT   
-UniFi Access Requirement: 2.2.6 or later   
+| Request URL | `/api/v1/developer/user_groups/:id/access_policies` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `PUT` |
+| UniFi Access Requirement | 2.2.6 or later |
 API version: v1
 
 ### Request Header
@@ -1081,10 +1101,11 @@ curl -XPUT '{host}/user_groups/23676a54-382e-4121-AA80-878d2d9bacaa/access_polic
 
 This API allows you to fetch the access policies assigned to a user group.
 
-Request URL: /api/v1/developer/user_groups/:id/access_policies   
-Permission Key: view:user   
-Method: GET   
-UniFi Access Requirement: 2.2.6 or later   
+| Request URL | `/api/v1/developer/user_groups/:id/access_policies` |
+| :--- | :--- |
+| Permission Key | `view:user` |
+| Method | `GET` |
+| UniFi Access Requirement | 2.2.6 or later |
 API version: v1
 
 ### Request Header
@@ -1143,10 +1164,11 @@ curl -XGET '{host}/user_groups/23676a54-382e-4121-AA80-878d2d9bacaa/access_polic
 
 This API allows you to delete a user whose status is disabled.
 
-Request URL: /api/v1/developer/users/:id   
-Permission Key: edit:user   
-Method: DELETE   
-UniFi Access Requirement: 3.1.30 or later   
+| Request URL | `/api/v1/developer/users/:id` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `DELETE` |
+| UniFi Access Requirement | 3.1.30 or later |
 API version: v1   
 Note: Only users with a disabled can be deleted.
 
@@ -1183,10 +1205,11 @@ curl -XDELETE '{host}/api/v1/developer/developer/users/348e868e-534a-4ace-ba77-c
 
 This API allows you to fetch all users.
 
-Request URL: /api/v1/developer/users/search   
-Permission Key: view:user   
-Method: GET   
-UniFi Access Requirement: 3.1.30 or later
+| Request URL | `/api/v1/developer/users/search` |
+| :--- | :--- |
+| Permission Key | `view:user` |
+| Method | `GET` |
+| UniFi Access Requirement | 3.1.30 or later |
 
 ### Request Header
 
@@ -1241,10 +1264,11 @@ curl -XGET '{host}/api/v1/developer/users/search?keyword=Name&user_id=472cabd2-0
 
 This API assigns a suspended or inactive Touch Pass to a specific user.
 
-Request URL: /api/v1/developer/users/:user_id/touch_passes/:touch_pass_id   
-Permission Key: edit:user   
-Method: PUT   
-UniFi Access Requirement: Version 3.2.20 or later
+| Request URL | `/api/v1/developer/users/:user_id/touch_passes/:touch_pass_id` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `PUT` |
+| UniFi Access Requirement | Version 3.2.20 or later |
 
 ### Request Header
 
@@ -1289,10 +1313,11 @@ curl --location --request PUT '{host}/api/v1/developer/users/cadb8707-a2c1-4407-
 
 This API unassigns a Touch Pass from a specific user.
 
-Request URL: /api/v1/developer/users/:user_id/touch_passes/:touch_pass_id   
-Permission Key: edit:user   
-Method: DELETE   
-UniFi Access Requirement: Version 3.2.20 or later
+| Request URL | `/api/v1/developer/users/:user_id/touch_passes/:touch_pass_id` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `DELETE` |
+| UniFi Access Requirement | Version 3.2.20 or later |
 
 ### Request Header
 
@@ -1340,10 +1365,11 @@ curl --location --request DELETE 'https://192.168.1.1:12445/api/v1/developer/use
 
 This API allows assigning unassigned Touch Passes to users using their email addresses.
 
-Request URL: /api/v1/developer/users/touch_passes/assign   
-Permission Key: edit:user   
-Method: PUT   
-UniFi Access Requirement: Version 3.2.20 or later
+| Request URL | `/api/v1/developer/users/touch_passes/assign` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `PUT` |
+| UniFi Access Requirement | Version 3.2.20 or later |
 
 ### Request Header
 
@@ -1400,10 +1426,11 @@ curl --location --request PUT \
 
 This API allows you to assign one or more license plate numbers to a specific user.
 
-Request URL: /api/v1/developer/users/:id/license_plates   
-Permission Key: edit:user   
-Method: PUT   
-UniFi Access Requirement: Version 3.3.10 or later
+| Request URL | `/api/v1/developer/users/:id/license_plates` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `PUT` |
+| UniFi Access Requirement | Version 3.3.10 or later |
 
 ### Request Header
 
@@ -1443,10 +1470,11 @@ curl --location --request PUT 'https://192.168.1.1:12445/api/v1/developer/users/
 
 This API allows you to unassign a license plate number from a user.
 
-Request URL: /api/v1/developer/users/:user_id/license_plates/:license_plate_id   
-Permission Key: edit:user   
-Method: DELETE   
-UniFi Access Requirement: Version 3.3.10 or later
+| Request URL | `/api/v1/developer/users/:user_id/license_plates/:license_plate_id` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `DELETE` |
+| UniFi Access Requirement | Version 3.3.10 or later |
 
 ### Request Header
 
@@ -1477,10 +1505,11 @@ curl --location --request DELETE 'https://192.168.1.1:12445/api/v1/developer/use
 
 This API allows you to upload a profile picture for a user.
 
-Request URL: /api/v1/developer/users/:id/avatar   
-Permission Key: edit:user   
-Method: POST   
-UniFi Access Requirement: Version 3.3.10 or later   
+| Request URL | `/api/v1/developer/users/:id/avatar` |
+| :--- | :--- |
+| Permission Key | `edit:user` |
+| Method | `POST` |
+| UniFi Access Requirement | Version 3.3.10 or later |
 Note: Updating the profile picture is supported only for local users. UI Account users must update their profile picture through the UI Account interface (https://account.ui.com/).
 
 ### Request Header

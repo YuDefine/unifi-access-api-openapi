@@ -8,11 +8,12 @@
 
 此 API 可讓您取得通知，例如門鈴通知。
 
-請求 URL: /api/v1/developer/devices/notifications
-權限金鑰: view:device
-協定: WebSocket
-方法: GET
-UniFi Access 需求: 1.20.11 或更新版本
+| 請求 URL | `/api/v1/developer/devices/notifications` |
+| :--- | :--- |
+| 權限金鑰 | `view:device` |
+| 協定 | `WebSocket` |
+| 方法 | `GET` |
+| UniFi Access 需求 | 1.20.11 或更新版本 |
 
 
 ### 請求範例: wscat
@@ -132,10 +133,11 @@ wscat \
 
 此 API 可讓您取得可用的 Webhook 端點。
 
-請求 URL: /api/v1/developer/webhooks/endpoints
-權限金鑰: view:webhook
-方法: GET
-UniFi Access 需求: 2.2.10 或更新版本
+| 請求 URL | `/api/v1/developer/webhooks/endpoints` |
+| :--- | :--- |
+| 權限金鑰 | `view:webhook` |
+| 方法 | `GET` |
+| UniFi Access 需求 | 2.2.10 或更新版本 |
 
 
 ### 請求範例: Shell/cURL
@@ -198,10 +200,11 @@ curl '{{host}}/api/v1/developer/webhooks/endpoints'
 
 此 API 可讓您新增 Webhook 端點。
 
-請求 URL: /api/v1/developer/webhooks/endpoints
-權限金鑰: edit:webhook
-方法: POST
-UniFi Access 需求: 2.2.10 或更新版本
+| 請求 URL | `/api/v1/developer/webhooks/endpoints` |
+| :--- | :--- |
+| 權限金鑰 | `edit:webhook` |
+| 方法 | `POST` |
+| UniFi Access 需求 | 2.2.10 或更新版本 |
 
 
 ### 請求範例: Shell/cURL
@@ -274,10 +277,11 @@ curl -XPOST '{{host}}/api/v1/developer/webhooks/endpoints'
 
 此 API 可讓您更新可用的 Webhook 端點。
 
-請求 URL: /api/v1/developer/webhooks/endpoints/:id
-權限金鑰: edit:webhook
-方法: PUT
-UniFi Access 需求: 2.2.10 或更新版本
+| 請求 URL | `/api/v1/developer/webhooks/endpoints/:id` |
+| :--- | :--- |
+| 權限金鑰 | `edit:webhook` |
+| 方法 | `PUT` |
+| UniFi Access 需求 | 2.2.10 或更新版本 |
 
 
 ### 請求範例: Shell/cURL
@@ -357,10 +361,11 @@ curl -XPUT '{{host}}/api/v1/developer/webhooks/endpoints/a22ee283-c91f-432b-9d0f
 
 此 API 可讓您刪除可用的 Webhook 端點。
 
-請求 URL: /api/v1/developer/webhooks/endpoints/:id
-權限金鑰: edit:webhook
-方法: DELETE
-UniFi Access 需求: 2.2.10 或更新版本
+| 請求 URL | `/api/v1/developer/webhooks/endpoints/:id` |
+| :--- | :--- |
+| 權限金鑰 | `edit:webhook` |
+| 方法 | `DELETE` |
+| UniFi Access 需求 | 2.2.10 或更新版本 |
 
 
 ### 請求範例: Shell/cURL
@@ -399,9 +404,10 @@ curl -XDELETE '{{host}}/api/v1/developer/webhooks/endpoints/a22ee283-c91f-432b-9
 
 以下範例示範如何接收 Webhook 訊息。請注意，secret 需要調整為指定的 secret。這些僅為範例；在實際使用中，應使用 HTTPS 和自訂 URL。
 
-請求 URL: 您的 Webhook 端點
-方法: POST
-UniFi Access 需求: 2.2.10 或更新版本
+| 請求 URL | 您的 Webhook 端點 |
+| :--- | :--- |
+| 方法 | `POST` |
+| UniFi Access 需求 | 2.2.10 或更新版本 |
 
 | 參數 | 必填 | 型別 | 說明 | 範例 |
 | --- | --- | --- | --- | --- |

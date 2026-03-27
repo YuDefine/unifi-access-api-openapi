@@ -61,9 +61,10 @@
 
 此 API 可讓您取得系統日誌。
 
-請求 URL: /api/v1/developer/system/logs
-權限金鑰: view:system_log
-方法: POST
+| 請求 URL | `/api/v1/developer/system/logs` |
+| :--- | :--- |
+| 權限金鑰 | `view:system_log` |
+| 方法 | `POST` |
 
 
 ### 請求範例: Shell/cURL
@@ -164,10 +165,11 @@ curl '{host}/api/v1/developer/system/logs?page_size=1&page_num=25'
 
 此 API 可讓您將系統日誌匯出為 CSV 檔案。
 
-請求 URL: /api/v1/developer/system/logs/export
-權限金鑰: view:system_log
-方法: POST
-UniFi Access 需求: 1.20.11 或更新版本
+| 請求 URL | `/api/v1/developer/system/logs/export` |
+| :--- | :--- |
+| 權限金鑰 | `view:system_log` |
+| 方法 | `POST` |
+| UniFi Access 需求 | 1.20.11 或更新版本 |
 
 
 ### 請求範例: Shell/cURL
@@ -209,10 +211,11 @@ curl '{host}/api/v1/developer/system/logs/export'
 
 此 API 可讓您取得系統日誌中的資源。
 
-請求 URL: /api/v1/developer/system/logs/resource/:id
-權限金鑰: view:system_log
-方法: GET
-UniFi Access 需求: 1.24.6 或更新版本
+| 請求 URL | `/api/v1/developer/system/logs/resource/:id` |
+| :--- | :--- |
+| 權限金鑰 | `view:system_log` |
+| 方法 | `GET` |
+| UniFi Access 需求 | 1.24.6 或更新版本 |
 
 
 ### 回應範例
@@ -257,10 +260,11 @@ curl '{host}/api/v1/developer/system/logs/resource/0418d6a38f00-b6906057-2a90-44
 
 此 API 可讓您取得系統日誌中的靜態資源。
 
-請求 URL: /api/v1/developer/system/static/:path
-權限金鑰: view:system_log
-方法: GET
-UniFi Access 需求: 1.24.6 或更新版本
+| 請求 URL | `/api/v1/developer/system/static/:path` |
+| :--- | :--- |
+| 權限金鑰 | `view:system_log` |
+| 方法 | `GET` |
+| UniFi Access 需求 | 1.24.6 或更新版本 |
 
 ### 請求標頭
 
